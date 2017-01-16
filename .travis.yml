@@ -18,7 +18,9 @@ before_install:
   - ssh-add ~/.ssh/id_rsa
   - cp .travis/ssh_config ~/.ssh/config
   - npm install -g hexo-cli # 安装 hexo
-  - git clone -b mod https://github.com/hippo-jessy/hexo-theme-next.git themes/next
+  - git submodule init
+  - git submodule update
+# - git clone -b mod https://github.com/hippo-jessy/hexo-theme-next.git themes/next
 
 # S: Build Lifecycle
 install:
