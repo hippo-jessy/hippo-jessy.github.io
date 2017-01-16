@@ -4,8 +4,11 @@ git submodule init
 git submodule update
 
 # install Node.js
-curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+git clone http://github.com/creationix/nvm.git $HOME/.nvm
+source ~/.profile
+nvm install stable
 
+npm install -g hexo
 npm install 
 
 # npm install hexo-deployer-git
