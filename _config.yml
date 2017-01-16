@@ -124,6 +124,6 @@ markdown:
 deploy:
   type: git
   repository: 
-    github: https://github.com/hippo-jessy/hippo-jessy.github.io.git
-    coding: https://git.coding.net/hippo-jessy/hippo-jessy.git
+    github: git@github.com:hippo-jessy/hippo-jessy.github.io.git
+    coding: git@coding.net:hippo-jessy/hippo-jessy.git
   branch: master
