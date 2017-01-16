@@ -125,5 +125,5 @@ deploy:
   type: git
   repository: 
     github: git@github.com:hippo-jessy/hippo-jessy.github.io.git
-    coding: git@coding.net:hippo-jessy/hippo-jessy.git
+    coding: git@git.coding.net:hippo-jessy/hippo-jessy.git
   branch: master
