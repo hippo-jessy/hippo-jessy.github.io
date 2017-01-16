@@ -1,0 +1,33 @@
+language: node_js
+node_js: stable
+
+# assign build branches
+branches:
+  only:
+    - hexo 
+
+# cache this directory
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_9c521b2c48f7_key -iv $encrypted_9c521b2c48f7_iv -in ./.travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - eval $(ssh-agent)
+  - ssh-add ~/.ssh/id_rsa
+  - cp .travis/ssh_config ~/.ssh/config
+  - npm install -g hexo-cli # 安装 hexo
+  - git clone -b mod https://github.com/hippo-jessy/hexo-theme-next.git themes/next
+
+# S: Build Lifecycle
+install:
+  - npm install # 安装 package.json 中的插件
+
+script:
+  - hexo generate
+
+after_success:
+  - git config --global user.name "hippo"
+  - git config --global user.email "hippo.jessy@gmail.com"
+  - hexo deploy
