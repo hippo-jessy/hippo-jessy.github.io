@@ -2,19 +2,13 @@
 title: 
 date: 2017-01-13 01:41:16
 ---
-
-# About me ...
-  
-
-![avatar](http://hippo-jessy.com/images/birdcatchworm.jpg)
 ### A Clumsy Bird Wants to Catch Worms. 
-  
-  
-  
+![avatar](http://hippo-jessy.com/images/birdcatchworm.jpg)
+# About me ...  
 一只较晚接触代码的弱菜，一直在奋力追赶
 长期熬夜，似乎记忆力开始报警...
 
-#### Anyway, 
+#### Anyway 
 作为一只单身汪🐶 , 最不缺的就是时间
 希望在有生之年能赶上大神的步伐
 希望所有后飞的笨鸟最后都能有虫吃
