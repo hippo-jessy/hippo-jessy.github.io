@@ -4,23 +4,31 @@ date: 2017-01-13 01:41:16
 ---
 
 # About me ...
-
-
-
+![avatar](http://hippo-jessy.com/images/birdcatchworm.png)
 ### A Clumsy Bird Wants to Catch Worms. 
+作为一只较晚接触代码的弱菜，一直在奋力追赶
+年纪渐涨，似乎记忆力开始报警
+####Anyway, 
+作为一只单身🐶 , 最不缺的就是时间
+希望在有生之年能跟上大神的步伐
+希望所有后飞的笨鸟最后都能有虫吃
+  
+  
+  
 
-顾名思义，不再赘述
 
 
 
 ### Find me here
-
-单身🐶 ，求骚扰
+求骚扰
 hippo.jessy@gmail.com
 [hippo @github](https://github.com/hippo-jessy)
 [hippo @知乎](https://www.zhihu.com/people/hippo-jessy)
 [hippo-jessy @微博](http://weibo.com/hippojessy)
-
+  
+  
+  
+  
 
 
 
