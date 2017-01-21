@@ -31,7 +31,7 @@ System.out.print(list);
 
 - list对象的toString方法明显被重写过了，重写toString方法是在哪里实现的？
 
-  ​
+<!-- more -->
 
 ## Solution
 
