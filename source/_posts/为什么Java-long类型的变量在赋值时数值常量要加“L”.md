@@ -1,7 +1,7 @@
 ---
 title: 为什么Java long类型的变量在赋值时数值常量要加“L”?
 date: 2017-01-19 19:39:43
-categories: [Java, Java Basics]
+categories: [Java, Items You Don't Know in Java]
 tags: Java
 description:
 ---
