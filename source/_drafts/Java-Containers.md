@@ -8,7 +8,7 @@ description:
 
 ### Container重要的接口继承关系
 
-Container vs Collection : Container包含Collection
+Container vs Collection :  Container包含Collection 和 Map两大类
 
 Container(容器): 
 
@@ -54,6 +54,35 @@ Map的其他扩展(和Set类似)： HashMap(快速查找), TreeMap, LinkedHashMa
 综上所诉，给集合添加一组元素，或者为集合初始化一组数据，最方便的办法是使用Collections.addAll(Collection<? super T> c, T... elements)
 
 
+
+## Printing Containers
+
+Collection 和 Map均可以直接使用System.out.println()来打印容器内部的所有元素：
+
+```java
+Collection<String> list = new ArrayList<String>();
+//运用上文中提到的添加一组元素最好的方法Collections.addAll
+Collections.addAll(list, "tomorrow","hi","yes");
+//调用了list.toString
+System.out.print(list);
+```
+
+上面这段代码的运行结果如下：
+
+```java
+[tomorrow, hi, yes]
+```
+
+很明显，list对象调用的toString方法是重写之后的方法，那么这又引出了两个问题：
+
+- Collection是一个接口，其内部并没有toString方法，为什么声明为Collection类型的list对象可以调用toString方法？
+- 重写toString方法是在哪里实现的？
+
+上述问题在**Java You Don't Know**系列的一篇博文中进行了解答，请移步 ☞ [【Java You Don't Know - Item 2】All Interfaces Have toString() Method](hippo-jessy.com/)
+
+
+
+## Iterator
 
 
 
