@@ -70,7 +70,11 @@ System.out.print(list);
 个中原因简而言之，所有接口都会有对应于Object类中public实例方法的抽象方法。也就是说所有接口都会有toString,  hashCode, wait, notify, getClass, equals等方法。Java Language Specification 中的原话如下：
 
 ```
-If an interface has no direct superinterfaces, then the interface implicitly declares a public abstract member method m with signature s, return type r, and throws clause t corresponding to each public instance method m with signature s, return type r, and throws clause t declared in Object, unless a method with the same signature, same return type, and a compatible throws clause is explicitly declared by the interface.
+If an interface has no direct superinterfaces, then the interface implicitly declares a
+public abstract member method m with signature s, return type r, and throws clause t
+corresponding to each public instance method m with signature s, return type r, and
+throws clause t declared in Object, unless a method with the same signature, same return
+type, and a compatible throws clause is explicitly declared by the interface.
 ```
 
 总结一下整个过程，Collection中没有显式声明toString方法，因此会隐式添加对应于Object类中toString的同名抽象方法，```System.out.println(list)``` list调用Collection接口中的toString方法，list实际类型为ArrayList, 由于动态绑定（此处涉及多态），调用的是ArrayList实例对象中的toString方法，ArrayList中并没有重写toString方法，又因为ArrayList的超父类AbstractCollection重写了toString方法，因此最后调用的是AbstractCollection 中的toString方法。从而实现了打印Collection所有元素的最终效果。
