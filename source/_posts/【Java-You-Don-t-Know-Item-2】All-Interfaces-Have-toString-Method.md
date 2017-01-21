@@ -65,9 +65,9 @@ System.out.print(list);
 
 ![All%20Interfaces%20Have%20toString%28%29%20Method](http://ojnnon64z.bkt.clouddn.com/All%20Interfaces%20Have%20toString%28%29%20Method.png)
 
-可以看出，其实list调用的是Object中的toString方法。实际上Collection中有toString方法，只不过是隐式添加的。
+可以看出，其实list调用的是Object中的toString方法。实际上Collection中有toString方法，只不过是隐式添加的。一个没有任何父接口的接口，如果没有显式声明toString等Object类中的public实例方法，则会被隐式添加这些方法对应的抽象方法。
 
-个中原因简而言之，所有接口都会有对应于Object类中public实例方法的抽象方法。也就是说所有接口都会有toString,  hashCode, wait, notify, getClass, equals等方法。Java Language Specification 中的原话如下：
+简而言之，所有接口都会有对应于Object类中public实例方法的抽象方法。也就是说所有接口都会有toString,  hashCode, wait, notify, getClass, equals等方法。Java Language Specification 中的原话如下：
 
 ```
 If an interface has no direct superinterfaces, then the interface implicitly declares a
