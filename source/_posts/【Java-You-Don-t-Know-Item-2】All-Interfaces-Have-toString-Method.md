@@ -1,6 +1,5 @@
 ---
 title: 【Java You Don't Know - Item 2】All Interfaces Have toString() Method
-subtitle: 为什么Collection接口可以调用toString方法？
 date: 2017-01-22 00:30:29
 categories: [Java, Java You Don't Know]
 tags: [Java]
@@ -8,6 +7,8 @@ description:
 ---
 
 ## Introduction
+
+
 
 最近总结**Thinking in Java 读书笔记**时，涉及到下面这段简单代码：
 
@@ -18,10 +19,23 @@ Collections.addAll(list, "tomorrow","hi","yes");
 System.out.print(list);
 ```
 
+上面这段代码的运行结果如下：
+
+```java
+[tomorrow, hi, yes]
+```
+
 进而引出了两个问题：
 
 - Collection是一个接口，其内部并没有toString方法，为什么声明为Collection类型的list对象可以调用toString方法？
+
 - list对象的toString方法明显被重写过了，重写toString方法是在哪里实现的？
+
+  ​
+
+## Solution
+
+
 
 首先解决第二个问题：
 
@@ -49,7 +63,7 @@ System.out.print(list);
 
 下面这张图通过Eclipse的自动补全工具给我们提供了一点线索：
 
-![Screen Shot 2017-01-22 at 2.15.32 AM](/Users/hippo/Desktop/Screen Shot 2017-01-22 at 2.15.32 AM.png)
+![All%20Interfaces%20Have%20toString%28%29%20Method](http://ojnnon64z.bkt.clouddn.com/All%20Interfaces%20Have%20toString%28%29%20Method.png)
 
 可以看出，其实list调用的是Object中的toString方法。实际上Collection中有toString方法，只不过是隐式添加的。
 
