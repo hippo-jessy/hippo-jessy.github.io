@@ -192,9 +192,11 @@ public class ConcreteAggregateOptim<E> implements Aggregate<E> {
 }
 ```
 
-JDK中对迭代器模式的实现和上面这段改进代码比较类似，只不过它更倾向于采用内部类而非匿名内部类。
+JDK源码中对迭代器模式的实现和上面这段改进代码比较类似，只不过它更倾向于采用内部类而非匿名内部类。JDK中迭代器模式的简化版类图（中间省略了几层继承关系）如下：
 
-JDK库中Iterable接口相当于上文类图中的Aggregate接口，Iterable接口中声明的方法Iterator()对应于createIterator()方法，Iterator接口对应于Iterator接口，AbstractList类对应于ConcreteAggregate类，而AbstractList类中的内部类Itr实现了Iterator接口，相当于ConcreteIterator。ArrayList和LinkedList均为AbstractList的子类，可以直接使用iterator()方法来得到Concreteiterator从而实现遍历。
+![【Design Pattern】Iterator 迭代器模式_2](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern】Iterator%20迭代器模式_2.png)
+
+这里JDK库中**Iterable接口相当于上文第一张类图中的Aggregate接口**，Iterable接口中声明的方法Iterator()对应于createIterator()方法，**Java 中的Iterator接口直接对应与之前的Iterator接口**，AbstractList类对应于ConcreteAggregate类，而AbstractList类中的内部类Itr实现了Iterator接口，相当于ConcreteIterator。ArrayList和LinkedList均为AbstractList的子类，可以直接使用父类的iterator()方法得到由内部类Itr向上转型后的Iterator接口引用，通过Iterator接口暴露的hasNext, next等方法最终实现遍历。Client端代码一般只会和Iterator接口以及ArrayList，LinkedList等类发生关联（有时也会使用上面类图中省略了的List接口，Collection接口等，但是不会有使用内部类Iter的需求）。
 
 ```java
 ArrayList<String> sampleList = new ArrayList<String>();
