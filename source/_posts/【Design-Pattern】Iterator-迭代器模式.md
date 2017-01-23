@@ -206,10 +206,10 @@ Iterator<String> iter = sampleList.iterator();
 while(iter.hasNext()){
   System.out.println(iter.next());
 }
-/*
- * 凡是数组（数组并没有实现Iterable接口）或者是实现了Iterable接口的类都可以用foreach形式来遍历其
- * 元素，原理是foreach会默认调用该类的iterator()方法获得其Iterator然后进行遍历 
- */
+
+//凡是实现了Iterable接口的类都可以用foreach形式来遍历其内部元素，原理是foreach会
+//默认调用该类的iterator()方法获得其Iterator然后进行遍历
+
 for(String item: sampleList){
   System.out.println(item);
 }

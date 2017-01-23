@@ -99,5 +99,5 @@ System.out.print(list);
 
 关于迭代器模式以及其在Java Collection的框架中的应用， 在[**Design Pattern**](http://hippo-jessy.com/categories/Design-Pattern/)系列中的[【Design Pattern】Iterator 迭代器模式](http://hippo-jessy.com/2017/01/22/%E3%80%90Design-Pattern%E3%80%91Iterator-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/)这一篇中进行了详细讲解。
 
-这里简单提一下迭代器在foreach
+
 
