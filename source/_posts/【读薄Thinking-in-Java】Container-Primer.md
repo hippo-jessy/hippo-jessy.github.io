@@ -6,7 +6,7 @@ tags: [Java, Container]
 description:
 ---
 
-### Container重要的继承实现关系
+## Container重要的继承实现关系
 
 Container vs Collection :  Container包含Collection 和 Map两大类
 
@@ -32,9 +32,7 @@ Set的其他扩展：HashSet(快速获取元素), TreeSet(按照字母表顺序�
 
 Map的其他扩展(和Set类似)： HashMap(快速查找), TreeMap, LinkedHashMap
 
-
-
-### 给Collection添加一组元素的几种方法对比：
+## 给Collection添加一组元素的几种方法对比：
 
 1. Collection.addAll(Collection<? extends E> c) **对比** Collection Constructor taking a Conllection as a parameter
 
@@ -54,16 +52,23 @@ Map的其他扩展(和Set类似)： HashMap(快速查找), TreeMap, LinkedHashMa
 >
 > ```java
 > Integer[] array = {1,2,3,4,5};
->
+> List<Integer> list = Arrays.asList(array);
+> list.set(0,9);
+> list.set(1,8);
+> System.out.println(Arrays.toString(array));
 > ```
 >
-> 
+> 运行后得到的结果为：
+>
+> ```
+> [9, 8, 3, 4, 5]
+> ```
+>
+> 也就是说改变Arrays.asList(array)返回的List中的元素，则原始的array数组中的元素也会发生相应改变
 
 
 
 综上所诉，给集合添加一组元素，或者为集合初始化一组数据，最方便的办法是使用Collections.addAll(Collection<? super T> c, T... elements)
-
-
 
 ## Printing Containers
 
@@ -90,11 +95,9 @@ System.out.print(list);
 
 上述问题在[**Java You Don't Know**](http://hippo-jessy.com/categories/Java/Java-You-Don-t-Know/)系列博文中的一篇中进行了解答，请移步 ☞ [【Java You Don't Know - Item 2】All Interfaces Have toString() Method](hippo-jessy.com/)
 
-
-
 ## Iterator
 
-关于迭代器模式， 在[**Design Pattern**](http://hippo-jessy.com/categories/Design-Pattern/)系列中的[【Design Pattern】Iterator 迭代器模式](http://hippo-jessy.com/2017/01/22/%E3%80%90Design-Pattern%E3%80%91Iterator-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/)这一篇中进行了详细讲解。
+关于迭代器模式以及其在Java Collection的框架中的应用， 在[**Design Pattern**](http://hippo-jessy.com/categories/Design-Pattern/)系列中的[【Design Pattern】Iterator 迭代器模式](http://hippo-jessy.com/2017/01/22/%E3%80%90Design-Pattern%E3%80%91Iterator-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/)这一篇中进行了详细讲解。
 
-这里更专注于分析Java Container中迭代器模式的设计和使用。
+这里简单提一下迭代器在foreach
 

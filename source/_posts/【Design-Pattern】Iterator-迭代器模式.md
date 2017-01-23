@@ -145,7 +145,7 @@ This/is/a/bright/day/
    >
    > 适合使用内部类的特征： 该类需要使用外部类的某些属性方法而该类又不会在外部类以外的地方被调用或实例化。
 
-于是上面Example部分的实例代码可以进行改写（Iterator接口用匿名内部类实现，无需专门单独定义ConcreteIterator类）：
+于是根据第二点的启发，上面Example部分的实例代码可以进行改写（Iterator接口用匿名内部类实现，无需专门单独定义ConcreteIterator类）：
 
 - **改进版ConcreteAggregate**
 
@@ -205,6 +205,13 @@ Collections.addAll(sampleList,"a","b","c","d");
 Iterator<String> iter = sampleList.iterator();
 while(iter.hasNext()){
   System.out.println(iter.next());
+}
+/*
+ * 凡是数组（数组并没有实现Iterable接口）或者是实现了Iterable接口的类都可以用foreach形式来遍历其
+ * 元素，原理是foreach会默认调用该类的iterator()方法获得其Iterator然后进行遍历 
+ */
+for(String item: sampleList){
+  System.out.println(item);
 }
 ```
 
