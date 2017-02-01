@@ -20,9 +20,9 @@ tags: [Encoding, Charset, Unicode, UTF-8, UTF-16]
 - Charset (Character set) 字符集： 见名知义，字符集就是字符的集合。比如ASCII字符集收录了英文字符和标点以及控制字符，GB2312字符集收录了常用的汉字字符、标点等。
 - Encoding (Charset Encoding) 字符编码：实现字符与字节（二进制）映射的编码规则。可以通俗的看做是实现语言字符与计算机机器码相互翻译的规则，比如UTF-8编码方式等。
 
-​	为什么经常容易混淆Charset与Encoding？主要由于很多Charset只对应一种Encoding的方式，并且有相同的名字，比如ASCII字符集只对应ASCII编码规则，GB2312字符集只能由GB2312编码规则来进行翻译。然而下面这个例子很好地诠释了Charset与Encoding的区别。
+  ​为什么经常容易混淆Charset与Encoding？主要由于很多Charset只对应一种Encoding的方式，并且有相同的名字，比如ASCII字符集只对应ASCII编码规则，GB2312字符集只能由GB2312编码规则来进行翻译。然而下面这个例子很好地诠释了Charset与Encoding的区别。
 
-![Charset](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/Charset.png)
+![Charset and Encoding](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding.png)
 
 Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集只有GB2312一种编码方式。因此实际上我们经常看到的 `charset = "uft-8"` 是不准确的说法，UTF-8实际上只是一种编码方式而不是一个字符集，它所对应的字符集是Unicode字符集。额外提一句，在windows平台上(比如记事本)有时候会出现Unicode编码这种不规范的说法，其实它指的的UTF-16编码。
 
@@ -32,7 +32,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
   首先上图，这张图按照历史发展顺序对多种字符编码集进行了梳理。
 
-![Encoding-1](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/Encoding-1.png)
+![Charset and Encoding_1](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_1.png)
 
   简单的来说，最开始为了能实现二进制与人类语言字符的映射转换，人们想出了ASCII码来实现英文字符的转换。后来西欧各国也需要表示自己的语言，于是对ASCII进行扩展产生ISO8859。再然后我天朝崛起，博大精深的中文通过GB2312等字符集进入计算机，当然世界上还有各种语言，于是各种字符集编码层出不穷。。。为了促进世界的和谐，Unicode出现了希望能够包罗万象，以一种字符编码集收录所有的语言。再后来随着网络世界的崛起，为了提高网络传输效率，UTF-8等编码方式出现以期望提高Unicode的编码效率。  
 
@@ -44,7 +44,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
 ​	计算机使用二进制保存指令和数据，字节作为计算接处理数据的基本单位，有256(2^8^)种可能状态。这些状态被人们利用来标记指令和文字。最初前32(0x20)种状态被用来表示终端、打印机等设备的某些特殊动作，比如终端遇到字节0x10则换行，类似的还有回车(CR 0x0D)，震铃(BELL 0x07)等。这前32种状态又被称为控制码。除了这些特殊用途的状态外，还有256-32=224种状态没有被利用，资源浪费怎么能忍，何况除了控制指令外，咱们的文字还没有被表示。于是这些多出来的状态被用来表示文字(English Character)和符号标点等，如此这般，计算机就可以显示和记录文字了，这便是**ASCII**(American Standard Code for Information Interchange)最初的由来。下面附张ASCII的图加深印象。
 
-![ASCII](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/ASCII.png)
+![Charset and Encoding_2](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_2.png)
 
   从图片中可以看到，所有英文字符和标点等可显示字符即使加上32种控制字符，也只需要128种状态(7 bits)就可以表示完，因此ASCII码实际上每个字节的第一位都是0。
 
@@ -78,7 +78,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
   由于编码表过大([地址一](http://tools.jb51.net/table/gb2312) [地址二](http://www.knowsky.com/resource/gb2312tbl.htm))，这里只截取第17区部分示例讲解。
 
-  ![GB2312](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/GB2312.png)
+  ![Charset and Encoding_3](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_3.png)
 
 
 
@@ -98,7 +98,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
 ​	下面 **[这张图](https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html)** 足以说明Unicode的发展趋势和普及程度。
 
-![Unicode](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/Unicode.png)
+![Charset and Encoding_4](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_4.png)
 
  ​Unicode不仅仅是一个字符集，它还为每个字符配上了一个号码。值得注意的是，这个号码并不是字符在计算机的字节中存储的号码。可以将号码看做是对整个字符集进行了一个编号（1号字符，2号字符，etc），就好比是学生都有学号，方便管理。在Unicode中将这种编号命名为**码点(code point)**。这使得Unicode字符集称为一种标准，一旦公布了Unicode字符集以及对应码点，大家就可以自行设计编码方式，将字符码点按照自定义的编码规则映射为相应编码储存到字节中。这也侧面验证了前文谈到的字符集与字符编码的区别，Unicode字符集就对应了UTF-8, UTF-16等多种编码方式。Unicode的码点范围在U+0000~U+10FFFF(十六进制表示数字)，大致可以算出范围在111万左右。为了方便分类管理，这些码点又被分为多个平面（plane）来管理，我们只需要知道**BMP**(Basic Multilingual Plane)这个平面即可。BMP包含了U+0000~U+FFFF这个范围内的码点，世界人民常用的字符都落在这个平面内。BMP所包含的所有字符参见传送门☞[BMP](http://unifoundry.com/pub/unifont-7.0.03/unifont-7.0.03.bmp)。
 
@@ -118,7 +118,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
   UTF-8是变长编码，使用1~4个字节来表示一个字符，下图大致呈现了UTF-8对Unicode码点的变长转换原理。
 
-![UTF-8](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/UTF-8.png)
+![Charset and Encoding_5](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_5.png)
 
 1. 单字节表示对应Unicode码点0x0000-0x007F的字符，且此时首位为0，有效位7位，也就是说可以表示2^7^=128种字符，这部分其实刚好兼容了ASCII编码规则，而Unicode0x0000-0x007F的字符也就是ASCII字符。
 
@@ -129,7 +129,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
    以汉字“一”为例讲解UTF-8如何对Unicode码点进行编码。汉字“一”的Unicode码点是U+4E00，在范围0x0800-0xFFFF中，因此采用1110XXX\_10XXXXXX\_10XXXXXX模板，有效位为16位，0x4E00换做二进制表示为0b0100\_1110\_0000\_0000，将这十六位二进制数依次填入模板中缺失的X即可。于是我们得到汉字“一”的UTF-8编码为0b11100100\_10111000_10000000，即0xE4B880。想要验证更多可以移步 ☞ [**传送门**](http://www.endmemo.com/unicode/unicodeconverter.php)
 
 
-  ![Codechange](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/Codeexchange.png)
+  ![Charset and Encoding_6](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_6.png)
 
 如果看到一串的16进制码有如下的形式：**E**X XX XX **E**X XX XX…每个三字节组前面都是E打头，那么它很可能就是一串汉字的UTF-8编码了。
 
@@ -151,15 +151,47 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
 ### BOM
 
-  讲到BOM之前，需要大端Big Endian和小端Little Endian的相关知识，请先自行google。
+  讲到BOM之前，需要大端Big Endian和小端Little Endian的相关知识, 这里只是简单提一下大小端的问题，具体细节请先自行google。
 
-  这里简单提一下大小端的问题
+只有涉及到多于一个字节的数据结构保存和传输时才会产生大小端的问题。Big EndIan普遍用于网络传输，又被称为Network Byte Order；Little Endian通常用于微处理器，部分受到Intel处理器设计的影响。二者的区别简单来说就是，Big EndIan优先保存高位字节，最终表现为低址存储高位字节，高址存储低位字节； Little Endian优先保存低位字节， 最终表现为低址存储低位字节，高址存储高位字节。如下图所示（图片来自Wikipedia）：
 
+![Charset and Encoding_7](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_7.png)
 
+> 需要注意的是，不管大端还是小端，单个字节内部的存储顺序是一致的，因为字节是计算机数据处理的最小可寻址单位是字节，因此字节内部也就不存在高址低址的概念，故而更不会有大小端的概念了。
 
+BOM, Byte Order Mark, 字节序标志。 刚才也提到过，只有对于多于一个字节的数据结构才存在字节序（Byte Order）这个概念，因此我们可以向字符编码中类推： UTF-8采用单个字节作为代码单元，因此没有并不会涉及字节序，而UTF-16使用两个字节作为一个代码单元，因此在代码单元的保存上用到了BOM（同理，UTF - 32也会用到BOM）。
 
+UTF - 16 Big EndIan BOM： FE FF
 
+UTF - 16 Little EndIan BOM： FF FE
 
+实际上UTF-8早期也是有BOM的，其值为EF BB BF，但是通过之前的分析也可以知道这个BOM是没有意义的。更多的时候它并没有起到字节序标志的作用，而是用作标志此文件是UTF - 8编码，类似于魔数（Magic Number）的作用。
+
+Java中默认使用Big EndIan，下面这段代码简单演示了“拜拜bye”字符串分别使用UTF-16大小端编码时的数据：
+
+```java
+public class Demo {
+    public static void main(String[] args) {
+        String sample = "拜拜bye";
+        try {
+          //Java UTF-16默认使用大端
+            System.out.println(printHexBinary(sample.getBytes("UTF-16")));
+            System.out.println(printHexBinary(sample.getBytes("UTF-16LE")));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+输出的结果如下：
+
+```
+FEFF62DC62DC006200790065
+DC62DC62620079006500
+```
+
+在这里我们不仅看到了大端时的BOM是FEFF，并且还可以回忆验证一下UTF-16的编码规则：所有英文和大部分汉字使用两个字节来表示一个字符，因此这里采用十个字节来编码sample字符串。每个代码单元两个字节，字节顺序大小端刚好颠倒。
 
 
 
@@ -171,7 +203,7 @@ Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集
 
 ​	我们想要搜索"a"，其UTF-8编码为0x61(0b01100001)。当我们搜索“a”时，计算机会自动搜索匹配01100001字符串，当然“a”会被搜索匹配出来，但是110XXXXX\_01100001，1110XXXX\_01100001_XXXXXXXX这些二三字节表示的字符也会被错误匹配为“a”。因此在变长编码设计之初就需要考虑到搜索匹配的问题，多字节模式不可以与单字节模式或者较少字节模式的比特串发生字节重叠。对于UTF-8中首字节之后的字节的开始两位“10”就是起这个作用（详见下图）。细心的童鞋可能留意到GB2312在用二字节表示中文字符时也规定两个字节的首位都必须为1，其中第二个字节首位必须为1的规定也是为了避免和ASCII编码比特串（GB2312用一字节表示英文字符的方式和ASCII兼容）重叠。
 
-![fixlength](http://ojnnon64z.bkt.clouddn.com/Misc/Charset-and-Encoding/fixlength.png)
+![Charset and Encoding_8](http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_8.png)
 
 
 
