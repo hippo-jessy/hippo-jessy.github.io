@@ -27,7 +27,7 @@ iThoughtsX原格式文件地址:
 
 ### 第七章 虚拟机类加载机制
 
-这一章节分为类加载机制以及类加载器两部分，类加载机制导图如下：![Class Loading](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.pdf)
+这一章节分为类加载机制以及类加载器两部分，类加载机制导图如下 ( 点击放大再放大😑 )：![Class Loading](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.pdf)
 
 iThoughtsX原格式文件地址:
 
