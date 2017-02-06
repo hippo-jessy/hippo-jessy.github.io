@@ -6,7 +6,9 @@ tags: [JVM, MindMap]
 description:
 ---
 
-此篇博文主要用于汇总JVM初级学习阶段的思维导图，主要根据《深入理解Java虚拟机》书中的脉络（对应书中的目录），结合JVM Specification中的知识点进行总结。思维导图通过**iThoughtsX 4.3**绘制，文中会提供原始格式文件(低于4.3版本的iThoughtsX可能无法打开原始文件)和导出的图片。由于有些章节的思维导图过大，我可能会进行拆分，但是尽量不会影响理解。 希望对照这些思维导图能有助大家更好地阅读和理解《深入理解Java虚拟机》。有些导图目前还是半成品，暂时不会放上来，文章持续更新中。
+此篇博文主要用于汇总JVM初级学习阶段的思维导图，主要根据《深入理解Java虚拟机》书中的脉络（对应书中的目录），结合JVM Specification中的知识点进行总结。思维导图通过**iThoughtsX 4.3**绘制，文中会提供原始格式文件(低于4.3版本的iThoughtsX可能无法打开原始文件)和导出的图片。由于有些章节的思维导图过大，我可能会进行拆分，但是尽量不会影响理解。 
+
+内容有些杂乱，主要用作个人笔记整理，同时也希望这些思维导图能帮助大家更好地阅读和理解《深入理解Java虚拟机》。有些导图目前还是半成品，暂时不会放上来，文章持续更新中。
 <!-- more -->
 
 ## 第二部分 自动内存管理
@@ -25,7 +27,11 @@ iThoughtsX原格式文件地址:
 
 ### 第七章 虚拟机类加载机制
 
+这一章节分为类加载机制以及类加载器两部分，类加载机制导图如下：![Class Loading](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.pdf)
 
+iThoughtsX原格式文件地址:
+
+[http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.itmz](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.itmz)
 
 ### 第八章 虚拟机字节码执行引擎
 
