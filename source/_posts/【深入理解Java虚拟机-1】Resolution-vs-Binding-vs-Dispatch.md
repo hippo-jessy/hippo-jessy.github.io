@@ -58,6 +58,8 @@ System.out.println(man.name)
 
 虚方法主要包括invokevirtual指令调用的方法（除了final方法），即不用final修饰的实例方法。
 
+下面开始正式讨论：
+
 ## Resolution
 
 Resolution, 解析是指**将符号引用替换为直接引用的过程**，JVM Specification并未规定其发生时间，只是规定在下面十六条指令执行前必须完成这些指令涉及的符号引用的解析: 
