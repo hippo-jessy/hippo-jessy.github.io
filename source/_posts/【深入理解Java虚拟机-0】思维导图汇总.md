@@ -31,7 +31,7 @@ iThoughtsX原格式文件地址:
 
 #### 类加载机制
 
-![Class Loading](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.pdf)
+![](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading.pdf)
 
 iThoughtsX原格式文件地址:
 
