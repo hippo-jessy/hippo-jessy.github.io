@@ -13,7 +13,23 @@ description:
 
 ## 第二部分 自动内存管理
 
-敬请期待。。。😪
+### 第二章 Java内存区域与内存溢出异常 
+
+这一章节主要涉及三方面的内容： 
+
+- 运行时数据区域
+- HotSpot虚拟机对象的表示
+- OutOfMemoryError的相关实践
+
+思维导图如下( 点击放大再放大😑 ) ：![](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Java%20Memory%20Area.pdf)
+
+iThoughtsX原格式文件地址:
+
+[http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Java%20Memory%20Area.itmz](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Java%20Memory%20Area.itmz)
+
+### 第三章 垃圾收集器与内存分配策略
+
+
 
 ## 第三部分 虚拟机执行子系统
 
