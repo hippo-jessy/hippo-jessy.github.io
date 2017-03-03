@@ -8,7 +8,7 @@ description:
 
 设计模式重要性不言而喻，但是设计模式的学习只有结合具体项目实践才有意义。这里新开【Design Pattern】系列博文来总结设计模式相关的知识点，并尽量结合一些工程实践来帮助自己理解。
 
-在具体介绍各个常见的设计模式之前，先花一点时间总结软件设计的六大原则：
+学习设计模式，就不得不提到软件设计的六大原则，本文主要围绕这六大设计原则展开讨论：
 
 单一职责原则(SRP)，开闭原则(OCP)，里氏替换原则(LSP)， 依赖倒置原则(DIP)，接口隔离原则(ISP)， 迪米特法则(LoD)
 
@@ -376,13 +376,13 @@ public class OldDriver{
 //【修改】高层模块
 public class HighLevelClient{
   public static void main(String[] args){
- 	 Car car = new Car();
-     Bike bike = new Bike();
- 	 YoungDriver youngDriver = new YoungDriver();
-     OldDirver oldDriver = new OldDriver();
- 	 youngDriver.drive(car);
-     youngDriver.drive(bike);
- 	 oldDriver.drive(bike);
+    Car car = new Car();
+    Bike bike = new Bike();
+    YoungDriver youngDriver = new YoungDriver();
+    OldDirver oldDriver = new OldDriver();
+    youngDriver.drive(car);
+    youngDriver.drive(bike);
+    oldDriver.drive(bike);
   }
 }  
 ```
@@ -484,14 +484,14 @@ public class Bike implements Vehicle{
 //【修改】高层模块
 public class HighLevelClient{
   public static void main(String[] args){
-     Driver youngDriver = new YoungDriver();
-     Driver oldDriver = new OldDriver();
- 	 Vehicle car = new Car();
-     Vehicle bike = new Bike();
-     //下面是高层事务逻辑的代码实现，全部依赖抽象层定义的功能来实现高层事务逻辑
-     youngDriver.drive(car);
-     youngDriver.drive(bike);
-     oldDriver.drive(bike);
+    Driver youngDriver = new YoungDriver();
+    Driver oldDriver = new OldDriver();
+    Vehicle car = new Car();
+    Vehicle bike = new Bike();
+    //下面是高层事务逻辑的代码实现，全部依赖抽象层定义的功能来实现高层事务逻
+    youngDriver.drive(car);
+    youngDriver.drive(bike);
+    oldDriver.drive(bike);
   }  
 }
 ```
@@ -512,17 +512,199 @@ public class HighLevelClient{
 
 <blockquote><font color="green" size="3px"><big>Client should not be forced to depend on methods that they do not use </big></font></blockquote> <br/>
 
+接口隔离原则的核心在于尽量使接口精简化，能避免接口过于臃肿，包含过多没必要的方法。 
+
+Fat Interface的坏处用一个简单的不良设计就可以证明:
+
+首先还是指明需求，有两个客户端A和B，A的需求是让一辆车移动并给它加油，B的需求是让一辆自行车移动然后将自行车折叠收起。
+
+首先采用DIP，抽象出接口之后，在依赖抽象接口完成高层需求逻辑和底层细节实现。小明同学总结了需求，认为接口需要暴露交通工具移动，加油和折叠的功能给高层模块。于是设计了下面的类图和相关代码实现：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_6.png?%20v=20170302)
+
+```java
+public interface Vehicle{
+  public void move();
+  public void refuel();
+  public void fold();
+}
+
+public class Car implements Vehicle{
+  @Override 
+  public void move(){
+    System.out.println("A car is moving");
+  }
+  @Override
+  public void refuel(){
+    System.out.println("A car is being refueled")
+  }
+  //汽车不可拆卸折叠，因此该方法退化为空方法
+  @Override
+  public void fold(){
+  }
+}
+
+public class Bike implements Vehicle{
+  @Override
+  public void move(){
+    System.out.println("A bike is moving");
+  }  
+  //自行车不需要加油，因此该方法直接退化为空方法
+  @Override 
+  public void refuel(){
+  }
+  @Override
+  public void fold(){
+    System.out.println("A bike is folded");
+  }
+}
+
+//客户端A只有调用move方法和refuel方法的需求
+public class ClientA{
+  public void dailyTransition(Vehicle vehicle){
+    vehicle.move();
+    vehicle.refuel();
+  }
+}
+
+//客户端B只有调用move方法和fold方法的需求
+public class ClientB{
+  public void service(Vehicle vehicle){
+    vehicle.move();
+    vehicle.fold();
+  }
+}
+
+public class Test{
+  public static void main(String[] args){
+    ClientA a = new ClientA();
+    ClientB b = new ClientB();
+    Vehicle vehicleA = new Car();
+    Vehicle vehicleB = new Bike();
+    a.dailyTransition(vehicleA);
+    b.service(vehicleB);
+  }
+}
+```
+
+类图中绿色框中的方法为退化方法。从这个例子我们可以很明确的看到ClientA和ClientB两个客户程序都只需要用到Vehicle接口暴露的部分方法。这里的Vehicle接口就是一个胖接口，它的两个实现类Car和Bike都被迫实现了一些各自不需要的方法。我们也看到了，代码中出现了几个退化方法，明显违背了LSP，这也是接口设计时违背ISP所间接导致的后果。
+
+再来讨论一下需求变更时，这种设计可能导致的问题。比如ClientA现在的需求变更为不仅需要实现加油的功能，还需要返回所加的油量。那么很明显我们需要对Vehicle接口中refuel()方法签名需要被更改为<font color="green" size="3px">**refuel:()I**</font>即public int refuel()，然而Vehicle接口同时被高层和底层依赖，导致所有实现Vehicle接口的子类都需要被修改。也就是说在为了应对这个需求变更，Car, Bike, Vehicle, ClientA 这几个类都需要做修改，违背了OCP。这个例子也说明了这六条设计原则并非孤立存在的，而是相辅相成的，一个好的设计会尽量兼顾这六条原则，设计时一旦严重违反其中一条原则，很可能产生连锁效应，导致其它多条规则的违反。
+
+模块和模块间的依赖和耦合是通过接口完成的（前文中DIP有讲解过），尽量精简接口也就是尽量减少模块间的耦合。上面原始设计的例子中 clientA客户模块通过Vehicle接口和底层细节模块耦合，然而由于Vehicle被设计成了胖模块，添加了不必要的方法，导致clientA与底层有了不必要的耦合。耦合越多，rigidity和fragility也会增加，越不利于应对需求变更。
+
+实际上前面小明同学的设计主要问题出在了没有分离客户，没有根据不同客户模块抽象出接口，而是直接将所有客户的需求混为一谈来作为接口设计的依据，最终导致了胖接口。“见人说人话，见鬼说鬼话”，这也是一项很重要的技能， 接口设计必须根据不同的客户人群，客户需求来提供最精简化的定制服务。现在从头开始设计，分析客户需求，客户A需求是让一辆车移动并给它加油，面向客户A的接口需要暴露移动和加油；客户B的需求是让一辆自行车移动然后将自行车折叠收起，面向客户B的接口需要暴露移动和折叠。考虑到二者都需要“移动”功能，考虑先设计几个高内聚的接口，然后将暴露给客户A和B的接口设计为继承这些接口的子接口。具体代码实现就不再详述了，类图如下：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_7.png?%20v=20170302)                                                                                     
+
+这里再啰嗦一句，接口要精简，但是没必要过分精简。不考虑客户的需求粒度，一味地将每个方法都列成一个接口的做法是不明智的，这样只会大大增加软件的复杂度。
+
+### 接口隔离原则（ISP） vs 单一职责原则（SRP）
+
+分析到这里，一般都会产生这样的疑问：ISP一直强调要精简接口，如果接口精简为只负责一个职责，那ISP岂不是和之前提到的SRP是一个概念？
+
+这两个原则主要有如下区别：
+
+1. ISP是仅针对接口的原则，是更偏向于框架的原则；SRP是首要针对类的原则，附带方法和接口，是更偏向于实现细节的原则。
+2. ISP虽然要精简接口，但是是根据特定的客户需求来进行定制化的设计，精简依据的是客户的需求而不是单一职责。
 
 
 ## 迪米特法则（Law of Demeter, LoD）
 
 <blockquote><font color="green" size="3px"><big>Only talk to your friends who share your concerns</big></font></blockquote> <br/>
 
+迪米特法则的核心在于只和朋友说话，不要和陌生人说话。那么问题来了，谁是朋友，谁是陌生人？在此篇博文的开头提到过，类与类之间的横向关系有四种：依赖，关联，聚合，组合。两个类只要是以这四种关系关联在一起，我们就可以称它们为朋友，除了是由于局部变量产生的依赖关系。在讲这四种横向关系的时候提到过，关联，聚合和组合关系一般是通过成员变量触发的，而依赖关系是由局部变量，方法参数，方法返回值和静态方法调用出发的。如果是由于局部变量触发的依赖关系，则关联的两个类不是朋友关系。
 
+按照惯例，还是用例子来解释：
+
+```java
+public class Teacher{
+  public void findAndPrint(String name, ClassMonitor monitor){
+    //student对象以局部变量出现在Teacher类的方法中，此处和陌生类对话了
+    Student student = monitor.find(name);
+    student.print();
+  }
+}
+
+public class ClassMonitor{
+  private List<Student> list;
+  public Student(List list){
+    this.list = list;
+  }
+  public Student find(String name){
+     for(Student tmp: list){
+       if(tmp.getName().equals(name)){
+         return tmp;
+       }
+     }
+    return null;
+  }
+}
+
+public class Student{
+  private String name;
+  public Student(String name){
+    this.name = name;
+  }
+  public void print(){
+    System.out.println(name);
+  }
+  
+  public String getName(){
+    return this.name;
+  }
+}
+```
+
+在Teacher类的findAndPrint()方法中和陌生人Student类对话，违背了LoP。想想也是，老师明明可以直接让班长给同学传达任务，何必偏偏要班长把同学叫到身边来亲自给学生分配任务。将上述设计稍作修改，让Teacher的朋友类ClassMonitor作为中介来和陌生人通信，避免和陌生人的耦合。修改后代码如下：
+
+```java
+public class Teacher{
+  public void findAndPrint(String name, ClassMonitor monitor){
+    //使用朋友类ClassTeacher作为中介间接与陌生人通信
+    monitor.findAndPrint(name)
+  }
+}
+
+public class ClassMonitor{
+  private List<Student> list;
+  public Student(List list){
+    this.list = list;
+  }
+  public Student find(String name){
+     for(Student tmp: list){
+       if(tmp.getName().equals(name)){
+         return tmp;
+       }
+     }
+    return null;
+  }
+  //ClassTeacher作为中介来避免Teacher和陌生类Student直接通信
+  public void findAndPrint(String name){
+    find(name).print();
+  }
+}
+
+public class Student{
+  private String name;
+  public Student(String name){
+    this.name = name;
+  }
+  public void print(){
+    System.out.println(name);
+  }
+  
+  public String getName(){
+    return this.name;
+  }
+}
+```
+
+LoD的目的在于尽量减少类与类之间的耦合，尽量保证类中不要出现陌生类（非朋友的类)。当然JDK提供的API不在陌生人之列，否则还如何能愉快地敲代码了😂。
 
 最后用一段话总结这六大设计原则：
 
-**SRP规定一个类的职责要单一；LSP表示子类重写要遵守父类（或父接口）方法的功能契约；DIP告诉我们要面向接口编程；ISP是说接口方法要尽量精简，内聚性强；LoD告诉我们不要和陌生人说话（类与类之间要尽量减少耦合）；OCP是说软件要对扩展开放，对修改关闭。尽量遵守前五种原则能使得软件设计更合理，让软件应对需求变更时更容易实现OCP。**
+**SRP规定一个类的职责要单一；LSP表示子类重写要遵守父类（或父接口）方法的功能契约；DIP告诉我们要面向接口编程；ISP是说接口要尽量精简，接口的设计要对应具体客户的需求；LoD告诉我们不要和陌生人说话（类与类之间要尽量减少耦合）；OCP是说软件要对扩展开放，对修改关闭，OCP是前五种种设计原则的总纲。尽量遵守前五种原则能使得软件设计更合理，让软件应对需求变更时更容易遵守OCP。**
 
 这篇文章只是设计模式总结的开始，很多知识的理解和运用并不是很透彻，待内功修炼以后，再回过来补充一些新的感悟吧，在此先立一个Flag🇨🇳
 
@@ -530,7 +712,7 @@ public class HighLevelClient{
 
 为了实现将复杂问题简单化，模式化，整出graceful code，了解常见的设计招式还是很有必要的。虽说金庸先生教导大家“无招胜有招”，但是对于我这种战五渣而言，从一招一式学起显然更为稳妥。
 
-23种常见设计模式根据其特征和应用场合可以分为三大类，如下图所示（开启思维导图模式，持续修改更新）![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】%5BMind%20Map%5D%20Design%20Pattern.pdf?%20v=20170303)
+2 3种常见设计模式根据其特征和应用场合可以分为三大类，如下图所示（开启思维导图模式，持续修改更新）![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】%5BMind%20Map%5D%20Design%20Pattern.pdf?%20v=20170303)
 
 具体每种设计模式的分析总结，会抽时间陆续更新在下面这个目录中：
 
