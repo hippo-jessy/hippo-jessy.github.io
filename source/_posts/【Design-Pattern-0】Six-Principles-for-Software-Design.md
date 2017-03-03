@@ -1,6 +1,6 @@
 ---
 title: 【Design Pattern-0】Six Principles for Software Design
-date: 2016-12-28 13:02:04
+date: 2017-02-16 13:02:04
 categories: [Design Pattern]
 tags: [Design Pattern]
 description:
@@ -10,7 +10,7 @@ description:
 
 在具体介绍各个常见的设计模式之前，先花一点时间总结软件设计的六大原则：
 
-单一职责原则(SRP)，里氏替换原则(LSP)， 依赖倒置原则(DIP)，接口隔离原则(ISP)， 迪米特法则(LoD)，开闭原则(OCP)
+单一职责原则(SRP)，开闭原则(OCP)，里氏替换原则(LSP)， 依赖倒置原则(DIP)，接口隔离原则(ISP)， 迪米特法则(LoD)
 
 <!--more-->
 
@@ -175,6 +175,16 @@ public interface phone{
 
 
 
+## 开闭原则（Open Close Principle, OCP）
+
+<blockquote><font color="green" size="3px"><big>Software entities (classes, modules, functions, etc.) should be open for extension and closed for modification</big></font></blockquote> <br/>
+
+开闭原则核心在于：软件应该对扩展开放，对修改关闭。通俗来说，就是指应该尽量通过扩展软件实体来解决需求变化，而非通过修改代码来实现。
+
+开闭原则看似是一个比较“缥缈”的原则，它六个设计原则中最为宏观也最为模糊的一个。实际上我们可以将其它五条设计原则看做是我们在从无到有设计软件时应遵守的具体原则，而将OCP当做是软件设计完成后应对需求变化时应有的表现。如果该软件在原始设计时很好地遵守了其它五条设计原则，那么在应对需求变更时就很容易遵守OCP了。建议先看完下面其它原则之后再回到这一部分来看应该会有更好的理解。
+
+鉴于目前能力有限，在这里先挖个坑，以后在实践中有更深领悟的时候，我再来谈谈对开闭原则的理解。
+
 ## 里氏替换原则（Liskov Substitution Principle, LSP）
 
 <blockquote><font color="green" size="3px"><big>Subtypes must be substitutable for their base types</big></font></blockquote> <br/>
@@ -276,6 +286,228 @@ public class Client{
 
 依赖倒置原则的核心说白了就是面向接口编程。但是为啥要整出“依赖倒置”这么高大上的名字？
 
+这是由于传统的某些结构化设计倾向于创建高层模块依赖于底层模块的结构。需要定义子模块的层次之后才能确定高层次的调用逻辑。这样一来，高层次依赖自层次，策略依赖实现细节。
+
+而DIP原则的核心在于让高层次模块相对独立于子层次模块，通过高层次依赖抽象，低层次实现抽象，来实现高层次对低层次模块的调用。 抽象先制定契约（这种抽象通常表现为接口），高层模块通过契约来了解功能进而实现调用，子模块按照契约来具体实现抽象。所以经常将DIP总结为不管是高层模块还是底层模块都需要面向接口编程。这种依赖关系和前面描述的传统结构化设计的依赖关系是相反的，因此该原则被命名为依赖倒置原则。
+
+这里先提一下什么叫“依赖”，本文开头也提到过类之间的几种关系（依赖，关联，聚合，组合，继承，实现），实际上这几种关系都可以表示上面一段话中的“依赖”这个抽象概念。高层模块对抽象的依赖更像是类之间的前四种关系（特别是第一种关系），通过局部变量，方法参数传递，静态方法调用，成员变量等实现。而底层模块对抽象的依赖则是通过类之间的后两种关系来实现的。
+
+说了一堆抽象概念，不弄点实例，感觉就快飘上天了。如果要你设计一个简单软件实现让一个年轻驾驶员驾驶汽车的功能（用打印字符串来表示驾驶，以及车移动的速度）。
+
+底层模块实现涉及到的主要对象（车，年轻驾驶员），然后通过调用底层模块的类和其暴露的方法来实现高层模块主要逻辑，从而实现驾驶（这种设计思考过程看似很自然，也完全满足当前的需求，但是明显违背了DIP）。上面这种思考过程对应下面这个设计：
+
+```java
+//底层模块
+public class Car{
+  private int speed = 100;
+  public void move(){
+    System.out.println("Car move at the speed of " + speed);
+  }
+}
+
+//底层模块
+public class YoungDriver{
+  public void drive(Car car){
+    System.out.println("A young driver start driving");
+    car.move();
+  }
+}
+
+//高层模块
+public class HighLevelClient{
+  public static void main(String[] args){
+ 	 Car car = new Car();
+ 	 YoungDriver driver = new YoungDriver();
+ 	 driver.drive(car);
+  }
+}  
+```
+
+上述代码类图如下：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_2.png?%20v=20170302)
+
+从类图可以清晰看到，高层模块HighLevelClient直接依赖于底层模块YoungDriver以及Car的具体实现，底层模块YoungDriver和Car之间也是直接相互依赖。这样的设计看起来很简洁，也完美解决了当前的需求。但是软件需求总是处于不断变动中，我们只需要稍微改动或者扩展下当前需求就可以轻易发现这种设计的僵硬性（rigidity）和脆弱性（fragility）。
+
+比如现在不仅要求年轻驾驶员驾驶汽车，还要年轻驾驶员驾驶自行车，并且老年驾驶员也要驾驶自行车。很明显此时底层需要多加两个类Bike和OldDriver，并且需要对所有直接依赖底层细节的地方进行更改，比如HighLevelClient和YoungDriver类。修改后的代码如下：
+
+```java
+//【不变】底层模块
+public class Car{
+  private int speed = 100;
+  public void move(){
+    System.out.println("Car move at the speed of " + speed);
+  }
+}
+
+//【扩展】底层模块
+public class Bike{
+  private int speed = 30;
+  public void move(){
+    System.out.println("Bike move at the speed of " + speed);
+  }
+}
+
+//【修改】底层模块
+public class YoungDriver{
+  public void driveCar(Car car){
+    System.out.println("A young driver start driving");
+    car.move();
+  }
+  //【扩展】添加驾驶自行车的方法
+  public void driveBike(Bike bike){
+    System.out.println("A young driver start driving");
+    bike.move();
+  }
+}
+
+//【扩展】底层模块
+public class OldDriver{
+  public void driveCar(Car car){
+    System.out.println("An old driver start driving");
+    car.move();
+  }
+  public void driveBike(Bike bike){
+    System.out.println("An old driver start driving");
+    bike.move();
+  }
+}
+
+//【修改】高层模块
+public class HighLevelClient{
+  public static void main(String[] args){
+ 	 Car car = new Car();
+     Bike bike = new Bike();
+ 	 YoungDriver youngDriver = new YoungDriver();
+     OldDirver oldDriver = new OldDriver();
+ 	 youngDriver.drive(car);
+     youngDriver.drive(bike);
+ 	 oldDriver.drive(bike);
+  }
+}  
+```
+
+现在新的类图如下：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_3.png?%20v=20170302)
+
+不管你们能不能看懂这个类图，反正我是尽力了🐶。仅仅是为了满足一个这么简单的需求变化，竟然需要原始代码做这么多修改。这也就忍了，可是这样修改之后高层模块需要依赖几乎所有的底层细节不说，底层各个模块之间的细节依赖也相当严重。设想如果再加上第三次，第四次需求变化，呵呵，请自行脑补☞。
+
+前面的开放关闭原则（OCP）也提到过，程序要对扩展开放，对修改关闭。从上面代码我们也看到了有一部分新的类需要加进去，这属于扩展，是应对需求变更的正常做法，但是对于YoungDriver和HighLevelClient的修改是我们需要想办法减少或避免的。其实导致现在看到的这些扩展性差，逻辑杂乱的根源在于我们一开始的设计思路是按照传统模块化设计思路来的，高层模块直接依赖于底层细节，违背了DIP，直接导致了需求变更时牵一发而动全身的后果。
+
+我们依照DIP重新开始设计，再来感受一下DIP是如何做到灵活应对需求变更的。DIP的思路很简单，这种设计思路是通过客户需求抽象出接口，高层业务逻辑调用这些接口暴露的功能来实现用户需求，底层模块具体实现这些接口契约所规定的功能。这就好比是设计生产一辆车，首先我们需要根据车的需求定义出抽象层（汽车的四大基本组成）：发动机，底盘，车身，电气设备。然后高层开发人员研究如何利用这四大接口的功能组装成一辆符合需求的汽车，而底层开发人员主要关心如何具体实现发动机，底盘等底层部件。这种设计思路可以很好地应对需求变更，使软件具有更好的可扩展性。这一点也很容易理解，因为需求变更通常是在原来的需求上增加一些新功能，或者做一些微调。还是用汽车举例，需求的变更通常是针对于细节来的，比如我们之前的需求是实现一辆经济型SUV，现在需求变成了一辆豪华跑车。由于我们之前的高层设计和底层实现是围绕汽车的四大基础部件的抽象层来展开的，而SUV和跑车的基本结构也都是基于这四大部件来的，因此此时我们只需要在底层扩展出针对跑车特征的类，然后对高层模块稍做调整即可（遵守DIP的设计，间接也使软件在应对需求变更时更轻易地遵守OCP）。万变不离其宗大概讲的就是这个道理，所以我们的设计不应该围绕底层细节展开，而是应该围绕“宗”展开，才能以不变应万变（“宗”就是我们从需求中分析出来的抽象层）。
+
+现在换成DIP来重新设计之前的例子：目前需求是设计一个简单软件实现让一个年轻驾驶员驾驶汽车的功能（用打印字符串来表示驾驶，以及车移动的速度），首先思考一下高层模块可能需要用到哪些抽象的功能：1.高层模块需要用到驾驶员的驾驶功能；2. 驾驶员需要用到交通工具。根据DIP，核心要义是面向接口编程，高层模块和底层模块都需要依赖抽象，这里先设计出接口，高层模块根据接口的功能契约来调用接口的方法，实现高层逻辑；底层根据接口的功能契约来实现细节（底层需要严格按照接口的契约来实现，这也是遵守里氏替换原则LSP的表现）。
+
+```java
+//先设计抽象模块
+public interface Driver{
+  public void drive(Vehicle vehicle);
+}
+
+public interface Vehicle{
+  public void move();
+}
+```
+
+当接口设计好之后，高层模块，以及用抽象隔开的底层模块之间就可以实现并行开发了(分别交给不同的人同时开发)。下面是具体的实现：
+
+```java
+//底层模块
+public class YoungDriver implements Driver{
+  public void drive(Vehicle vehicle){
+    System.out.println("A young driver start driving");
+    vehicle.move();
+  }
+}
+
+//底层模块
+public class Car implements Vehicle{
+  private int speed = 100;
+  public void move(){
+    System.out.println("move at the speed of " + speed);
+  }
+}
+
+//高层模块
+public class HighLevelClient{
+  public static void main(String[] args){
+     Driver youngDriver = new YoungDriver();
+ 	 Vehicle car = new Car();
+     //全部依赖抽象层定义的功能来实现高层逻辑
+     youngDriver.drive(car);
+  }  
+}
+```
+
+上述代码的类图如下：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_4.png?%20v=20170302)
+
+至此，这种设计实现了基本需求。对比前面传统思维的设计，可以清楚的看到DIP的设计看上去要复杂一些，因为它在前面的设计上加了一层抽象。但是，一旦软件需求发生改变，这种面向接口的设计的优势就会立即体现出来。
+
+同样的，需求此时变更为：不仅要求年轻驾驶员驾驶汽车，还要年轻驾驶员驾驶自行车，并且老年驾驶员也要驾驶汽车和自行车。我们只需扩展出Bike和OldDriver两个类，并少量修改高层代码即可应对需求变化。
+
+```java
+//【不变】底层模块
+public class YoungDriver implements Driver{
+  public void drive(Vehicle vehicle){
+    System.out.println("A young driver start driving");
+    vehicle.move();
+  }
+}
+
+//【扩展】底层模块
+public class OldDriver implements Driver{
+  public void drive(Vehicle vehicle){
+    System.out.println("An old driver start driving");
+    vehicle.move();
+  }
+}
+
+//【不变】底层模块
+public class Car implements Vehicle{
+  private int speed = 100;
+  public void move(){
+    System.out.println("move at the speed of " + speed);
+  }
+}
+
+//【扩展】底层模块
+public class Bike implements Vehicle{
+  private int speed = 30;
+  public void move(){
+    System.out.println("move at the speed of " + speed);
+  }
+}
+
+//【修改】高层模块
+public class HighLevelClient{
+  public static void main(String[] args){
+     Driver youngDriver = new YoungDriver();
+     Driver oldDriver = new OldDriver();
+ 	 Vehicle car = new Car();
+     Vehicle bike = new Bike();
+     //下面是高层事务逻辑的代码实现，全部依赖抽象层定义的功能来实现高层事务逻辑
+     youngDriver.drive(car);
+     youngDriver.drive(bike);
+     oldDriver.drive(bike);
+  }  
+}
+```
+
+上述代码的类图如下：
+
+![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】Six%20Principles%20of%20Software%20Design_5.png?%20v=20170302)
+
+这一次没有修改底层代码，而是通过扩展底层代码和少量调整高层代码来应对需求变化。并且扩展后的程序依然逻辑结构分明，高层和底层都依赖接口（这也侧面证明了当初接口的设计是合理的）。
+
+有些人可能会认为高层代码中也用到了Car，Bike，YoungDriver等底层具体类，这是不是说明实际上这一种设计也让高层模块依赖底层细节了？
+
+这里我们需要留意变量类型的两个概念：引用类型（外观类型）和实际类型（不明白的可以参考[http://hippo-jessy/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/](http://localhost:4000/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/)的开头部分）。在高层模块中尽量在创建变量时，将变量的引用类型定义为接口类型，也就是说局部变量使用的是接口类型，在真正事务逻辑代码编写时调用的是抽象模块的方法（即接口暴露的方法和功能)。也就是说整体上而言高层模块依赖的是抽象层，这个设计符合DIP。
+
+遵守了DIP的设计明显比之前的设计有更好地可扩展性，模块间的耦合性明显降低（模块间尽量通过接口来耦合）。遵守DIP的设计可以轻易地通过扩展底层模块的实现类来应对需求的变化，并尽量最小化代码的修改（OCP）。之前分析OCP时也提到了OCP是一个相对抽象和整体化的原则，但是从上面的例子我们也可以看到当设计遵守了DIP原则，某些程度上也能保证程序在应对需求变化时可以遵守OCP。后文的分析中，还可以进一步看到的，如果保证了其它五个设计原则，就可以更好地使程序在应对需求变化时遵守OCP。
+
 ## 接口隔离原则（Interface Segregation Principle, ISP）
 
 <blockquote><font color="green" size="3px"><big>Client should not be forced to depend on methods that they do not use </big></font></blockquote> <br/>
@@ -288,25 +520,9 @@ public class Client{
 
 
 
-
-
-## 开闭原则（Open Close Principle, OCP）
-
-<blockquote><font color="green" size="3px"><big>Software entities (classes, modules, functions, etc.) should be open for extension and closed for modification</big></font></blockquote> <br/>
-
-开闭原则核心在于：软件应该对扩展开放，对修改关闭。通俗来说，就是指应该尽量通过扩展软件实体来解决需求变化，而非通过修改代码来实现。
-
-开闭原则看似是一个比较“缥缈”的原则，它六个设计原则中最为基础也最为模糊的一个。鉴于目前能力有限，在这里先挖个坑，以后在实践中有更深领悟的时候，我再来谈谈对开闭原则的理解。
-
 最后用一段话总结这六大设计原则：
 
-
-
-
-
-
-
-
+**SRP规定一个类的职责要单一；LSP表示子类重写要遵守父类（或父接口）方法的功能契约；DIP告诉我们要面向接口编程；ISP是说接口方法要尽量精简，内聚性强；LoD告诉我们不要和陌生人说话（类与类之间要尽量减少耦合）；OCP是说软件要对扩展开放，对修改关闭。尽量遵守前五种原则能使得软件设计更合理，让软件应对需求变更时更容易实现OCP。**
 
 这篇文章只是设计模式总结的开始，很多知识的理解和运用并不是很透彻，待内功修炼以后，再回过来补充一些新的感悟吧，在此先立一个Flag🇨🇳
 
@@ -314,15 +530,11 @@ public class Client{
 
 为了实现将复杂问题简单化，模式化，整出graceful code，了解常见的设计招式还是很有必要的。虽说金庸先生教导大家“无招胜有招”，但是对于我这种战五渣而言，从一招一式学起显然更为稳妥。
 
-23种常见设计模式根据其特征和应用场合可以分为三大类，如下图所示（开启思维导图模式）：
-
-
-
-
+23种常见设计模式根据其特征和应用场合可以分为三大类，如下图所示（开启思维导图模式，持续修改更新）![](http://ojnnon64z.bkt.clouddn.com/【Design%20Pattern-0】%5BMind%20Map%5D%20Design%20Pattern.pdf?%20v=20170303)
 
 具体每种设计模式的分析总结，会抽时间陆续更新在下面这个目录中：
 
-[http://hippo-jessy.com/categories/Design-Pattern/](http://hippo-jessy.com/categories/Design-Pattern/)
+[<font color="green" size="3px">http://hippo-jessy.com/categories/Design-Pattern/</font>](http://hippo-jessy.com/categories/Design-Pattern/)
 
 ---
 
