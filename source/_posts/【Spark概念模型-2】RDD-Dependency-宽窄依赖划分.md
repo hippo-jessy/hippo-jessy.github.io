@@ -6,7 +6,11 @@ tags: [Spark]
 description:
 ---
 
-RDD是由诸多partition所构成的分布式只读数据集以及相关算子的封装，它只是一个逻辑概念上的数据集而并非是一个将所有数据都载入内存的数据结构（在另一篇博客详细讲解RDD的概念，本文重点在于Dependency）。
+## RDD
+
+RDD是由诸多partition所构成的分布式只读数据集以及相关算子的封装，它只是一个逻辑概念上的数据集而并非是一个将所有数据都载入内存的数据结构（这里只是简单提一下RDD，在另一篇博客详细讲解RDD的概念，本文重点在于Dependency）。
+
+## Dependency
 
 Dependency描述了RDD之间的依赖关系，每个RDD内部都记录了它与其他RDD（parent RDD）的依赖关系。通过Dependency类的getParents(partitionId:Int)我们可以获取当前RDD的每个partition所依赖的parent partitions。
 
@@ -50,9 +54,11 @@ RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency
 
 逐一看一下上面列举的算子，显然，map和filter是窄依赖，因为都只是简单的传递了盒子，对单个小球涂色或扔掉，并没有传入新的partitioner，即接收盒子的人并没有对小球进行重新放置。因此所有小球都待在自己原来的盒子里，显然是窄依赖。对于union，也是窄依赖，因为每个小球都会在原来小盒子所衍生的大盒子中。
 
+### join
+
 对于join(rddB)既可能是窄依赖，也有可能是宽依赖，实际上讨论join是宽依赖还是窄依赖其实相当于讨论cogroup，可以参看下面源码可知，join内部是调用cogroup实现的
 
-```
+```scala
  def join[W](other: RDD[(K, W)], partitioner: Partitioner): RDD[(K, (V, W))] = {
     this.cogroup(other, partitioner).flatMapValues( pair =>
       for (v <- pair._1; w <- pair._2) yield (v, w)
@@ -62,13 +68,13 @@ RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency
 
 我们需要分情况讨论：  
 
-##### 窄依赖join:
+#### 窄依赖join
 
 想要窄依赖，则必须保证原来同一个盒子里的球传递个另一个人之后依然在同一个盒子里。
 
 如果传递盒子的人和接受盒子的人有相同的放置小球的策略，并且传递盒子的人和接受盒子的人的盒子数目相同，则join为窄依赖，否则为宽依赖。比如传递者A和传递者B（rddB）两人都采用了HashParitioner（比如用小球的序号对盒子的序号取余），则二人所持有的相同序号的小球一定放在序号相同的盒子里，join之后接受盒子的人也使用同样的HashParitioner，则熔成的打球一定还会被放置在序号相同的盒子里，这样看来，原本放在盒子1中的小球最后一定还是会被放置在盒子1中。（如后文图中的join with inputs co-partitioned）
 
-##### 宽依赖join：
+#### 宽依赖join
 
 大多数情况的join都是宽依赖，第一个人将相同序号的球打散放置在不同的盒子里，传递给第二个人之后，如果采用不同的放置策略，基本都会使原本在同一个盒子里的球分散到不同的盒子中去。
 
@@ -81,8 +87,8 @@ RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency
 
 实际上我们也可以从源码角度来看如何区分cogroup是否为宽依赖，cogroup方法实际上创建了CoGroupedRDD，该RDD的getDependencies方法如下：
 
-```
-  override def getDependencies: Seq[Dependency[_]] = {
+```scala
+ override def getDependencies: Seq[Dependency[_]] = {
   //rdds是CoGroupedRDD的父RDD列表，part是CoGroupedRDD的partitioner
     rdds.map { rdd: RDD[_ <: Product2[K, _]] =>
       if (rdd.partitioner == Some(part)) {
@@ -95,6 +101,8 @@ RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency
     }
   }
 ```
+
+
 
 代码逻辑非常清晰，如果CoGroupedRDD和其父RDD有相同的partitioner则二者关系为窄依赖，否则为宽依赖。
 
