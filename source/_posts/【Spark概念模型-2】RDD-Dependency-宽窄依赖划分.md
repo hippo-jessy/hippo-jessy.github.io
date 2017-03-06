@@ -106,6 +106,6 @@ RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency
 
 代码逻辑非常清晰，如果CoGroupedRDD和其父RDD有相同的partitioner则二者关系为窄依赖，否则为宽依赖。
 
-## References:
+## References
 
 [http://smallx.me/2016/06/07/spark%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/](http://smallx.me/2016/06/07/spark%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/)  [https://github.com/JerryLead/SparkInternals/blob/master/markdown/2-JobLogicalPlan.md](https://github.com/JerryLead/SparkInternals/blob/master/markdown/2-JobLogicalPlan.md)  [https://github.com/JerryLead/SparkInternals/blob/master/markdown/3-JobPhysicalPlan.md](https://github.com/JerryLead/SparkInternals/blob/master/markdown/3-JobPhysicalPlan.md)
