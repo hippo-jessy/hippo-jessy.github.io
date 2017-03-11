@@ -6,6 +6,12 @@ tags: [Design Pattern, Java]
 description:
 ---
 
+
+
+静态代理例子： Runnable接口以及Thread(runnable) 静态代理创建线程，高琪172
+
+
+
 http://hotfixs.com/2015/12/13/java-rtti-vs-reflection.html
 
 
