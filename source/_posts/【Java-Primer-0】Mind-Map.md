@@ -20,7 +20,9 @@ Java并发编程这一部分的思维导图主要根据《Java Concurrency in Pr
 
 ### Fundamentals(基础知识)
 
+这一部分主要由四个章节组成，下面以章节为单位总结Mind Map
 
+####  
 
 ### Structuring Concurrent Applications(结构化并发应用) 		
 

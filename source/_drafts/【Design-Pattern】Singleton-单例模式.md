@@ -16,3 +16,10 @@ description:
 
 ### 饿汉式（Non-lazy Initialization, Thread Safe）
 
+
+
+http://blog.csdn.net/zhengzhb/article/details/7331369
+
+http://blog.csdn.net/zhengzhb/article/details/7331354
+
+http://ifeve.com/from-singleton-happens-before/
