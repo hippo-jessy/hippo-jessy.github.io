@@ -10,16 +10,23 @@ description:
 
 
 
-## Five Implementation of Singleton Pattern
+
+
+## 五种实现
+
+http://codebalance.blogspot.tw/2010/08/singleton-pattern-and-beyond.html
+
+## 线程安全
+
+## 垃圾回收
 
 
 
-### 饿汉式（Non-lazy Initialization, Thread Safe）
-
-
+https://yq.aliyun.com/articles/11333
 
 http://blog.csdn.net/zhengzhb/article/details/7331369
 
 http://blog.csdn.net/zhengzhb/article/details/7331354
 
 http://ifeve.com/from-singleton-happens-before/
+
