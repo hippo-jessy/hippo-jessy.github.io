@@ -34,7 +34,7 @@ hippo.jessy@gmail.com
 
 ### About this site 
 所有博文，均为原创
-Powered by [Hexo](https://hexo.io/)&nbsp; |&nbsp; Theme - [NexT.Mist](https://github.com/iissnan/hexo-theme-next)&nbsp; |&nbsp; Deployed on [GitHub](https://github.com/) & [Coding](https://coding.net)&nbsp; |&nbsp; CI by [Travis-CI](https://travis-ci.org/)&nbsp; |&nbsp; Comments - [多说](http://duoshuo.com)
+Powered by [Hexo](https://hexo.io/)  |  Theme - [NexT.Mist](https://github.com/iissnan/hexo-theme-next)  |  Deployed on [GitHub](https://github.com/) & [Coding](https://coding.net)  |  CI by [Travis-CI](https://travis-ci.org/) 
 
 
 
