@@ -26,10 +26,10 @@ description:
 1. 确保单例类只有一个实例
 2. 该单例类自行实例化并向整个系统提供该实例
 
-单例模式有如下五种常见的实现方式，按照是否延迟加载(Initialization On Demand)，可以分为懒加载和非懒加载两大类。尽管几种实现方式各不相同，但是从根本上讲，为了达到唯一化实例的目的，都是采用了同一种思路：限制创建+限制更改。
+单例模式有五种常见的实现方式，按照是否延迟加载(Initialization On Demand)，可以分为懒加载和非懒加载两大类。尽管几种实现方式各不相同，但是从根本上讲，为了达到唯一化实例的目的，都是采用了同一种思路：限制创建+限制更改。
 
-1. 创建实例的途径被封装在单例类中：私有化构造器，禁止外界构造实例，单例类的唯一实例是在单例类内部被创建
-2. 更改实例的途径被切断：该单例类只提供给外界“读取”该单例实例引用的入口，从而限制外界更改单例类中的唯一实例
+1. 限制创建，创建实例的途径被封装在单例类中：私有化构造器，禁止外界构造实例，单例类的唯一实例是在单例类内部被创建
+2. 限制更改，更改实例的途径被切断：该单例类只提供给外界“读取”该单例实例引用的权限，从而限制外界更改单例类中的唯一实例
 
 然而，如果仅仅满足上面两点，仅仅能保证单例类只有一个实例，却无法保证线程安全。当单例对象被多个线程共享时，如果单例对象没有被安全发布或者访问单例类状态时存在竞态条件(Race Condition)时，则会出现线程安全问题。
 
@@ -37,9 +37,13 @@ description:
 
 ### 1. 饿汉式(Eager Initialization)
 
+饿汉式的主要特征在于eager initialization，它在类初始化的时候就完成了唯一单例对象的创建，而不是等到真正需要用到单例对象的时候才创建。
+
 为了满足上文中提到的“限制创建+限制更改”的条件，饿汉式提出了一种解决方案（下面解释比较绕，仅作参考）：
 
-为了禁止外界创建实例，私有化构造器，要使唯一实例在单例类内部创建，于是考虑将单例对象设计成单例类的一个域，在域初始化的时候创建唯一的单例实例；为了限制外界只能“读取”单例实例的引用，于是考虑将该域的访问权限设置为private，再额外提供一个“只读”的方法来访问该域。由于唯一的实例是单例类的域，则外界没有办法访问单例类的实例方法，于是这个“只读”的方法只能是静态方法，而该静态方法需要访问单例实例域，而由于静态方法只能访问静态域 ，因此单例实例域只能是静态域。
+**为了限制外界创建实例**，饿汉式采用私有化构造器，并保证唯一实例在单例类内部创建，具体实现是将单例对象设计成单例类的一个域，采用eager initialization在域初始化的时候创建唯一的单例实例；
+
+**为了禁止外界更改唯一单例对象的引用地址**，必须使得外界只能“读取”单例实例的引用，于是考虑将该域的访问权限设置为private，再额外提供一个“只读”的方法来访问该域。由于唯一的实例保存在单例类的内部，并且在单例类内部被创建，外界没有办法创建单例对象，进而无法访问单例类的实例方法，于是这个暴露给外界的“只读”方法只能是静态方法，而该静态方法需要访问单例实例域，而由于静态方法只能访问静态域 ，因此单例实例域只能是静态域。
 
 ```java
 public class Singleton{
@@ -51,34 +55,39 @@ public class Singleton{
 }
 ```
 
-饿汉式的特点在于利用静态初始化器来静态构造单例对象。使用静态初始化器来初始化一个对象引用(Use static initializer to do the initializing stores)这也是《Java Concurrency in Practice》中提到的四种安全发布对象的方法之一。这种方法天然线程安全，因为它是在类初始化的时候创建唯一的单例实例的，而
+饿汉式的特点在于利用静态初始化器来静态构造单例对象。使用静态初始化器来初始化一个对象引用(Use static initializer to do the initializing stores)这也是《Java Concurrency in Practice》中提到的四种安全发布对象的方法之一。这种方法天然线程安全，因为它是在类初始化的时候创建唯一的单例实例的，而JVM在执行类初始化期间会尝试去获取一个锁，这样多个线程初始化同一个类的时候可以实现同步（对类初始化阶段JVM如何获取锁感兴趣的童鞋可以查阅[双重检查锁定与延迟初始化](http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization?utm_source=infoq&utm_campaign=user_page&utm_medium=link)的后半部分内容）。
 
 > 回忆下四种安全发布对象的方法（关键在于对象的引用以及对象的状态必须同时对其他线程可见）：
 >
-> 1. use static initializer to do the initializing stores
+> 1. use static initializer to do the initializing stores(the underlying principle is somewhat the same as method 4) 
 > 2. storing a reference to it into a volatile field or ActomicReference
-> 3. storing a reference to it into a final field
+> 3. storing a reference to it into a final field of a properly constructed object
+> 4. storing a reference to it into a field that is properly guarded by a lock
+
+上面这种实现方法为了限制外界只能“读取”单例实例的引用，采取了“private域”+“暴露只读方法访问private域”的解决办法。但是如果保存单例实例的域是final的，则外界必定无法修改单例对象的引用，只能读取。于是也就没有必要将该域的权限设为private也没有必要暴露一个只读方法来帮助外界访问单例对象。这种新的饿汉式实现方式如下：
 
 ```java
 public class Singleton{
-  public static final Singleton instance = new Singleton();
+  public static final Singleton instance = new Singelton();
   private Singleton(){}
 }
 ```
 
-
-
 #### 线程安全
 
-http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization?utm_source=infoq&utm_campaign=user_page&utm_medium=link
-
-
-
-#### 加载
-
-饿汉式的两种实现方式均为eager initialization，也就是说
+上面两种饿汉式的实现方式都是基于安全发布对象的第一种途径，因此在对象发布上是安全的。如果单例类的设计者为单例类添加更多的方法后，这里无法保证是否会出现一些线程不安全的访问方法。但是这不是我们讨论的重点。本文中所有的线程安全问题讨论都基于单例模式的最简单范式，而不考虑实际应用中的代码扩展。
 
 ### 2. 懒汉式(Lazy Initialization)
+
+与饿汉式不同，懒汉式追求懒加载，即在需要使用单例对象的时候才创建单例对象。这样在某些情境下可以减少程序启动的时间，也可以最大程度的节省内存。当然，对应的弊端是，当第一次需要使用单例对象时可能需要花费更多时间来创建单例对象。
+
+同样的，懒汉式也遵循文章开头提到的两点设计要求：“限制创建+限制更改”，懒汉式的实现思路如下：
+
+**为了限制外界创建实例**，懒汉式同样采用私有化构造器，并保证唯一实例在单例类内部创建。具体实现也是将单例对象保存在单例类的一个域中，采用lazy initialization在外界第一次读取单例对象时创建唯一的单例对象（即在暴露给外界的“只读”方法中创建单例对象，该“只读”方法的内部逻辑保证只有第一次读取单例对象时才会创建对象，并且保证只会创建一次）。
+
+**为了禁止外界更改单例类中保存的唯一单例对象的引用地址**，懒汉式和饿汉式的第一种实现方式采用了同样的处理技巧：将该域的访问权限设置为private，再额外提供一个“只读”的方法来访问该域。同样的，由于唯一的实例保存在单例类的内部，并且在单例类内部被创建，外界没有办法创建单例对象，进而无法访问单例类的实例方法，于是这个暴露给外界的“只读”方法只能是静态方法，而该静态方法需要访问单例实例域，而由于静态方法只能访问静态域 ，因此单例实例域只能是静态域。
+
+懒汉式的初步的实现如下：
 
 ```java
 public class Singleton{
@@ -93,9 +102,13 @@ public class Singleton{
 }
 ```
 
-懒汉式
+#### 线程安全
 
+很明显这种实现不是线程安全的。首当其冲，getInstance()方法中出现了经典的race condition：第五行到第七行代码是典型的Check-Than-Act。线程A执行getInstance()时由于是第一次调用，instance此时还是null，执行完第五行代码时，系统切换执行线程B，此时线程B中看到的instance依然是null，于是继续执行创建单例对象，然后切换到线程A继续执行第六行代码，于是**第二个单例对象**被创建了，违反了单例模式的要求。
 
+然而，就算我们忽略Check-Than-Act的race condition，上面的代码依旧是线程不安全的。原因在于多线程共享对象时，一定要保证该对象安全发布，否则有些线程会看到未被完全构造的共享对象。这一条这里不展开分析，对于对象安全发布的问题在后文讲解双重检查锁定时会重点讲解。
+
+解决race condition以及对象不安全发布，都可以通过Lock来简单粗暴解决。比如下面这个就是利用隐式锁来实现线程安全懒汉式：
 
 ```java
 public class Singleton{
@@ -110,7 +123,7 @@ public class Singleton{
 }
 ```
 
-
+直接将getInstance方法改为同步方法。这样固然可以解决线程安全问题，但是线程安全和执行性能从来都是此长彼消的。本来上面的race condition以及对象不安全发布的问题只会在第一次访问（创建）单例对象的时候发生，解决问题的关键在于同步第一次创建单例对象和第一次访问单例对象，现在我们却将每次访问单例对象的操作都同步了，虽然也解决了问题，却是杀鸡用牛刀，使得所有访问单例对象的操作都只能“串行”执行，极大地牺牲了效率。
 
 ### 3. 双重检查锁定(Double-check Locking, Lazy Initialization)
 
@@ -131,11 +144,15 @@ public class Singleton{
 }
 ```
 
-DCL的出现主要是
+DCL的出现主要是为了解决前面直接同步整个方法带来的低效率问题。
 
-#### 线程安全
+
 
 DCL的重点在于第5行到第7行
+
+
+
+#### 线程安全
 
 DCL看似是一种合理的单例模式实现，它既解决了Check-Than-Act的race condition，又避免了直接同步整个getInstance方法带来的性能效率问题，简直就是抖了个完美的机灵，权衡了同步和效率问题。但是，DCL在并发环境中却仍然会出现问题，这些问题涉及到很多JMM相关的知识，这一部分也是整篇博文的重点所在。
 
