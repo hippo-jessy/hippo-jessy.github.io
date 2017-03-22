@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dsq="http://www.disqus.com/" xmlns:wp="http://wordpress.org/export/1.0/" version="2.0">
+  <channel>
+    <item>
+      <title>Hello World</title>
+      <link>http://yoursite.com/2017/01/11/hello-world/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/11/hello-world/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/11/hello-world/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>Personal Configuration for Mac and Apps</title>
+      <link>http://hippo-jessy.com/2017/01/30/Personal-Configuration-for-Mac-and-Apps/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/30/Personal-Configuration-for-Mac-and-Apps/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/30/Personal-Configuration-for-Mac-and-Apps/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>为什么Java long类型的变量在赋值时数值常量要加“L”?</title>
+      <link>http://hippo-jessy.com/2017/01/19/为什么Java-long类型的变量在赋值时数值常量要加“L”/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/19/为什么Java-long类型的变量在赋值时数值常量要加“L”/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/19/为什么Java-long类型的变量在赋值时数值常量要加“L”/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>firstBlog</title>
+      <link>http://hippo-jessy.com/2017/01/13/firstBlog/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/13/firstBlog/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/13/firstBlog/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Design Pattern-0】Six Principles for Software Design</title>
+      <link>http://hippo-jessy.com/2017/02/16/【Design-Pattern-0】Six-Principles-for-Software-Design/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/02/16/【Design-Pattern-0】Six-Principles-for-Software-Design/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/02/16/【Design-Pattern-0】Six-Principles-for-Software-Design/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【读薄Thinking in Java】Container Primer</title>
+      <link>http://hippo-jessy.com/2017/01/23/【读薄Thinking-in-Java】Container-Primer/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/23/【读薄Thinking-in-Java】Container-Primer/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/23/【读薄Thinking-in-Java】Container-Primer/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch</title>
+      <link>http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>Charset and Encoding</title>
+      <link>http://hippo-jessy.com/2017/01/17/Charset-and-Encoding/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/17/Charset-and-Encoding/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/17/Charset-and-Encoding/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6376992765565207297</wp:comment_id>
+        <wp:comment_author>hippo</wp:comment_author>
+        <wp:comment_author_email>hippo.jessy@gmail.com</wp:comment_author_email>
+        <wp:comment_author_url>http://hippo-jessy.com/</wp:comment_author_url>
+        <wp:comment_author_IP>45.63.55.101</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-19 01:08:50</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[test]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+    </item>
+    <item>
+      <title>tags</title>
+      <link>http://yoursite.com/tags/index.html</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>tags/index.html</dsq:thread_identifier>
+      <dsq:thread_identifier>tags/index.html</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>about</title>
+      <link>http://hippo-jessy.com/about/index.html</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>about/index.html</dsq:thread_identifier>
+      <dsq:thread_identifier>about/index.html</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6382893761579451138</wp:comment_id>
+        <wp:comment_author>lpouyang2005</wp:comment_author>
+        <wp:comment_author_email/>
+        <wp:comment_author_url>http://www.baidu.com/p/lpouyang2005</wp:comment_author_url>
+        <wp:comment_author_IP>124.166.233.118</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-02-03 22:47:42</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[已添加友链,www.ezlippi.com]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6382922190244807426</wp:comment_id>
+        <wp:comment_author>hippo</wp:comment_author>
+        <wp:comment_author_email>hippo.jessy@gmail.com</wp:comment_author_email>
+        <wp:comment_author_url>http://hippo-jessy.com/</wp:comment_author_url>
+        <wp:comment_author_IP>171.81.189.10</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-02-04 00:38:01</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[好的，谢谢~~ 我这边也添加了~]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>6382893761579451138</wp:comment_parent>
+      </wp:comment>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://yoursite.com/2017/01/13/hello-world/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/13/hello-world/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/13/hello-world/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Java Primer-0】Mind Map</title>
+      <link>http://hippo-jessy.com/2016/11/20/【Java-Primer-0】Mind-Map/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/11/20/【Java-Primer-0】Mind-Map/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/11/20/【Java-Primer-0】Mind-Map/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【深入理解Java虚拟机-0】思维导图汇总</title>
+      <link>http://hippo-jessy.com/2017/02/03/【深入理解Java虚拟机-0】思维导图汇总/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/02/03/【深入理解Java虚拟机-0】思维导图汇总/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/02/03/【深入理解Java虚拟机-0】思维导图汇总/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>categories</title>
+      <link>http://yoursite.com/categories/index.html</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>categories/index.html</dsq:thread_identifier>
+      <dsq:thread_identifier>categories/index.html</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>Summary for Sorting</title>
+      <link>http://hippo-jessy.com/2017/02/20/Summary-for-Sorting/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/02/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/02/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Java You Don't Know - Item 1】为什么long类型的变量在赋值时数值常量要加“L”</title>
+      <link>http://hippo-jessy.com/2017/01/21/【Java-You-Don-t-Know-Item-1】为什么long类型的变量在赋值时数值常量要加“L”/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/21/【Java-You-Don-t-Know-Item-1】为什么long类型的变量在赋值时数值常量要加“L”/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/21/【Java-You-Don-t-Know-Item-1】为什么long类型的变量在赋值时数值常量要加“L”/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Design Pattern】Singleton 单例模式</title>
+      <link>http://hippo-jessy.com/2016/11/25/【Design-Pattern】Singleton-单例模式/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/11/25/【Design-Pattern】Singleton-单例模式/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/11/25/【Design-Pattern】Singleton-单例模式/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>Summary for Sorting</title>
+      <link>http://hippo-jessy.com/2017/01/20/Summary-for-Sorting/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Java You Don't Know - Item 2】All Interfaces Have toString() Method</title>
+      <link>http://hippo-jessy.com/2017/01/22/【Java-You-Don-t-Know-Item-2】All-Interfaces-Have-toString-Method/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/22/【Java-You-Don-t-Know-Item-2】All-Interfaces-Have-toString-Method/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/22/【Java-You-Don-t-Know-Item-2】All-Interfaces-Have-toString-Method/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6389097352497464065</wp:comment_id>
+        <wp:comment_author>风林火山</wp:comment_author>
+        <wp:comment_author_email/>
+        <wp:comment_author_url>http://t.qq.com/yangshenhui</wp:comment_author_url>
+        <wp:comment_author_IP>220.248.47.34</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-02-20 16:00:48</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[个人博客 : http://www.shenhuiyang.com]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+    </item>
+    <item>
+      <title>【Spark概念模型-2】RDD &amp; Dependency &amp; 宽窄依赖划分</title>
+      <link>http://hippo-jessy.com/2016/08/15/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/08/15/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/08/15/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>HelloWoW</title>
+      <link>http://hippo-jessy.com/2017/01/14/HelloWoW/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/14/HelloWoW/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/14/HelloWoW/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Design Pattern-0】Six Principles for Software Design</title>
+      <link>http://hippo-jessy.com/2016/12/28/【Design-Pattern-0】Six-Principles-for-Software-Design/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/12/28/【Design-Pattern-0】Six-Principles-for-Software-Design/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/12/28/【Design-Pattern-0】Six-Principles-for-Software-Design/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>关于2016的一些思考</title>
+      <link>http://hippo-jessy.com/2017/01/24/关于2016的一些思考/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/24/关于2016的一些思考/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/24/关于2016的一些思考/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6379826026893017858</wp:comment_id>
+        <wp:comment_author>喻凤</wp:comment_author>
+        <wp:comment_author_email/>
+        <wp:comment_author_url>http://t.qq.com/yufeng19930505</wp:comment_author_url>
+        <wp:comment_author_IP>140.206.254.171</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-26 16:23:20</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[我一直都在，很多爱你的支持你的人都在，其实人生没那么多觉得过不去的难关，都在乎于你的心态。很高兴，你走了出来并且升华了自己，相信以后的你会更加坚强勇敢！爱你！]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6379838838797239041</wp:comment_id>
+        <wp:comment_author>Xinwei</wp:comment_author>
+        <wp:comment_author_email>xinweili@usc.edu</wp:comment_author_email>
+        <wp:comment_author_url/>
+        <wp:comment_author_IP>104.32.167.14</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-26 17:13:03</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[能看到这篇文章, 看到你好好的, 真的太高兴太开心了。希望你一切都好好的。有时间来la玩，开车带你玩遍全LA!! -- Xinwei]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6379840147294257922</wp:comment_id>
+        <wp:comment_author>雷杜</wp:comment_author>
+        <wp:comment_author_email/>
+        <wp:comment_author_url>http://t.qq.com/ld819837668</wp:comment_author_url>
+        <wp:comment_author_IP>66.215.221.152</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-26 17:18:07</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[好久没看到你的消息，看到这篇文章的时候一下子心都揪起来，无比的心疼你。我也是生日和你没隔几天的处女座，我也追求完美，好强，强迫症。如果说我一直延续高中的生活状态，相信我很快会病入膏肓。但奇迹的是，我爸妈虽睿智，却没什么文凭，我考上了华科他们就觉得光耀门楣了，所以我觉得获得周围人认同这一步，我已经做得差不多了。于是大学期间无比放任，不听课不好好复习，p图，搞社团，沉浸在寝室关系里。一边却赞叹着你这样又美性格又好成绩又好能力又强的女神，觉得是我人生的榜样了。然而这样你一定感到压力颇大吧，当周围人都把你架起来放在神坛上，就更加害怕跌落而举步维艰了吧。
+自从开始接触知乎，就对抑郁症有了越来越多的理解，所谓“这点东西你有什么想不开呢”“你这么优秀怎么会觉得不如别人呢”，等等，这种话简直毫无意义。
+但不是心理医师的我们，好像也只能站在你身边，握紧你的手，表达不变的理解和支持。
+你知道吗？让我如此记住你的，根本不是超强的能力 或者美丽的身姿，而是你那由内而外天然纯真的善良啊。
+不管怎么说，懂你的人无论你是否优秀，都会继续支持你喜欢你。反倒是比较担心这么照顾他人感受的你牺牲了自己的快乐，尽管肆意地找到自己的梦想，自己真正想做的事吧，让你自己开心，喜欢你的人自然也会开心。
+加油。]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6380035577382699777</wp:comment_id>
+        <wp:comment_author>hippo</wp:comment_author>
+        <wp:comment_author_email>hippo.jessy@gmail.com</wp:comment_author_email>
+        <wp:comment_author_url>http://hippo-jessy.com/</wp:comment_author_url>
+        <wp:comment_author_IP>103.240.125.67</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-27 05:56:30</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[差点泪目了，一直以来你都给我很多鼓励，不是“谢谢”二字可以表达的。
+
+其实我已经很幸运了，在并不算太长的时间内想通一些道理。有很多人可能会一直陷在严重的抑郁症中难以自救，更有甚者放弃了生命。思维模式一旦定型，只能慢慢调整，但是重要的是要能够认清思维模式的形成是有“规律”可循的。如果将人格性格当做是完全感性的、无逻辑的事物，可能就真的只能放任自己沉湎在自己的思维定式和情绪当中难以自拔了。好在，凡事就怕“规律”二字，一旦发现思维模式，人格心理的形成是有规律有逻辑的，也就没什么可怕的了。我后来也想起你以前在空间发过一些对初中老师的“难忘”记忆，实际上也从侧面反映了家庭和教育环境在我们人格形成初期的重大影响力。作为孩子和学生（特别是低龄阶段），我们一直是弱势的，很多行为都是为了“讨好”和“迎合”父母老师价值观念，这些行为反复发生直到固化到我们的思维模式中。所以说老师是“心灵的园丁”这句话是真心很有道理，只可惜有太多的老师虽然是知识传授的高手，却也是失败的心灵园丁。
+]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>6379840147294257922</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6380284313220416258</wp:comment_id>
+        <wp:comment_author>黄黄黄黄黄</wp:comment_author>
+        <wp:comment_author_email/>
+        <wp:comment_author_url>http://t.qq.com/onederek</wp:comment_author_url>
+        <wp:comment_author_IP>220.248.183.219</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-27 22:01:43</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[除夕的晚上吃完年夜饭，我打开一年没用的qq空间，静下心来用半个小时看完了这篇总结。真的是好久没听到你的消息，微信上跟你的聊天记录还是停留在3个月前。
+
+读完这篇文章，真是无比的心疼你。我也是处女座，我也是完美主义，我也会为了一道题没有解出而愤怒，我也会因为自己的一些小小的失误而自懊恼，我也会因为自己在意的、为之付出巨大努力的事情不顺心而自责。
+
+我的爸爸作为他那个时代村里唯一的大学生、在县城里担任重要职务的公务员，从小就是村里的榜样。他深刻认识到读书学习的重要性，从而对我也是严加要求：我每天在家都要自主学习至少三个小时，每次玩电脑的时间不能超过15分钟，每次出门玩都必须按约定好的时间回家，等等。因而，在高考之前，我一直都认为自己是最棒的，没有之一。
+
+随着高考的不甚顺利，我也曾经痛苦过，曾经失落过。直到我进入华科，跟大家一起学习，我渐渐发现，能进入这个优秀的环境、能认识这么优秀的大家，我是多么幸运。我开始尝试去跟朋友打篮球打dota，于是我参加了不少比赛认识了我一辈子的好朋友；我开始尝试去搞科研，于是我进入了苏老师的实验室，在那里也是和你有过一段时间的合作；我开始尝试去玩社团，于是我加入了咱们软院的学生会；我开始学着让自己对编程感兴趣，于是我加入了ACM集训加入了技术团队。
+
+还记得上次在阿里2号楼跟你吃饭的时候，你有提过你觉得身边的人都好厉害自己什么都不懂，我也曾经是什么都不懂。刚进阿里的时候我还是一个充满书生气质的菜鸡。工业化开发环境怎么搭建？开发流程怎么确保效率和稳定性的平衡？不同技术方案怎么去权衡？应该怎么去拓宽技术广度和锐化技术深度？这个时候我开始认识到，自己要学的东西还有很多。于是我开始强迫自己去内网找前辈总结的资料，在工作中找前辈多去讨论和请教。即便如此，我还是在2015年的双十一上差点出了一个P2故障（P2是很严重的故障，我和师兄、主管都要被记过）。于是我开始反思自己在这个错误中出现的问题，反思自己进入阿里之后的工作。现在回去看我的朋友圈，在2015年11月6日问题被解决的那个晚上我发了一条状态鼓励自己：时长提醒自己，反思，琢磨，进步，敬畏之心常在。从那以后到现在，我一直保持这个信念，工作上不断进步，还拿了一次3.75，受到了主管的认可，还被他承诺今年5月会提拔晋升。
+
+于是我开始得意忘形，开始变得飘了起来。2016年10月的时候，Xinwei在微信上给我介绍了一个Facebook内推的机会，我以为自己的能力一定能进FB。于是开始刷Leetcode，开始练习口语。刚开始的电面都很简单，直到onsite，各种follow up答不出来，各种口语上支支吾吾。onsite才结束第三天就收到了HR的拒信，我才意识到自己需要提高的方面太多太多。我也欣然接受了这个结果，针对接下来的技术提升做出一个还不错的规划。
+
+现在回过头来，看看自己高中毕业后这5年来走过的路，有过高兴也有过失落。最重要的是，我会不断的，去尝试接触新的东西，尝试去从事自己没有建树的领域。在这个过程中，我发现自己在逐渐加深对这个世界的小小的理解，更重要的是连接了这个世界，让我们的感受能够更深刻的被彼此所认知，这才是生活的奥义。
+
+我真的很羡慕你，长得漂亮性格又好成绩又好能力又强，觉得是我人生的榜样。我也知道这样的你一定是压力颇大，因为我曾经和现在也一直都是别人的榜样。可是让我羡慕你的，并不因为你是“最优秀的那一批”，并不因为你“习惯想要变得优秀”，而是每当遇到困难你不会退步的决心和开朗阳光的信心。
+
+我希望你能一直做真正的你。如果你有什么想说的，别犹豫，拿起微信，愉快的找我们一起倾诉，我们一直都会在你身边。]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6381482760321630978</wp:comment_id>
+        <wp:comment_author>hippo</wp:comment_author>
+        <wp:comment_author_email>hippo.jessy@gmail.com</wp:comment_author_email>
+        <wp:comment_author_url>http://hippo-jessy.com/</wp:comment_author_url>
+        <wp:comment_author_IP>171.81.190.53</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-01-31 03:32:18</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[当天晚上看了你的评论，我又反复想了很多。并没有立即回复是因为我希望等心情平静下来再写下一些较为“理智”的想法。
+
+然而我似乎最后还是选了一个最不合时宜的情境开始写下面的内容。我自己的总结，尽管已经尽可能地分析了不良情绪的来源以及现有思维模式的各种不合理，习惯性的绝望感还是会时不时地绕回来，比如现在。
+
+我们确实有很多相似的地方，比如完美主义，比如成长环境。我爸爸和你爸爸有惊人相似的人生轨迹，甚至连职业都是一样的。
+
+但是我也明显看到了不一样的地方。我其实一直都很不自信，这一点在很多方面都有体现。我也一直没有学会如何正视比自己优秀的人。实际上遇见优秀的人我应该庆幸自己未来有更多的提升空间，有更宽广的眼界，而不是过多关注于现状的差距带来的压力。除此之外，我也不善于求助他人。
+
+本科数媒有些专业课没有系统学习，比如计算机组成，汇编，编译原理等等，我依靠自学掌握的内容毕竟有限。遇到问题，相比求助周围的同学，我更习惯于依靠网络和书本寻找解决方案。一方面，我担心同学师兄都有自己的事要忙，不想麻烦别人；另一方面，我一直困惑于什么是我“应该”会的：这个问题会不会是大家本科都学过的？问这样的问题会不会很傻？由此一来，我越来越“封闭”自己，不会利用环境给我提供的资源，潜移默化地给自己施压，虽然我也知道交流才是快速成长的根本。实际上，在想通一些事情之后，我也逐渐明白没有什么是”应该“会的，所谓应不应该都是试图站在他人的角度来评价自己，只有在自己感兴趣的事情上获得进步才是”应该“的事情。
+
+看到你的评论，说不感动是假的。很感激你在除夕的晚上来看我这篇负能量爆棚的总结，并且还花了这么多时间来用你自己的经历开导我。从你身上我学到了很多，也对照自己反思了很多。很庆幸在最难过的时候有你们这些朋友愿意帮助我，但是我也知道，习惯的力量很强大，这件事急不来，只能依靠自己慢慢改变思维模式。
+]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>6380284313220416258</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6382491052208554753</wp:comment_id>
+        <wp:comment_author>karl</wp:comment_author>
+        <wp:comment_author_email>i@karlzhou.com</wp:comment_author_email>
+        <wp:comment_author_url>https://www.karlzhou.com/</wp:comment_author_url>
+        <wp:comment_author_IP>49.77.188.35</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-02-02 20:44:59</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[加油 踏实的前行！ 共勉！]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>0</wp:comment_parent>
+      </wp:comment>
+      <wp:comment>
+        <dsq:remote>
+          <dsq:id></dsq:id>
+          <dsq:avatar></dsq:avatar>
+        </dsq:remote>
+        <wp:comment_id>6384382804448248578</wp:comment_id>
+        <wp:comment_author>hippo</wp:comment_author>
+        <wp:comment_author_email>hippo.jessy@gmail.com</wp:comment_author_email>
+        <wp:comment_author_url>http://hippo-jessy.com/</wp:comment_author_url>
+        <wp:comment_author_IP>171.81.189.10</wp:comment_author_IP>
+        <wp:comment_date_gmt>2017-02-07 23:05:57</wp:comment_date_gmt>
+        <wp:comment_content><![CDATA[嗯嗯，谢谢]]></wp:comment_content>
+        <wp:comment_approved>1</wp:comment_approved>
+        <wp:comment_parent>6382491052208554753</wp:comment_parent>
+      </wp:comment>
+    </item>
+    <item>
+      <title>【Spark概念模型-2】RDD &amp; Dependency &amp; 宽窄依赖划分</title>
+      <link>http://hippo-jessy.com/2016/12/04/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/12/04/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/12/04/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>【Design Pattern】Iterator 迭代器模式</title>
+      <link>http://hippo-jessy.com/2017/01/22/【Design-Pattern】Iterator-迭代器模式/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2017/01/22/【Design-Pattern】Iterator-迭代器模式/</dsq:thread_identifier>
+      <dsq:thread_identifier>2017/01/22/【Design-Pattern】Iterator-迭代器模式/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+    <item>
+      <title>Summary for Sorting</title>
+      <link>http://hippo-jessy.com/2016/12/20/Summary-for-Sorting/</link>
+      <content:encoded><![CDATA[]]></content:encoded>
+      <dsq:thread_identifier>2016/12/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <dsq:thread_identifier>2016/12/20/Summary-for-Sorting/</dsq:thread_identifier>
+      <wp:post_date_gmt></wp:post_date_gmt>
+      <wp:comment_status>open</wp:comment_status>
+    </item>
+  </channel>
+</rss>
