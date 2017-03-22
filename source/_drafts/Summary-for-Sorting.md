@@ -611,3 +611,15 @@ https://leetcode.com/problems/find-all-duplicates-in-an-array/?tab=Description
 ## Reference
 
 \[1] [https://www.toptal.com/developers/sorting-algorithms](https://www.toptal.com/developers/sorting-algorithms)
+
+
+
+
+
+http://blog.csdn.net/hguisu/article/details/7776068
+
+
+
+快排
+
+http://harttle.com/2015/09/27/quick-sort.html

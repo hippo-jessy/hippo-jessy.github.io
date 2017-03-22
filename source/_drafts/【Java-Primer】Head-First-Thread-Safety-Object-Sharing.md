@@ -14,6 +14,8 @@ description:
 
 ## Thread Safety
 
+我们经常将线程安全挂在嘴边，但是到底什么是线程安全？那些做法会威胁到线程安全？
+
 
 
 ## Sharing Objects 

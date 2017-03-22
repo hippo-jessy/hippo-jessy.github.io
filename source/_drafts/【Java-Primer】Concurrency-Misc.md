@@ -23,3 +23,20 @@ http://blog.csdn.net/great_smile/article/details/42297077
 
 
 
+## GC 
+
+http://www.cnblogs.com/laoyangHJ/articles/java_gc.html
+
+http://www.infoq.com/cn/articles/cf-java-garbage-references
+
+http://www.jianshu.com/p/778dd3848196
+
+http://www.jianshu.com/p/b0f5d21fe031
+
+https://www.ibm.com/developerworks/cn/java/j-lo-JVMGarbageCollection/
+
+http://www.infoq.com/cn/articles/cf-java-garbage-references
+
+http://jayfeng.com/2016/03/11/理解Java垃圾回收机制/
+
+http://www.cnblogs.com/laoyangHJ/articles/java_gc.html

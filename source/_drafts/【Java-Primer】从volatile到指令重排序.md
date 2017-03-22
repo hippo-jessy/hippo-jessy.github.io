@@ -14,9 +14,21 @@ description:
 
 
 
-
+## volatile为什么可以保证一次性安全发布（one-time safe publication）？
 
 https://www.ibm.com/developerworks/cn/java/j-jtp06197.html
+
+https://www.ibm.com/developerworks/java/library/j-jtp06197/index.html
+
+
+
+## volatile为什么可以保证DCL的安全发布？
+
+http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization?utm_source=infoq&utm_campaign=user_page&utm_medium=link
+
+
+
+
 
 
 
