@@ -260,6 +260,8 @@ public class Singleton{
 
 线程X先执行getInstance()，此时instance还是null，刚赋值给tmp后，切换到线程Y执行getInstance方法，执行完后再切回线程X。但是此时instance已经不再是null了，
 
+
+
  尽管这里说有两种原因造成DCL线程不安全，但是究其根本，这两种原因都是由于指令重排序导致的问题。DCL专注于解决共享对象的竞态条件，保证了Check-Then-Act对于其它线程“写”共享对象的原子性，却忽略了     “读”原子性
 
 指令重排序带来的。第一种由于  <font color="blue" >instance = new Singleton();</font>  内部指令重排序造成对象不安全发布，第二种由于互不依赖的load指令重排序造成返回失效值。
