@@ -14,6 +14,14 @@ description:
 
 
 
+
+
+
+
+
+
+
+
 ## volatile为什么可以保证一次性安全发布（one-time safe publication）？
 
 https://www.ibm.com/developerworks/cn/java/j-jtp06197.html

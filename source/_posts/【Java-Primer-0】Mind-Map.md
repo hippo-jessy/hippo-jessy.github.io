@@ -1,7 +1,7 @@
 ---
 title: 【Java Primer-0】Mind Map
 date: 2016-11-20 15:20:17
-categories: [Java, Java Primer]
+categories: [Java, Java Primer, Guideline]
 tags: [Java]
 description:
 ---
