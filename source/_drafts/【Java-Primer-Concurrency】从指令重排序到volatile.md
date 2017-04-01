@@ -51,3 +51,9 @@ http://ifeve.com/falsesharing/
 https://software.intel.com/zh-cn/blogs/2011/12/16/false-sharing-2
 
 http://ifeve.com/from-javaeye-false-sharing/
+
+
+
+## Final vs Volatile
+
+http://stackoverflow.com/questions/36524033/safe-publication-of-immutable-objects-in-java
