@@ -1,6 +1,6 @@
 ---
 title: Summary for Sorting
-date: 2016-12-20 22:59:05
+date: 2016-04-20 22:59:05
 categories: [Algorithm, Sort]
 tags: [Algorithm, Java]
 description:
@@ -40,6 +40,9 @@ description:
 9. **其它常见排序** 
    - 桶排序（Bucket Sort）
    - 计数排序（Counting Sort）
+   - 混合排序（Hybrid Sort）
+     - 内省排序（IntroSort）
+     - Timsort
 
 
 各种排序的性能对比如下表所示：
@@ -49,7 +52,7 @@ https://www.toptal.com/developers/sorting-algorithms
 
 为什么要研究这么多的排序算法？为什么不使用一种算法一劳永逸？
 
-各个算法有自己擅长的领域： 针对不同输入数据的特征地方，表现各有利弊
+各个算法有自己擅长的领域： 针对不同输入数据集的特征，表现各有利弊
 
 
 
@@ -518,6 +521,12 @@ Java中默认的排序算法用到了快速排序，并且采用了双枢纽快�
 
 
 
+
+
+
+
+
+
 ## Insertion Sort
 
 ​	插入排序， 
@@ -575,6 +584,12 @@ Java中默认的排序算法用到了快速排序，并且采用了双枢纽快�
 ### Counting Sort
 
 https://leetcode.com/problems/find-all-duplicates-in-an-array/?tab=Description
+
+
+
+### Hybrid Sort
+
+这里主要提及两种常见的混合算法：一种是IntroSort，另一种是TimSort。混合算法会改进前文中讨论的基本排序算法，并一般会根据待排序数据的特征来综合多种基本排序算法，以期达到更好的排序效率。由于混合排序一般比较复杂，这里不会展开分析。考虑到JDK的实现中会涉及到这两个算法，后续会在专门分析JDK排序算法的时候展开分析这两种算法。
 
 ## Optimisation Strategy
 

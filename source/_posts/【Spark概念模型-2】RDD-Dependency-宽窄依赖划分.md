@@ -1,6 +1,6 @@
 ---
 title: 【Spark概念模型-2】RDD & Dependency & 宽窄依赖划分
-date: 2016-08-15 12:45:41
+date: 2016-05-15 12:45:41
 categories: [Spark, Spark概念模型]
 tags: [Spark]
 description:
