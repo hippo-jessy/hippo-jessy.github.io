@@ -55,7 +55,7 @@ iThoughtsX原格式文件地址:
 
 #### 类加载器
 
-![](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading_1%20.pdf)
+![](http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading_1%20.pdf?%20imageView2/3/w/400/h/400/q/75)
 
 iThoughtsX原格式文件地址:
 

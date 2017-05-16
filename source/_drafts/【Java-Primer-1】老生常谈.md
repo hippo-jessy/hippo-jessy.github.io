@@ -12,6 +12,14 @@ description:
 
 ## Java语言
 
+### 1. Object类的hashcode()和equals()方法的关系和作用
+
+以前对这个问题没有太在意，可能过多关注于hashcode()本身的实现，以及equals()在平时代码中的应用而忽略了二者之间的关系。直到前段时间的面试被问到这个问题，发现自己还是too naive。这不仅是一道面试高频题，而且还暴露了平时编码过程潜在的陋习，下面展开讨论下。
+
+
+
+http://blog.csdn.net/lijiecao0226/article/details/24609559
+
 
 
 ## Java线程安全
@@ -31,3 +39,10 @@ Vector和ArrayList有什么区别？
 
 
 ### 3. Hashtable vs HashMap   
+
+### 
+
+
+
+
+

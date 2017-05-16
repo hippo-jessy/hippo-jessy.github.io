@@ -1,18 +1,26 @@
 ---
 title: Summary for Sorting
-date: 2016-04-20 22:59:05
-categories: [Algorithm, Sort]
-tags: [Algorithm, Java]
+categories:
+  - Algorithm
+  - Sort
+tags:
+  - Algorithm
+  - Java
+date: 2016-03-20 22:59:05
 description:
 ---
 
+
+
 ​	这篇笔记集中主要对常见的八大排序算法的原理，复杂度以及稳定性比较。后续会在另开一篇博文专门分析java中的排序算法的实现。本篇博客的所有代码都可以在这个路径找到：[https://github.com/hippo-jessy/algorithm/tree/master/src/sorting](https://github.com/hippo-jessy/algorithm/tree/master/src/sorting)
+
+![](./a.png)
 
 ## Overall
 
 ​	排序是一个大话题，下面这张图可以给我们一个较为宏观的概念：
 
-![sort](http://ojnnon64z.bkt.clouddn.com/Java/Java%20Basics/Summary%20for%20Sorting/sort.png)
+![sort](http://ojnnon64z.bkt.clouddn.com/Summary%20for%20Sorting.png?%20v=20170412)
 
 <!--more-->
 
@@ -50,9 +58,7 @@ https://www.toptal.com/developers/sorting-algorithms
 
 
 
-为什么要研究这么多的排序算法？为什么不使用一种算法一劳永逸？
 
-各个算法有自己擅长的领域： 针对不同输入数据集的特征，表现各有利弊
 
 
 
@@ -620,6 +626,16 @@ https://leetcode.com/problems/find-all-duplicates-in-an-array/?tab=Description
 |      |      |      |
 |      |      |      |
 |      |      |      |
+
+
+
+## Q&A
+
+1. 为什么要研究这么多的排序算法？为什么不使用一种算法一劳永逸？
+
+各个算法有自己擅长的领域： 针对不同输入数据集的特征，表现各有利弊
+
+2. 线性排序可以打破O(nlgn)
 
 
 
