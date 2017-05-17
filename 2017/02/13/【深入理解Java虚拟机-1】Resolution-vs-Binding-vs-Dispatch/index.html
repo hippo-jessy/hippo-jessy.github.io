@@ -1,0 +1,1275 @@
+<!doctype html>
+
+
+
+  
+
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Neucha:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Java,JVM," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Hippo-Jessy" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差： Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch 其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以">
+<meta name="keywords" content="Java,JVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch">
+<meta property="og:url" content="http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/index.html">
+<meta property="og:site_name" content="Hippo-Jessy">
+<meta property="og:description" content="最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差： Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch 其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以">
+<meta property="og:updated_time" content="2017-05-17T05:07:20.266Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch">
+<meta name="twitter:description" content="最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差： Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch 其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/"/>
+
+
+
+
+
+  <title> 【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch | Hippo-Jessy </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90324670-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?12ae893fb1833bb5521cb0395c407976";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta custom-logo">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hippo-Jessy</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">A clumsy bird</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Hippo-Jessy">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/Avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hippo-Jessy">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Hippo-Jessy" src="/images/Avatar.jpg">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-13T23:18:13+00:00">
+                2017-02-13
+              </time>
+            
+
+            
+
+            
+         </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JVM/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JVM/深入理解Java虚拟机/" itemprop="url" rel="index">
+                    <span itemprop="name">深入理解Java虚拟机</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/" class="leancloud_visitors" data-flag-title="【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+            
+
+          
+
+          
+ 
+         
+  <span class="post-letters-count">
+    &nbsp; | &nbsp;
+    <span>5,190 words</span>
+  </span>
+
+
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差：</p>
+<p>Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch</p>
+<p>其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以及Java的角度来分析上述几种概念的差别，并对“JVM方法调用“这一话题展开一些延伸思考和讨论。</p>
+<a id="more"></a>
+<p>在开始讨论之前，需要明确下面几个概念：</p>
+<p><strong>1. Static Type(Apparent Type) 静态类型（外观类型）， Actual Type（实际类型）</strong></p>
+<p>二者的区别用一个例子就能解释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Person sample = <span class="keyword">new</span> Man();</div></pre></td></tr></table></figure>
+<p>这里，sample变量的静态类型（编译时类型）是Person， 实际类型（运行时类型）是Man</p>
+<p><strong>2. 方法的接收者(Receiver)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Person man = <span class="keyword">new</span> Man();</div><div class="line">man.speak();</div></pre></td></tr></table></figure>
+<p>上例中，对象man就是speak()方法的所有者，也是speak()方法的接收者</p>
+<p><strong>3. 属性的所有者</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//		class Person&#123;</span></div><div class="line"><span class="comment">//  		String name = "unknown";</span></div><div class="line"><span class="comment">//		&#125;</span></div><div class="line"></div><div class="line">Person man = <span class="keyword">new</span> Man();</div><div class="line">System.out.println(man.name)</div></pre></td></tr></table></figure>
+<p>上例中, 对象man是属性name的所有者</p>
+<p><strong>4. 宗量</strong></p>
+<p>方法的接收者和方法的参数统称宗量，主要在单分派和多分派中用到这个概念，单分派是仅根据一种宗量（比如方法的接收者）对方法进行选择，多分派是根据多种宗量对方法进行选择。</p>
+<p><strong>5. Java中的 虚方法 vs 非虚方法</strong></p>
+<p>非虚方法主要包括invokestatic和invokespecial指令调用的方法以及final方法，即类方法，私有方法，构造器，final方法等。个人将其理解为无法被重写的方法集合。</p>
+<p>虚方法主要包括invokevirtual指令调用的方法（除了final方法），即不用final修饰的实例方法。</p>
+<p>下面开始正式讨论：</p>
+<h2 id="resolution">Resolution</h2>
+<p>Resolution, 解析是指<strong>将符号引用替换为直接引用的过程</strong>，JVM Specification并未规定其发生时间，只是规定在下面十六条指令执行前必须完成这些指令涉及的符号引用的解析:</p>
+<p>new, getstatic, putstatic, invokestatic, getfield, putfield, invokespecial, invokevirtual, invokeinterface, invokedynamic, anewarray, multianewarray, ldc, ldc_w, checkcast, instanceof。</p>
+<p>一般来说，解析可以发生在两个时间段：类加载时期和符号引用将被使用时。其中，invokedynamic必须等到指令执行时才能进行解析动作，其它指令都可以随意选择两个时间段中的一个（根据虚拟机的具体实现而定）。通常，非虚方法的解析都在类加载时期完成了。</p>
+<h2 id="binding">Binding</h2>
+<p>绑定是针对<strong>类型</strong>而言的，指的是类型确定的过程，<strong>通常发生在访问对象成员或者方法调用的过程中</strong>。当我们谈论方法或属性的访问时动态绑定还是静态绑定时，实际上指的是方法的<strong>接收者</strong>和属性的<strong>所有者</strong>的<strong>类型确定</strong>（determine by atual type or determine by static type）。</p>
+<p>根据类型确定发生在运行期还是编译期以及依据实际类型还是静态类型，可以将Binding分为Dynamic Binding和Static Binding两类。下面这个经典的例子反映了二者的区别。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="keyword">int</span> age = <span class="number">30</span>;</div><div class="line">  <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> age;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Man</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="keyword">int</span> age = <span class="number">40</span>;</div><div class="line">  <span class="keyword">int</span> height = <span class="number">160</span>;</div><div class="line">  <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> age;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Person a = <span class="keyword">new</span> Man();</div><div class="line">    <span class="comment">//	a.age内部主要通过如下字节码实现：</span></div><div class="line">    <span class="comment">//	getfield      #5                  // Field test/Person.age:I</span></div><div class="line">    System.out.println(a.age);</div><div class="line">    <span class="comment">//	a.getAge()内部主要通过如下字节码实现：</span></div><div class="line">    <span class="comment">//	invokevirtual #7                  // Method test/Person.getAge:()I</span></div><div class="line">    System.out.println(a.getAge());</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出的结果如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">30</span></div><div class="line"><span class="number">40</span></div></pre></td></tr></table></figure>
+<p>这个例子实际上涉及了很多本篇博客要讨论的概念：静态绑定，动态绑定，属性隐藏，方法重写，动态分派，单分派等等，这里主要从静态绑定和动态绑定的角度进行分析。</p>
+<h3 id="static-binding">Static Binding</h3>
+<p>类型在编译期就已经可以确定，并且该类型确定在运行期保持不变，即<strong>最终</strong>通过静态类型确定该变量类型。Java中，在Java中，静态绑定通常用于属性所有者的类型绑定，非虚方法（类方法，私有方法，构造器方法，final方法）接收者的类型绑定，以及方法参数的类型绑定。</p>
+<p><strong>上例中，age属性是对象属性，age属性的所有者（对象a）在此次访问中是静态绑定</strong>，因此这里对象a的类型在编译期被确定为a的静态类型Person，并且该类型确定后在运行期执行getfield指令时也不会发生改变，最后&quot;a.age&quot;调用的是a的静态类型Person的age属性值。这里也涉及到了属性隐藏的问题：父类和子类有同名域时，域的访问是通过域的所有者的静态类型决定的。比如上面例子中如果想访问子类Man中的age，则必须将对象a强制转型为Man，或者在当时创建之初就声明为Man类型而非Person类型。</p>
+<p>通过静态绑定来实现访问对象属性所有者类型绑定的<strong>好处</strong>在于：编译期就可以确定最终类型，避免了动态查找，高效快速，但是是以牺牲一部分灵活性为代价的。</p>
+<h3 id="dynamic-binding">Dynamic Binding</h3>
+<p>类型在运行时才能最终确定，通过<strong>最终</strong>实际类型（运行时类型）来确定变量类型。Java中，动态绑定通常用于虚方法（如非私有的实例方法等）接收者的类型绑定。</p>
+<p>某些动态类型语言将动态绑定作为默认的内部实现。Java作为一种静态类型语言，采取了一些其他的方法来实现动态绑定（比如invokevirtual指令动态识别对象的实际类型）。</p>
+<p><strong>上面例子中，getAge()属于虚方法， getAge()方法的接收者（对象a）在此次访问中是动态绑定</strong>，因此这里对象a的类型尽管在编译期被标记为Person，最后在运行期会被invokevirtual指令重新确定为a的实际类型Man，并在Man中查找能够匹配符号引用中方法名和描述符的方法，因此&quot;a.getAge()&quot;调用的是a的实际类型Man的getAge方法。</p>
+<h2 id="dispatch">Dispatch</h2>
+<p>分派是针对<strong>方法</strong>而言的，指的是方法确定的过程，<strong>通常发生在方法调用的过程中</strong>。分派根据方法选择的发生时机可以分为静态分派和动态分派，其中对于动态分派，根据宗量种数又可以分为单分派和多分派。</p>
+<p>我更倾向于将分派理解为是<strong>方法选择</strong>的过程而非方法确定，“确定”这个词有“一劳永逸”的赶脚，让人进入一种误区：一次分派就能最终确定执行哪个方法。但是实际上从方法代码到JVM最终确定执行哪个方法的过程中，中间可能经过多次分派，比如某些重载的实例方法，在编译期进行一次方法选择（静态分派），在运行期可能还会进行一次方法选择（动态分派）。</p>
+<h3 id="static-dispatch">Static Dispatch</h3>
+<p>静态分派指的是在编译期间进行的方法选择，通常以方法名称，方法接收者和方法参数的静态类型来作为方法选择的依据。这些可以静态分派的方法一般都具有“签名唯一性”的特点（签名只考虑参数的静态类型而不管参数的实际类型），即不会出现相同签名的方法，因此可以在编译期就实现方法确定。Java中的非虚方法（主要包括静态方法，私有方法，final方法等，这些方法一般不可重写，故而不会有相同签名的情况出现）通常仅需要静态分派就可以实现方法的最终确定，更特别一点的例子是静态方法的隐藏，也是利用了静态分派，后面会专门讲解。虚方法的重载在编译时也用到了静态分派（尽管虚方法的调用在运行时还会涉及动态分派）。</p>
+<h4 id="关于-深入理解java虚拟机-中8-3-1解析部分的一些想法-resolution-vs-dispatch">关于《深入理解Java虚拟机》中8.3.1解析部分的一些想法（Resolution vs Dispatch）</h4>
+<p>《深入理解Java虚拟机》书中在方法调用8.3.1对静态分派以及解析两个概念的解释有些混乱，参考了一些资料之后，这里提出一些更为清晰的分析。</p>
+<p>首先区分Static Dispatch 与Resolution的区别(顺便附带Dynamic Dispatch)：</p>
+<p>个人理解的是resolution是符号引用转化为直接引用的过程，发生在类加载期或者运行期，而dispatch是方法确定的过程，static dispatch发生在编译期。一个方法从最初的代码调用到最后的直接引用（或者说入口地址），实际上先要经过dispatch后要经过resolution。也就是说，对于非虚方法的调用过程，方法签名唯一，在编译期就可以确定，使用static dispatch就可以实现方法确定。static dispatch 就是产生符号引用的过程，并且该符号引用在类加载时期转化为该符号引用的直接引用(此过程为resolution（非虚方法的解析通常在类加载时期完成）。而对于虚方法的调用过程，编译期产生的符号引用无法直接用于确定最终调用的方法（方法的最终确定无法在编译期完成，但是在编译期间也会进行一次方法选择——静态分派，比如虚方法重载就是利用此原理）,使用dynamic dispatch来实现最终的方法确定。dynamic dispatch则会在运行期根据方法接收者的实际类型，去实际类型的虚方法表上找与符号引用相同方法签名的方法，找到后如果该方法已被解析，则返回该方法的直接引用；否则，则此时执行resolution然后返回直接引用。</p>
+<ul>
+<li>非虚方法 —&gt; 静态分派 —&gt; resolution发生在类加载时期</li>
+<li>虚方法 —&gt;静态分派—&gt; 动态分派 —&gt; resolution发生在类加载时期或者run-time（动态连接）</li>
+</ul>
+<p>而《深入理解Java虚拟机》中有下面这段话：</p>
+<blockquote>
+<p>调用目标在代码写好、编译器进行编译时就必须确定下来。这类方法的调用称为解析（Resolution）。</p>
+</blockquote>
+<p>这里将”解析“换做“静态分派”似乎更加合适。而且书中在8.3.1的“解析”这一部分中的讲解似乎容易让人混淆解析和静态分派的概念。</p>
+<h3 id="dynamic-dispatch">Dynamic Dispatch</h3>
+<p>动态分派是指方法的确定在run-time才能最终完成。使用动态分派来实现方法确定的方法一般在编译期间都是一些“不明确”的方法（比如一些重写方法，拥有相同的方法签名并且方法接收者的静态类型可能也相同），因此只能在运行时期根据方法接收者和方法参数的实际类型最终实现方法确定。Java中的虚方法（主要指实例方法） 通常需要在运行期采用动态分派来实现方法确定（利用invokevirtual指令获取方法接收者的实际类型，后文会有具体例子分析）。</p>
+<h4 id="single-dispatch-multiple-dispatch">Single Dispatch / Multiple Dispatch</h4>
+<p>单分派和多分派是根据分派时使用的原理来分类的，只根据一种宗量（宗量的概念请见文章开头）进行方法选择是单分派，根据多种宗量进行方法选择是多分派。</p>
+<p><strong>单分派(Single [dynamic] Dispatch)</strong>：只根据方法接收者的实际类型来实现方法的确定（Java采用此种分派方法）</p>
+<p><strong>多分派(Multiple [dynamic] Dispatch)</strong>：根据方法的接收者类型以及方法参数的实际类型来实现方法的确定</p>
+<p>单分派多分派的概念区分一般只存在于动态分派当中。由于单分派多分派需要考虑实际类型，而对于静态分派只会根据静态类型来分派，因此没有所谓的静态单分派静态多分派的概念。（这种理解与《深入理解Java虚拟机》中的解释有所不同，个人比较倾向于单分派和多分派的分类只适用于动态分派）</p>
+<h3 id="如何理解java的-静态多分派-动态单分派">如何理解Java的“静态多分派，动态单分派”</h3>
+<p>这种说法是不准确的。Java确实是动态单分派，但是对于静态分派而言其实没有所谓的单分派多分派的概念。但是我们可以这样来理解所谓的”静态多分派“概念： 由于java的静态分派需要同时考虑方法接收者和方法参数的静态类型，某种层度上而言是考虑了两种宗量，尽管没有涉及任何实际类型，依然可以从行为上勉强理解为”多分派“。</p>
+<p>这里通过一个例子来理解Java中的分派。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Food</span></span>&#123;&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Meat</span> <span class="keyword">extends</span> <span class="title">Food</span></span>&#123;&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Food food)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A person buy food"</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Meat meat)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A person buy meat"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Man</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Food food)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A man buy food"</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Meat meat)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A man buy meat"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Person a = <span class="keyword">new</span> Man();</div><div class="line">    Food b = <span class="keyword">new</span> Meat();</div><div class="line">    a.buy(b);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出的结果为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A man buy food</div></pre></td></tr></table></figure>
+<p>这里涉及到了java里面的重载和重写。利用上文中提到的各种概念来对<code>a.buy(b)</code>方法调用过程进行分析：</p>
+<p>首先在编译期间进行了静态分派，利用方法名，方法接收者和方法参数的静态类型进行方法选择，于是方法的符号引用确定为<code>Person.buy:(Ltest/Food;)V</code>，这里明确可以看到此时经过静态分派对重载方法进行选择后确定的方法为Person类的buy(Food food)方法。</p>
+<p>但是对于虚方法的调用会在运行阶段利用动态分派再进行一次方法选择。如果此时采取动态单分派，则会根据方法接收者的实际类型再进行一次方法选择。由于对象a的实际类型是Man，因此最后确定调用的方法为Man类的buy(Food food)方法，输出结果将会是<code>A man buy food</code>。如果此时采取动态多分派，则会根据方法接收者以及方法参数的实际类型再进行一次方法选择。由于对象a的实际类型是Man，参数b的实际类型是Meat，因此最后确定调用的方法为Man类的buy(Meat meat)方法，输出结果将会是<code>A man buy meat</code>。</p>
+<p>显然，我们看到最后程序输出结果为<code>A man buy food</code>，也证明了Java采用了动态单分派。</p>
+<p>最后再从字节码的层面啰嗦一句，这里Java的动态分派是依靠invokevirtual指令的多态查找完成的。<code>a.buy(b)</code>方法调用对应的核心字节码为<code>invokevirtual #6 // Method test/Person.buy:(Ltest/Food;)V</code>，invokevirtual指令会首先找到操作数栈的第一个元素指向的对象（此例中为对象a）的实际类型（动态绑定方法接收者类型），并从实际类型中查找与指令参数中符号变量描述的方法签名（此例中为<code>buy:(Ltest/Food;)V</code>）相同的方法，并返回该方法的直接引用。</p>
+<h2 id="resolution-vs-binding-vs-dispatch">Resolution vs Binding vs Dispatch</h2>
+<p>Resolution是指将符号引用转化为直接引用的过程，通常发生在类加载时期和运行期（运行期发生的resolution又被称为动态连接）。</p>
+<p>这里从一般意义上(不限于Java)来对Binding和Dispatch来做一个区分：二者主要的区别在于作用的对象不同。</p>
+<p>Binding是针对类型而言，指的是类型确定的过程，通常发生在对象属性的访问或方法调用时，也就是说Binding是属性的所有者以及方法的接收者的类型确定。</p>
+<p>Dispatch是针对方法而言的，通常发生在方法调用时，指的是方法确定的过程。然而方法的确定也依赖于方法接收者类型的确定，这也是导致Binding和dispatch容易概念混淆的原因之一。举个例子来说，由于虚方法通过动态分派实现方法的最终选择，动态分派需要借助于方法接收者的<strong>实际类型</strong>，其实也就是意味着虚方法的接收者的类型确定是通过动态绑定实现的。这也是动态分派和动态绑定的关系所在：方法的确定通过动态分派实现，意味着方法接收者类型的确定通过动态绑定实现。前文已对Binding和Dispatch展开讨论，这里不再赘述。</p>
+<p>网上有很多解释说”绑定指的是把一个方法的调用与方法所在的类(方法主体)关联起来“，个人觉得是不准确的，这种说法一定程度上将binding和dispatch的概念混淆在一起。这种说法本意是指”方法绑定”而非一般意义上的绑定（类型绑定）。但是目前看来，在Java中，大家还是比较倾向于将绑定和分派当做同义词来使用（方法绑定），都表示方法与方法接收者关联的过程。这些概念性的问题没必要细纠，弄明白原理就好。</p>
+<h2 id="overloading-overriding-hiding">Overloading / Overriding / Hiding</h2>
+<p>下面通过Java中的重载，重写，隐藏（属性隐藏和方法隐藏）来综合理解上文中提到的多种概念。</p>
+<h3 id="overloading">Overloading</h3>
+<p>非虚方法的重载是通过静态绑定以及静态多分派实现的。</p>
+<p>虚方法的重载是通过动态绑定以及静态多分派和动态单分派实现的。</p>
+<h3 id="overriding">Overriding</h3>
+<p>重写是实现多态的关键之一（多态三要素：继承，重写，父类引用指向子类对象），重写是通过 动态绑定以及动态单分派实现的。</p>
+<p>由于重载和重写在上文中已经举过例子分析方法调用时的分派问题，这里不再赘述。</p>
+<h3 id="hiding">Hiding</h3>
+<p>覆盖和隐藏的共同特征表现在代码上：父类和子类定义了同名属性或同签名方法</p>
+<p>而覆盖和隐藏的区别表现在行为上：</p>
+<p><strong>覆盖（重写）</strong>：方法或属性的所有者实际类型和静态类型不相符时（静态类型为父类，实际类型为子类），最后实际被访问的是实际类型的方法或属性。</p>
+<p><strong>隐藏</strong>：方法或属性的所有者实际类型和静态类型不相符时（静态类型为父类，实际类型为子类），最后实际被访问的是静态类型的方法或属性。（静态方法，类属性或实例属性都只能被隐藏而无法覆盖）</p>
+<p>造成二区别的原因在于是否会进行动态类型识别，这些都与属性所有者以及方法接收者的类型确定方式有关（Binding）。</p>
+<h4 id="field-hiding">Field Hiding</h4>
+<p>前文讨论Binding时介绍过：属性所有者的类型确定是通过静态绑定实现的，意味着属性所有者不会进行动态类型识别。前文举过例子，不再详述。</p>
+<h4 id="method-hiding">Method Hiding</h4>
+<p>实例方法可以被重写，而静态方法不能被重写（覆盖），只能被隐藏（Method Hiding）。</p>
+<p>本质原因在于实例方法接收者的类型确定是通过动态绑定，实例方法的最终确定是通过动态分派，意味着实例方法的接收者类型由实际类型决定，最终访问的是实际类型的方法。</p>
+<p>而静态方法接收者的类型确定是通过静态绑定，静态方法的最终确定是通过静态分派，意味着静态方法的接收者类型仅通过静态类型决定，不会在运行时识别接收者的实际类型，最终访问的也就是静态类型的方法。</p>
+<p>由于本人对编译原理以及JVM的内部原理了解并不深入，如有纰漏，欢迎斧正~~</p>
+<h2 id="references">References</h2>
+<p><a href="https://book.douban.com/subject/6522893/" target="_blank" rel="external">《深入理解Java虚拟机》第二版</a></p>
+<p><a href="http://softwareengineering.stackexchange.com/questions/200115/what-is-early-and-late-binding/200123#200123" target="_blank" rel="external">http://softwareengineering.stackexchange.com/questions/200115/what-is-early-and-late-binding/200123#200123</a></p>
+<p><a href="https://www.zhihu.com/question/28462483" target="_blank" rel="external">https://www.zhihu.com/question/28462483</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+  
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
+          
+        </div>
+      
+
+
+<div class="page-footer">
+  
+      <div id="eof" class="print-invisible">
+        <hr class="eof">
+      </div>
+
+      <div class="copyright" style="clear:both;">
+         <p><span>文章作者:</span> &nbsp;<a href="/" title="访问 Hippo-Jessy 的个人博客">Hippo-Jessy</a></p>
+         <p><span>原始链接:</span>  &nbsp;<a href="/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/" title="【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch">http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</a></p>
+         <p><span>许可协议:</span>  &nbsp;<i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
+         <p><span>转载请保留以上信息。</span></p>
+      </div>
+    
+  </div>
+
+
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>🐶 来, 干了这杯狗粮 🐶</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechat-reward-img.jpg" alt="Hippo-Jessy WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay-reward-img.jpg" alt="Hippo-Jessy Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+         
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/03/【深入理解Java虚拟机-0】思维导图汇总/" rel="next" title="【深入理解Java虚拟机-0】思维导图汇总">
+                <i class="fa fa-chevron-left"></i> 【深入理解Java虚拟机-0】思维导图汇总
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/02/16/【Design-Pattern-0】Six-Principles-for-Software-Design/" rel="prev" title="【Design Pattern-0】Six Principles for Software Design">
+                【Design Pattern-0】Six Principles for Software Design <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/Avatar.jpg"
+               alt="Hippo-Jessy" />
+          <p class="site-author-name" itemprop="name">Hippo-Jessy</p>
+          <p class="site-description motion-element" itemprop="description">A Clumsy Bird</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">23</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/hippo-jessy" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/hippo-jessy" target="_blank" title="Zhihu">
+                  
+                    <i class="fa fa-fw fa-battery-3"></i>
+                  
+                  Zhihu
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/hippojessy" target="_blank" title="Weibo">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  Weibo
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友链出租
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://hippo-jessy.com/" title="来啊" target="_blank" rel="external nofollow">来啊</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://hippo-jessy.com/" title="快活啊" target="_blank" rel="external nofollow">快活啊</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://hippo-jessy.com/" title="反正有" target="_blank" rel="external nofollow">反正有</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://hippo-jessy.com/" title="大把友链" target="_blank" rel="external nofollow">大把友链</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://ehlxr.me/" title="小桥流水人家" target="_blank" rel="external nofollow">小桥流水人家</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.ezlippi.com/" title="EZLippi" target="_blank" rel="external nofollow">EZLippi</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#resolution"><span class="nav-number">1.</span> <span class="nav-text">Resolution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#binding"><span class="nav-number">2.</span> <span class="nav-text">Binding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#static-binding"><span class="nav-number">2.1.</span> <span class="nav-text">Static Binding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dynamic-binding"><span class="nav-number">2.2.</span> <span class="nav-text">Dynamic Binding</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dispatch"><span class="nav-number">3.</span> <span class="nav-text">Dispatch</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#static-dispatch"><span class="nav-number">3.1.</span> <span class="nav-text">Static Dispatch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#关于-深入理解java虚拟机-中8-3-1解析部分的一些想法-resolution-vs-dispatch"><span class="nav-number">3.1.1.</span> <span class="nav-text">关于《深入理解Java虚拟机》中8.3.1解析部分的一些想法（Resolution vs Dispatch）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dynamic-dispatch"><span class="nav-number">3.2.</span> <span class="nav-text">Dynamic Dispatch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#single-dispatch-multiple-dispatch"><span class="nav-number">3.2.1.</span> <span class="nav-text">Single Dispatch / Multiple Dispatch</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何理解java的-静态多分派-动态单分派"><span class="nav-number">3.3.</span> <span class="nav-text">如何理解Java的“静态多分派，动态单分派”</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#resolution-vs-binding-vs-dispatch"><span class="nav-number">4.</span> <span class="nav-text">Resolution vs Binding vs Dispatch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#overloading-overriding-hiding"><span class="nav-number">5.</span> <span class="nav-text">Overloading / Overriding / Hiding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#overloading"><span class="nav-number">5.1.</span> <span class="nav-text">Overloading</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#overriding"><span class="nav-number">5.2.</span> <span class="nav-text">Overriding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hiding"><span class="nav-number">5.3.</span> <span class="nav-text">Hiding</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#field-hiding"><span class="nav-number">5.3.1.</span> <span class="nav-text">Field Hiding</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#method-hiding"><span class="nav-number">5.3.2.</span> <span class="nav-text">Method Hiding</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#references"><span class="nav-number">6.</span> <span class="nav-text">References</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hippo-Jessy</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io" rel="external nofollow">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">30.5k  words in total</span>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+    
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "64e22c40dd504da5b065c0b8b2a5d133",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("3Ea8NbznxaUxxfX8ADjTrwfD-gzGzoHsz", "57czdaAe1zkMJW9QAMdPKKvN");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  	<!------ add fork me on github --------->
+       <a href="https://github.com/hippo-jessy"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+</body>
+</html>

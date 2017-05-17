@@ -1,0 +1,1067 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hippo-Jessy</title>
+  <subtitle>A clumsy bird</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://hippo-jessy.com/"/>
+  <updated>2017-05-17T05:07:20.266Z</updated>
+  <id>http://hippo-jessy.com/</id>
+  
+  <author>
+    <name>Hippo-Jessy</name>
+    <email>hippo.jessy@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Resolutions for the Later Half of 2017</title>
+    <link href="http://hippo-jessy.com/2017/05/16/Resolutions-for-the-Later-Half-of-2017/"/>
+    <id>http://hippo-jessy.com/2017/05/16/Resolutions-for-the-Later-Half-of-2017/</id>
+    <published>2017-05-16T15:53:12.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>计划做过无数，每次计划都各有各的亮点，然而却通常注定有一个相似的失败结局。何谓失败？这里并不要求百分之百完成计划，完成80%左右就基本可以算是挑战成功。然而我却很少有完成度高于60%的计划。</p>
+<p>原因呢？很简单，好大喜功，眼高手低。总想着把所有事情都做好，往往最后一事无成。这几年逐渐清楚了自己最核心的兴趣和目标，并且明确了自己的性格和能力的优劣势所在，希望以后能将有限的精力集中起来，结合自身实际情况，追求局部最优解。</p>
+<p>希望这次的半年计划能基本做到脚踏实地，算是一个新的起点吧。（以下计划按优先级排序）</p>
+<a id="more"></a>
+<h4 id="1-调整思维模式">1. 调整思维模式</h4>
+<p>​	重点，慢慢来，主要是下面这几点：</p>
+<blockquote><font color="green" size="3px">1.1 专注于自身的局部最优解，与他人比较只是为了更客观地衡量自身水平以便查漏补缺，而不是为了竞争</font></blockquote> <br>
+<blockquote><font color="green" size="3px">1.2 抓住核心需求和主要矛盾，不要总想着事事尽善尽美，人的时间精力有限，过分陷于细节只会让自己迷失方向</font></blockquote> <br>
+<blockquote><font color="green" size="3px">1.3 明确主要矛盾之后，凡是对自己成长有利，对他人无害的事情放手去干，不要瞻前顾后，拒绝道德绑架</font></blockquote> <br>
+<blockquote><font color="green" size="3px">1.4 对自己有客观稳定的认识和评价，不因他人的批评或表扬产生过多的自我否定或自我膨胀。学着看到自己的进步，学着接受自己的不足，学着避免情绪内耗</font></blockquote> <br>
+<h4 id="2-开始适度运动">2. 开始适度运动</h4>
+<p>​	从坚持某一项运动开始，主要是思想上需要开始重视，一周至少保证一次较完整的运动（两小时）</p>
+<h4 id="3-技术上">3. 技术上</h4>
+<p>​	除了学习工作中必备的技能学习，业余时间重点花在以下几方面（注意优先级）</p>
+<blockquote><font color="green" size="3px">3.1 坚持写技术博客，每周一篇</font></blockquote> <br>
+<p>​	尽量在周五或周六完成，选择更有价值的话题，阐述记录最核心的内容，不要过分陷于细节</p>
+<blockquote><font color="green" size="3px">3.2 算法和计算机基础的学习</font></blockquote> <br>
+<p>​       算法分两个方面，一个是基础算法题训练，以LeetCode为主，尽量每天都练下手，注意分类总结，半年下来至少150道（精细分析和总结，思维训练为导向，非面试导向）。另一方面是其他高级算法的学习和运用，这一方面主要通过写博客来驱动</p>
+<p>​       计算机基础目前的学习重点在于网络和分布式这两块，网络这一部分主要靠看书（TCP/IP详解卷一）和写博客，分布式这一块尽量跟着6.824做lab（根据自己的实际情况调整进度，不强求跟完，但是至少跟一半）</p>
+<blockquote><font color="green" size="3px">3.3 Java语言高级特性以及JVM</font></blockquote> <br>
+<p>​	语言方面，重点在IO、多线程以及语言新特性</p>
+<p>​	JVM，重点主要在实践经验积累和总结，get your hands dirty</p>
+<blockquote><font color="green" size="3px">3.4 Linux</font></blockquote> <br>
+<p>​	Linux的内容比较琐碎，主要还是以动手实践为主，下半年最核心的计划是熟练shell编程</p>
+<h4 id="4-生活上">4. 生活上</h4>
+<blockquote><font color="green" size="3px">4.1 规律作息</font></blockquote> <br>
+<p>​	尽量1点之前睡，使用sleep cycle进行统计</p>
+<p>​	每晚睡前明确当日的收获，以及第二天的首要任务</p>
+<blockquote><font color="green" size="3px">4.2 琵琶</font></blockquote> <br>
+<p>​	重新上课（不强求，时间不够就自己练，兴趣驱动），以指法、古曲训练为主。半年目标：每月至少练一次，练熟《送我一枝玫瑰花》</p>
+<blockquote><font color="green" size="3px">4.5 英语口语</font></blockquote> <br>
+<p>​	每两周周末一次conversation exchange（难以达成的情况下，至少保证每月一次）</p>
+<p>下面总结成表格，以便年终的时候查看计划完成情况（按优先级排序）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Task List</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1. 专注于自身的局部最优解</td>
+</tr>
+<tr>
+<td style="text-align:center">2. 抓住核心需求和主要矛盾</td>
+</tr>
+<tr>
+<td style="text-align:center">3. 放手去干，不要瞻前顾后，拒绝道德绑架</td>
+</tr>
+<tr>
+<td style="text-align:center">4. 对自己有客观稳定的认识和评价</td>
+</tr>
+<tr>
+<td style="text-align:center">5. 坚持一项运动</td>
+</tr>
+<tr>
+<td style="text-align:center">6. 坚持写技术博客，每周一篇</td>
+</tr>
+<tr>
+<td style="text-align:center">7. 算法和计算机基础的学习</td>
+</tr>
+<tr>
+<td style="text-align:center">8. Java语言高级特性以及JVM</td>
+</tr>
+<tr>
+<td style="text-align:center">9. Linux</td>
+</tr>
+<tr>
+<td style="text-align:center">10. 规律作息</td>
+</tr>
+<tr>
+<td style="text-align:center">11. 练熟《送我一枝玫瑰花》，至少每月一次练习</td>
+</tr>
+<tr>
+<td style="text-align:center">12. conversation exchange，至少每月一次</td>
+</tr>
+</tbody>
+</table>
+<p>还是写了太多具象的目标，其实凡是“每X一次”这种计划就基本是作死。但是比起以前的各种宏伟壮观，每每想起都让我心潮澎湃的计划，这次的计划已经接地气很多了。慢慢来吧，年底再来打脸。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计划做过无数，每次计划都各有各的亮点，然而却通常注定有一个相似的失败结局。何谓失败？这里并不要求百分之百完成计划，完成80%左右就基本可以算是挑战成功。然而我却很少有完成度高于60%的计划。&lt;/p&gt;
+&lt;p&gt;原因呢？很简单，好大喜功，眼高手低。总想着把所有事情都做好，往往最后一事无成。这几年逐渐清楚了自己最核心的兴趣和目标，并且明确了自己的性格和能力的优劣势所在，希望以后能将有限的精力集中起来，结合自身实际情况，追求局部最优解。&lt;/p&gt;
+&lt;p&gt;希望这次的半年计划能基本做到脚踏实地，算是一个新的起点吧。（以下计划按优先级排序）&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="My Life" scheme="http://hippo-jessy.com/categories/My-Life/"/>
+    
+      <category term="Thinking and Summary" scheme="http://hippo-jessy.com/categories/My-Life/Thinking-and-Summary/"/>
+    
+    
+      <category term="Thinking" scheme="http://hippo-jessy.com/tags/Thinking/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Design Pattern-0】Six Principles for Software Design</title>
+    <link href="http://hippo-jessy.com/2017/02/16/%E3%80%90Design-Pattern-0%E3%80%91Six-Principles-for-Software-Design/"/>
+    <id>http://hippo-jessy.com/2017/02/16/【Design-Pattern-0】Six-Principles-for-Software-Design/</id>
+    <published>2017-02-16T13:02:04.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>设计模式重要性不言而喻，但是设计模式的学习只有结合具体项目实践才有意义。这里新开【Design Pattern】系列博文来总结设计模式相关的知识点，并尽量结合一些工程实践来帮助自己理解。</p>
+<p>学习设计模式，就不得不提到软件设计的六大原则。本文作为【Design Pattern】系列的第一篇博文，主要围绕这六大设计原则展开讨论：</p>
+<p>单一职责原则(SRP)，开闭原则(OCP)，里氏替换原则(LSP)， 依赖倒置原则(DIP)，接口隔离原则(ISP)， 迪米特法则(LoD)</p>
+<a id="more"></a>
+<h2 id="类之间的关系">类之间的关系</h2>
+<p>在介绍六大设计原则之前，先来回顾一下类之间常见的关系： <strong>依赖(Dependence)，关联(Association)，聚合(Aggregation)， 组合(Composition) ， 继承(Generalization)，实现(Implementation)</strong></p>
+<p>对于最后两种关系一般没有争议，继承和实现描述了类与类或类与接口之间的纵向关系，而前四种其实都是关联关系的一种，用以描述类与类之间或者类与接口之间的相互引用，是横向关系，耦合度（这里可以将耦合度简单理解为一个类发生变更时另一个类受影响的程度）的强弱依次递增：依赖 &lt; 关联 &lt;  聚合 &lt; 组合。这四种关系的确定是比较容易出现争议的，特别是后三种。</p>
+<p>下面主要分析下前四种关系的区别以及UML绘制：</p>
+<h3 id="依赖-dependence">依赖（dependence）</h3>
+<p>依赖关系是前四种关系中最容易辨别的关系，通常通过局部变量，方法形参，静态方法调用等方式实现类与类之间的关联。具体例子如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Gun</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">staticShoot</span><span class="params">()</span></span>&#123;</div><div class="line">	System.out.println(<span class="string">"static shooting"</span>);    </div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shoot</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"shooting"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Sniper</span></span>&#123;</div><div class="line">  <span class="comment">//通过局部变量实现依赖</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">tryGun1</span><span class="params">()</span></span>&#123;</div><div class="line">    Gun gun = <span class="keyword">new</span> Gun();</div><div class="line">    gun.shoot();</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//通过方法形参实现依赖</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">tryGun2</span><span class="params">(Gun gun)</span></span>&#123;</div><div class="line">    gun.shoot();</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//通过静态方法调用实现依赖</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">tryGun3</span><span class="params">()</span></span>&#123;</div><div class="line">    Gun.staticShoot();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>依赖关系在UML中采用虚线+箭头表示，上例的UML图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_00.png" alt=""></p>
+<h3 id="关联-association">关联（Association）</h3>
+<p>关联关系表示两个类处于平级关系的关联，比如你和你的同事，猫和狗，苹果和梨。产生关联关系又是仅仅是为了方便一个类使用另一个类的某些属性或方法。关联关系可以是单向的，也可以是双向的，通过成员变量来实现类与类之间的关联。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Man</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> Colleague colleague;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getInfo</span><span class="params">()</span></span>&#123;</div><div class="line">    colleague.getInfo();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Colleague</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">getInfo</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"look!!! lots of information"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>关联关系在UML中采用实线+箭头表示，上例的UML图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_01.png" alt=""></p>
+<h3 id="聚合-aggregation">聚合（Aggregation）</h3>
+<p>聚合关系表示两个类处于从属或包含关系的关联，比如你和你的电脑，门和它的锁，汽车和车轮，公司与员工等。这是一种强耦合关系，但是涉及到的两个对象不一定有相同的生命周期。通过成员变量来实现类与类之间的关联。但是成员变量的赋值一般通过setter方法来单独实现(并非严格要求如此)。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Man</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> Computer computer;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setComputer</span><span class="params">(Computer computer)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.computer = computer;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">startComputer</span><span class="params">()</span></span>&#123;</div><div class="line">    computer.start();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Computer</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"start the computer"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>聚合关系在UML中采用空心菱形+实线+箭头表示，上例的UML图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_02.png" alt=""></p>
+<h3 id="组合-composition">组合（Composition）</h3>
+<p>组合关系表示两个类处于包含关系的关系，这两个类相互依存，比如你和你的思想，书和它的内容等。这是一种更强的耦合关系，涉及到的两个类的对象有相同的生命周期。通过成员变量来实现类与类之间的关联。但是成员变量的赋值一般通过构造函数实现（体现出相同生命周期）。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Man</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> Mind mind;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Man</span><span class="params">(Mind mind)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.mind = mind;</div><div class="line">  &#125;</div><div class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">think</span><span class="params">()</span></span>&#123;</div><div class="line">   mind.think();</div><div class="line"> &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Mind</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">think</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"Mind is thinking"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>组合关系在UML中采用实心菱形+实线+箭头表示，上例的UML图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_03.png" alt=""></p>
+<p>关联关系，聚合关系，组合关系，三者通常都是通过成员变量来实现类与类之间的关联。因此有时很难仅仅通过代码就轻易区分这三种关系，通常我们需要结合一些上下文语义和契约来区分这三种关系。可以借用下面这句话来帮助理解： 关联关系表示使用或借用（uses a）另一个类，聚合关系拥有（has a）另一个类，组合关系拥有并且不可或缺（contains a）另一个类。</p>
+<p><strong>聚合关系和组合关系如何进行区分？</strong></p>
+<p>聚合关系的两个类对应的对象生命周期不一定一致，并且两者并不是相互依存的关系。比如你和你的电脑，你没了电脑依然可以存在，你的电脑换一个主人同样也可以存在。这种关系更像是两个独立个体通过某种契约绑定在一起，形成一种上下级或者整体和部分的关系；这种契约一旦打破，两个个体依然可以独立存在。比如说公司和应聘者A签了工作协议，两个不相关的个人现在变成了整体和部分的关系，一旦A选择辞职，则契约被打破，但公司和A依然可以单独工作。</p>
+<p>组合关系的两个类对应的对象有完全一致（表示部分的对象会随着表示整体的对象的消亡而消亡）。比如书烧了，它的内容也随之不见了，人不在了，人的思想也随之消亡了。这种关系是与生俱来的，一旦表示整体的对象消亡，则表示部分的对象也会消亡，不存在二者脱离关系独立存在的情况。</p>
+<h2 id="单一职责原则-single-responsibility-principle-srp">单一职责原则（Single Responsibility Principle, SRP）</h2>
+<blockquote><font color="green" size="3px"><big>A class should have only one reason to change</big></font></blockquote> <br>
+<p>该原则的核心是：只有一个理由可以导致类的更改。更通俗的说，就是让一个类最好只负责一个职责。如果让一个类承担两种或以上职责时，当需求改变时，很多原因都容易导致类的更改（比如第一个职责的需求发生改变，第二个职责的需求发生改变等等）。</p>
+<p>这里使用《Agile Software Development: Principles, Patterns, and Practices》以及《设计模式之禅》中用到的经典例子来对单一职责模式进行举例讲解。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">phone</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dial</span><span class="params">(String phoneNumber)</span></span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hangup</span><span class="params">()</span></span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">send</span><span class="params">(<span class="keyword">char</span> c)</span></span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">char</span> <span class="title">recv</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上面这个接口的设计违背了单一职责原则，将负责连接管理的职责以及数据通信的职责混在了同一个接口中。将上述两个职责拆分，重新设计成以下结构：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design.png" alt=""></p>
+<p>这样一来，虽然PhoneImplementation中依然包含了两种职责，但是在接口设计时严格实现了单一职责原则。并且在应用的其他部分可以直接调用职责对应的接口，无需考虑实现类的细节，从某种层度上来说，也实现了解耦。</p>
+<p>这里为什么不直接将单个职责设计成单个类呢？这样不就能严格遵守单一职责原则了吗？</p>
+<p>如果按照上面的说法设计，则会出现下面这样的结果：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_1.png?%20v=20170228" alt=""></p>
+<p>这样虽然保证了SRP，却明显增加了整个设计结构的复杂度。PhoneImplementation需要依赖两个类才能完成业务（强耦合）。</p>
+<p>单一职责原则看似容易理解，实则难以把握。有时过分追求单一职责原则可能增加程序设计的复杂度。通常情况会优先保证接口遵循单一职责原则，尽量让<strong>类和方法</strong>也遵循单一职责原则。</p>
+<h2 id="开闭原则-open-close-principle-ocp">开闭原则（Open Close Principle, OCP）</h2>
+<blockquote><font color="green" size="3px"><big>Software entities (classes, modules, functions, etc.) should be open for extension and closed for modification</big></font></blockquote> <br>
+<p>开闭原则核心在于：软件应该对扩展开放，对修改关闭。通俗来说，就是指应该尽量通过扩展软件实体来解决需求变化，而非通过修改代码来实现。</p>
+<p>开闭原则看似是一个比较“缥缈”的原则，它六个设计原则中最为宏观也最为模糊的一个。实际上我们可以将其它五条设计原则看做是我们在从无到有设计软件时应遵守的具体原则，而将OCP当做是软件设计完成后应对需求变化时应有的表现。如果该软件在原始设计时很好地遵守了其它五条设计原则，那么在应对需求变更时就很容易遵守OCP了。建议先看完下面其它原则之后再回到这一部分来看应该会有更好的理解。</p>
+<p>鉴于目前能力有限，在这里先挖个坑，以后在实践中有更深领悟的时候，我再来谈谈对开闭原则的理解。</p>
+<h2 id="里氏替换原则-liskov-substitution-principle-lsp">里氏替换原则（Liskov Substitution Principle, LSP）</h2>
+<blockquote><font color="green" size="3px"><big>Subtypes must be substitutable for their base types</big></font></blockquote> <br>
+<p>里氏替换原则的核心是：子类型<strong>必须能替换</strong>他们的父类型。刚看到这句定义时，我很自然地想到<strong>多态</strong>，多态的三大要素在于：继承，重写，父类引用指向子类对象。想到这里，理所当然的认为多态一定是满足LSP的：对于所有多态运用，子类由于继承了父类的所有方法属性，因此子类替换父类似乎是一件再正常不过的事情了。实际上这是对里氏替换原则的一种误解，“必须能替换”，指的不仅仅是代码上能替换（替换后编译不报错），更重要的是功能上能替换（替换后程序的运行逻辑和功能执行不会出现问题）。</p>
+<p>更通俗地说，LSP是指子类可以继承并拓展父类的功能（拓展功能，比如子类定义新的方法实现新功能），更改这些功能的实现细节（比如重写某些方法），但是子类不可以改变这些原有的功能（比如重写方法时不管父类被重写方法的原始功能契约，重写时修改方法的功能）。</p>
+<p>下面是<strong>违背</strong>LSP的一个经典例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Base</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printSelf</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"I'm base"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Derived</span> <span class="keyword">extends</span> <span class="title">Base</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printSelf</span><span class="params">()</span></span>&#123;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//客户端代码</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Base a = <span class="keyword">new</span> Derived();</div><div class="line">    a.printSelf();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是一个派生类退化函数的例子。派生类出于某种原因认为不再需要printSelf方法了，于是将该方法重写成了一个空方法。但是这样一来，子类重写的方法就打破了父类方法的契约（父类方法的预定功能是打印自身实际类名）。尽管这样重写对于派生类自身而言很合理，但是客户端代码一般不会知道也不在意这些继承实现细节，很多时候还是会利用父类暴露的契约来调用方法：比如调用a.printSelf时，客户端默认遵循父类功能契约，默认这个方法用来打印自身实际类名的。然而客户端并不知道子类Derived已经悄悄打破了这个契约，因此客户端本意是想实现打印类名的功能，却发现实际运行结果并没有达到预期功能。这种异常现象就是由于设计类时违背LSP造成的。</p>
+<p>可能这个例子还是有些抽象，下面再举个类似的更加具体化的例子（此例子来自《设计模式之禅》，进行了简化)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">AbstractGun</span></span>&#123;</div><div class="line">  <span class="comment">//功能契约: 此方法打印一句话来表示射击</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">shoot</span><span class="params">()</span></span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HandGun</span> <span class="keyword">extends</span> <span class="title">AbstractGun</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shoot</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"shooting with handgun !!!"</span>);</div><div class="line">  &#125;</div><div class="line">&#125; </div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rifle</span> <span class="keyword">extends</span> <span class="title">AbstractGun</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shoot</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"shooting with rifle !!!"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ToyGun</span> <span class="keyword">extends</span> <span class="title">AbstractGun</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="comment">//玩具枪没有必要再使用射击功能，直接重写为空方法</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shoot</span><span class="params">()</span></span>&#123;&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//客户端代码，默认shoot方法是用来打印一句话表示射击的</span></div><div class="line"><span class="comment">//客户端打算利用该契约下的shoot方法完成一些事情</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span></span>&#123;</div><div class="line">  AbstractGun[] guns = <span class="keyword">new</span> AbstractGun[<span class="number">3</span>];</div><div class="line">  guns[<span class="number">0</span>] = <span class="keyword">new</span> HandGun();</div><div class="line">  guns[<span class="number">1</span>] = <span class="keyword">new</span> Rifle();</div><div class="line">  guns[<span class="number">2</span>] = <span class="keyword">new</span> ToyGun();</div><div class="line">  <span class="keyword">for</span>(AbstractGun gun: guns)&#123;</div><div class="line">    gun.shoot();</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>结果发现有一把枪无法完成预期效果，这就是前面提到的派生类函数退化造成子类重写方法打破父类方法功能契约带来的结果。由于类的设计违背了LSP，造成了客户端运行异常（无法达到预期功能）。</p>
+<p>按照网络上很多博客流行的说法，LSP在代码实现时通常包括下面的四层含义：</p>
+<ol>
+<li>子类可以实现父类的抽象方法，但是不能覆盖父类的非抽象方法</li>
+<li>子类可以增加自己特有的方法</li>
+<li>子类<strong>重载</strong>父类的方法时，必须保证子类方法的前置条件（即方法的形参）要比父类方法的输入参数更宽松</li>
+<li>子类实现父类的抽象方法时，必须保证子类方法的后置条件（即方法的返回值）要比父类更严格</li>
+</ol>
+<p>对于2和4没什么好说的，第4点直接就是方法重写的必要条件。我并不是很认同第1点，子类可以覆盖父类的非抽象方法，前提是重写时保证满足该方法在父类中定下的契约，即重写时不更改父类中该方法实现的功能和用途即可。</p>
+<p>对于第3点其实也不难理解，如果子类的重载方法的参数范围小于父类的方法（比如重载方法的参数类型是父类的方法参数类型的子类），很容易造成原本客户端代码想要调用父类方法时调成子类重载方法（由于重载方法匹配优先级，优先匹配参数范围最小的方法，如果找不到精准匹配的方法，则将参数自动向上转型再寻找）。</p>
+<p>讨论了这些之后，我们再回到开始时提到的多态和LSP之间的关系，从下面这几个方面分析，就能很容易理解它们的关系了：</p>
+<ol>
+<li>多态的实现是通过实现父类的抽象方法时：时满足父类方法契约，实现父类方法预定的功能，则为合理的设计，符合LSP。</li>
+<li>多态的实现是通过重写父类的非抽象方法时：重写时满足父类方法契约，实现父类方法预定的功能，则为合理的设计，符合LSP。</li>
+<li>多态的实现是通过重写父类的非抽象方法时：如果必须通过重写时打破父类方法契约，违背父类方法预定功能这种途径来实现某种新的功能需求，则此时建议重新思考设计，采用依赖，关联，聚合，组合等关系代替继承和多态来实现这种功能需求(比如前面的ToyGun的例子最好更改为采用依赖或关联关系来实现ToyGun而非直接继承AbstractGun和重写shoot()方法)。</li>
+</ol>
+<p>实际上对于LSP只需要记住一点就好：重写时尽量保证子类方法遵循父类方法契约（预定功能）。</p>
+<h2 id="依赖倒置原则-dependence-inversion-principle-dip">依赖倒置原则（Dependence Inversion Principle, DIP）</h2>
+<blockquote><font color="green" size="3px"><big>1.  High-level modules should not depend on low-level modules. Both should depend on abstractions <br>2.  Abstractions should not depend on details. Details should depend on abstractions. </big></font></blockquote> <br>
+<p>依赖倒置原则的核心说白了就是面向接口编程。但是为啥要整出“依赖倒置”这么高大上的名字？</p>
+<p>这是由于传统的某些结构化设计倾向于创建高层模块依赖于底层模块的结构。需要定义子模块的层次之后才能确定高层次的调用逻辑。这样一来，高层次依赖自层次，策略依赖实现细节。</p>
+<p>而DIP原则的核心在于让高层次模块相对独立于子层次模块，通过高层次依赖抽象，低层次实现抽象，来实现高层次对低层次模块的调用。 抽象先制定契约（这种抽象通常表现为接口），高层模块通过契约来了解功能进而实现调用，子模块按照契约来具体实现抽象。所以经常将DIP总结为不管是高层模块还是底层模块都需要面向接口编程。这种依赖关系和前面描述的传统结构化设计的依赖关系是相反的，因此该原则被命名为依赖倒置原则。</p>
+<p>这里先提一下什么叫“依赖”，本文开头也提到过类之间的几种关系（依赖，关联，聚合，组合，继承，实现），实际上这几种关系都可以表示上面一段话中的“依赖”这个抽象概念。高层模块对抽象的依赖更像是类之间的前四种关系（特别是第一种关系），通过局部变量，方法参数传递，静态方法调用，成员变量等实现。而底层模块对抽象的依赖则是通过类之间的后两种关系来实现的。</p>
+<p>说了一堆抽象概念，不弄点实例，感觉就快飘上天了。如果要你设计一个简单软件实现让一个年轻驾驶员驾驶汽车的功能（用打印字符串来表示驾驶，以及车移动的速度）。</p>
+<p>底层模块实现涉及到的主要对象（车，年轻驾驶员），然后通过调用底层模块的类和其暴露的方法来实现高层模块主要逻辑，从而实现驾驶（这种设计思考过程看似很自然，也完全满足当前的需求，但是明显违背了DIP）。上面这种思考过程对应下面这个设计：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">100</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"Car move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">YoungDriver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">(Car car)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A young driver start driving"</span>);</div><div class="line">    car.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//高层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HighLevelClient</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line"> 	 Car car = <span class="keyword">new</span> Car();</div><div class="line"> 	 YoungDriver driver = <span class="keyword">new</span> YoungDriver();</div><div class="line"> 	 driver.drive(car);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上述代码类图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_2.png?%20v=20170302" alt=""></p>
+<p>从类图可以清晰看到，高层模块HighLevelClient直接依赖于底层模块YoungDriver以及Car的具体实现，底层模块YoungDriver和Car之间也是直接相互依赖。这样的设计看起来很简洁，也完美解决了当前的需求。但是软件需求总是处于不断变动中，我们只需要稍微改动或者扩展下当前需求就可以轻易发现这种设计的僵硬性（rigidity）和脆弱性（fragility）。</p>
+<p>比如现在不仅要求年轻驾驶员驾驶汽车，还要年轻驾驶员驾驶自行车，并且老年驾驶员也要驾驶自行车。很明显此时底层需要多加两个类Bike和OldDriver，并且需要对所有直接依赖底层细节的地方进行更改，比如HighLevelClient和YoungDriver类。修改后的代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//【不变】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">100</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"Car move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【扩展】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bike</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">30</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"Bike move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【修改】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">YoungDriver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">driveCar</span><span class="params">(Car car)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A young driver start driving"</span>);</div><div class="line">    car.move();</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//【扩展】添加驾驶自行车的方法</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">driveBike</span><span class="params">(Bike bike)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A young driver start driving"</span>);</div><div class="line">    bike.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【扩展】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OldDriver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">driveCar</span><span class="params">(Car car)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"An old driver start driving"</span>);</div><div class="line">    car.move();</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">driveBike</span><span class="params">(Bike bike)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"An old driver start driving"</span>);</div><div class="line">    bike.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【修改】高层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HighLevelClient</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Car car = <span class="keyword">new</span> Car();</div><div class="line">    Bike bike = <span class="keyword">new</span> Bike();</div><div class="line">    YoungDriver youngDriver = <span class="keyword">new</span> YoungDriver();</div><div class="line">    OldDirver oldDriver = <span class="keyword">new</span> OldDriver();</div><div class="line">    youngDriver.drive(car);</div><div class="line">    youngDriver.drive(bike);</div><div class="line">    oldDriver.drive(bike);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>现在新的类图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_3.png?%20v=20170302" alt=""></p>
+<p>不管你们能不能看懂这个类图，反正我是尽力了🐶。仅仅是为了满足一个这么简单的需求变化，竟然需要原始代码做这么多修改。这也就忍了，可是这样修改之后高层模块需要依赖几乎所有的底层细节不说，底层各个模块之间的细节依赖也相当严重。设想如果再加上第三次，第四次需求变化，呵呵，请自行脑补☞。</p>
+<p>前面的开放关闭原则（OCP）也提到过，程序要对扩展开放，对修改关闭。从上面代码我们也看到了有一部分新的类需要加进去，这属于扩展，是应对需求变更的正常做法，但是对于YoungDriver和HighLevelClient的修改是我们需要想办法减少或避免的。其实导致现在看到的这些扩展性差，逻辑杂乱的根源在于我们一开始的设计思路是按照传统模块化设计思路来的，高层模块直接依赖于底层细节，违背了DIP，直接导致了需求变更时牵一发而动全身的后果。</p>
+<p>我们依照DIP重新开始设计，再来感受一下DIP是如何做到灵活应对需求变更的。DIP的思路很简单，这种设计思路是通过客户需求抽象出接口，高层业务逻辑调用这些接口暴露的功能来实现用户需求，底层模块具体实现这些接口契约所规定的功能。这就好比是设计生产一辆车，首先我们需要根据车的需求定义出抽象层（汽车的四大基本组成）：发动机，底盘，车身，电气设备。然后高层开发人员研究如何利用这四大接口的功能组装成一辆符合需求的汽车，而底层开发人员主要关心如何具体实现发动机，底盘等底层部件。这种设计思路可以很好地应对需求变更，使软件具有更好的可扩展性。这一点也很容易理解，因为需求变更通常是在原来的需求上增加一些新功能，或者做一些微调。还是用汽车举例，需求的变更通常是针对于细节来的，比如我们之前的需求是实现一辆经济型SUV，现在需求变成了一辆豪华跑车。由于我们之前的高层设计和底层实现是围绕汽车的四大基础部件的抽象层来展开的，而SUV和跑车的基本结构也都是基于这四大部件来的，因此此时我们只需要在底层扩展出针对跑车特征的类，然后对高层模块稍做调整即可（遵守DIP的设计，间接也使软件在应对需求变更时更轻易地遵守OCP）。万变不离其宗大概讲的就是这个道理，所以我们的设计不应该围绕底层细节展开，而是应该围绕“宗”展开，才能以不变应万变（“宗”就是我们从需求中分析出来的抽象层）。</p>
+<p>现在换成DIP来重新设计之前的例子：目前需求是设计一个简单软件实现让一个年轻驾驶员驾驶汽车的功能（用打印字符串来表示驾驶，以及车移动的速度），首先思考一下高层模块可能需要用到哪些抽象的功能：1.高层模块需要用到驾驶员的驾驶功能；2. 驾驶员需要用到交通工具。根据DIP，核心要义是面向接口编程，高层模块和底层模块都需要依赖抽象，这里先设计出接口，高层模块根据接口的功能契约来调用接口的方法，实现高层逻辑；底层根据接口的功能契约来实现细节（底层需要严格按照接口的契约来实现，这也是遵守里氏替换原则LSP的表现）。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//先设计抽象模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Driver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">(Vehicle vehicle)</span></span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>当接口设计好之后，高层模块，以及用抽象隔开的底层模块之间就可以实现并行开发了(分别交给不同的人同时开发)。下面是具体的实现：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">YoungDriver</span> <span class="keyword">implements</span> <span class="title">Driver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">(Vehicle vehicle)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A young driver start driving"</span>);</div><div class="line">    vehicle.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> <span class="keyword">implements</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">100</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//高层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HighLevelClient</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">     Driver youngDriver = <span class="keyword">new</span> YoungDriver();</div><div class="line"> 	 Vehicle car = <span class="keyword">new</span> Car();</div><div class="line">     <span class="comment">//全部依赖抽象层定义的功能来实现高层逻辑</span></div><div class="line">     youngDriver.drive(car);</div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上述代码的类图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_4.png?%20v=20170302" alt=""></p>
+<p>至此，这种设计实现了基本需求。对比前面传统思维的设计，可以清楚的看到DIP的设计看上去要复杂一些，因为它在前面的设计上加了一层抽象。但是，一旦软件需求发生改变，这种面向接口的设计的优势就会立即体现出来。</p>
+<p>同样的，需求此时变更为：不仅要求年轻驾驶员驾驶汽车，还要年轻驾驶员驾驶自行车，并且老年驾驶员也要驾驶汽车和自行车。我们只需扩展出Bike和OldDriver两个类，并少量修改高层代码即可应对需求变化。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//【不变】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">YoungDriver</span> <span class="keyword">implements</span> <span class="title">Driver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">(Vehicle vehicle)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A young driver start driving"</span>);</div><div class="line">    vehicle.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【扩展】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OldDriver</span> <span class="keyword">implements</span> <span class="title">Driver</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">drive</span><span class="params">(Vehicle vehicle)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"An old driver start driving"</span>);</div><div class="line">    vehicle.move();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【不变】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> <span class="keyword">implements</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">100</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【扩展】底层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bike</span> <span class="keyword">implements</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> <span class="keyword">int</span> speed = <span class="number">30</span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"move at the speed of "</span> + speed);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//【修改】高层模块</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HighLevelClient</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Driver youngDriver = <span class="keyword">new</span> YoungDriver();</div><div class="line">    Driver oldDriver = <span class="keyword">new</span> OldDriver();</div><div class="line">    Vehicle car = <span class="keyword">new</span> Car();</div><div class="line">    Vehicle bike = <span class="keyword">new</span> Bike();</div><div class="line">    <span class="comment">//下面是高层事务逻辑的代码实现，全部依赖抽象层定义的功能来实现高层事务逻</span></div><div class="line">    youngDriver.drive(car);</div><div class="line">    youngDriver.drive(bike);</div><div class="line">    oldDriver.drive(bike);</div><div class="line">  &#125;  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>上述代码的类图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_5.png?%20v=20170302" alt=""></p>
+<p>这一次没有修改底层代码，而是通过扩展底层代码和少量调整高层代码来应对需求变化。并且扩展后的程序依然逻辑结构分明，高层和底层都依赖接口（这也侧面证明了当初接口的设计是合理的）。</p>
+<p>有些人可能会认为高层代码中也用到了Car，Bike，YoungDriver等底层具体类，这是不是说明实际上这一种设计也让高层模块依赖底层细节了？</p>
+<p>这里我们需要留意变量类型的两个概念：引用类型（外观类型）和实际类型（不明白的可以参考<a href="http://localhost:4000/2017/02/13/%E3%80%90%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-1%E3%80%91Resolution-vs-Binding-vs-Dispatch/" target="_blank" rel="external">http://hippo-jessy/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</a>的开头部分）。在高层模块中尽量在创建变量时，将变量的引用类型定义为接口类型，也就是说局部变量使用的是接口类型，在真正事务逻辑代码编写时调用的是抽象模块的方法（即接口暴露的方法和功能)。也就是说整体上而言高层模块依赖的是抽象层，这个设计符合DIP。</p>
+<p>遵守了DIP的设计明显比之前的设计有更好地可扩展性，模块间的耦合性明显降低（模块间尽量通过接口来耦合）。遵守DIP的设计可以轻易地通过扩展底层模块的实现类来应对需求的变化，并尽量最小化代码的修改（OCP）。之前分析OCP时也提到了OCP是一个相对抽象和整体化的原则，但是从上面的例子我们也可以看到当设计遵守了DIP原则，某些程度上也能保证程序在应对需求变化时可以遵守OCP。后文的分析中，还可以进一步看到的，如果保证了其它五个设计原则，就可以更好地使程序在应对需求变化时遵守OCP。</p>
+<h2 id="接口隔离原则-interface-segregation-principle-isp">接口隔离原则（Interface Segregation Principle, ISP）</h2>
+<blockquote><font color="green" size="3px"><big>Client should not be forced to depend on methods that they do not use </big></font></blockquote> <br>
+<p>接口隔离原则的核心在于尽量使接口精简化，能避免接口过于臃肿，包含过多没必要的方法。</p>
+<p>Fat Interface的坏处用一个简单的不良设计就可以证明:</p>
+<p>首先还是指明需求，有两个客户端A和B，A的需求是让一辆车移动并给它加油，B的需求是让一辆自行车移动然后将自行车折叠收起。</p>
+<p>首先采用DIP，抽象出接口之后，在依赖抽象接口完成高层需求逻辑和底层细节实现。小明同学总结了需求，认为接口需要暴露交通工具移动，加油和折叠的功能给高层模块。于是设计了下面的类图和相关代码实现：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_6.png?%20v=20170302" alt=""></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">refuel</span><span class="params">()</span></span>;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fold</span><span class="params">()</span></span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> <span class="keyword">implements</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span> </div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A car is moving"</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">refuel</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A car is being refueled"</span>)</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//汽车不可拆卸折叠，因此该方法退化为空方法</span></div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fold</span><span class="params">()</span></span>&#123;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Bike</span> <span class="keyword">implements</span> <span class="title">Vehicle</span></span>&#123;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A bike is moving"</span>);</div><div class="line">  &#125;  </div><div class="line">  <span class="comment">//自行车不需要加油，因此该方法直接退化为空方法</span></div><div class="line">  <span class="meta">@Override</span> </div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">refuel</span><span class="params">()</span></span>&#123;</div><div class="line">  &#125;</div><div class="line">  <span class="meta">@Override</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">fold</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A bike is folded"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//客户端A只有调用move方法和refuel方法的需求</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClientA</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dailyTransition</span><span class="params">(Vehicle vehicle)</span></span>&#123;</div><div class="line">    vehicle.move();</div><div class="line">    vehicle.refuel();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//客户端B只有调用move方法和fold方法的需求</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClientB</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(Vehicle vehicle)</span></span>&#123;</div><div class="line">    vehicle.move();</div><div class="line">    vehicle.fold();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    ClientA a = <span class="keyword">new</span> ClientA();</div><div class="line">    ClientB b = <span class="keyword">new</span> ClientB();</div><div class="line">    Vehicle vehicleA = <span class="keyword">new</span> Car();</div><div class="line">    Vehicle vehicleB = <span class="keyword">new</span> Bike();</div><div class="line">    a.dailyTransition(vehicleA);</div><div class="line">    b.service(vehicleB);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>类图中绿色框中的方法为退化方法。从这个例子我们可以很明确的看到ClientA和ClientB两个客户程序都只需要用到Vehicle接口暴露的部分方法。这里的Vehicle接口就是一个胖接口，它的两个实现类Car和Bike都被迫实现了一些各自不需要的方法。我们也看到了，代码中出现了几个退化方法，明显违背了LSP，这也是接口设计时违背ISP所间接导致的后果。</p>
+<p>再来讨论一下需求变更时，这种设计可能导致的问题。比如ClientA现在的需求变更为不仅需要实现加油的功能，还需要返回所加的油量。那么很明显我们需要对Vehicle接口中refuel()方法签名需要被更改为<font color="green" size="3px"><strong>refuel:()I</strong></font>即public int refuel()，然而Vehicle接口同时被高层和底层依赖，导致所有实现Vehicle接口的子类都需要被修改。也就是说在为了应对这个需求变更，Car, Bike, Vehicle, ClientA 这几个类都需要做修改，违背了OCP。这个例子也说明了这六条设计原则并非孤立存在的，而是相辅相成的，一个好的设计会尽量兼顾这六条原则，设计时一旦严重违反其中一条原则，很可能产生连锁效应，导致其它多条规则的违反。</p>
+<p>模块和模块间的依赖和耦合是通过接口完成的（前文中DIP有讲解过），尽量精简接口也就是尽量减少模块间的耦合。上面原始设计的例子中 clientA客户模块通过Vehicle接口和底层细节模块耦合，然而由于Vehicle被设计成了胖模块，添加了不必要的方法，导致clientA与底层有了不必要的耦合。耦合越多，rigidity和fragility也会增加，越不利于应对需求变更。</p>
+<p>实际上前面小明同学的设计主要问题出在了没有分离客户，没有根据不同客户模块抽象出接口，而是直接将所有客户的需求混为一谈来作为接口设计的依据，最终导致了胖接口。“见人说人话，见鬼说鬼话”，这也是一项很重要的技能， 接口设计必须根据不同的客户人群，客户需求来提供最精简化的定制服务。现在从头开始设计，分析客户需求，客户A需求是让一辆车移动并给它加油，面向客户A的接口需要暴露移动和加油；客户B的需求是让一辆自行车移动然后将自行车折叠收起，面向客户B的接口需要暴露移动和折叠。考虑到二者都需要“移动”功能，考虑先设计几个高内聚的接口，然后将暴露给客户A和B的接口设计为继承这些接口的子接口。具体代码实现就不再详述了，类图如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91Six%20Principles%20of%20Software%20Design_7.png?%20v=20170302" alt=""></p>
+<p>这里再啰嗦一句，接口要精简，但是没必要过分精简。不考虑客户的需求粒度，一味地将每个方法都列成一个接口的做法是不明智的，这样只会大大增加软件的复杂度。</p>
+<h3 id="接口隔离原则-isp-vs-单一职责原则-srp">接口隔离原则（ISP） vs 单一职责原则（SRP）</h3>
+<p>分析到这里，一般都会产生这样的疑问：ISP一直强调要精简接口，如果接口精简为只负责一个职责，那ISP岂不是和之前提到的SRP是一个概念？</p>
+<p>这两个原则主要有如下区别：</p>
+<ol>
+<li>ISP是仅针对接口的原则，是更偏向于框架的原则；SRP是首要针对类的原则，附带方法和接口，是更偏向于实现细节的原则。</li>
+<li>ISP虽然要精简接口，但是是根据特定的客户需求来进行定制化的设计，精简依据的是客户的需求而不是单一职责。</li>
+</ol>
+<h2 id="迪米特法则-law-of-demeter-lod">迪米特法则（Law of Demeter, LoD）</h2>
+<blockquote><font color="green" size="3px"><big>Only talk to your friends who share your concerns</big></font></blockquote> <br>
+<p>迪米特法则的核心在于只和朋友说话，不要和陌生人说话。那么问题来了，谁是朋友，谁是陌生人？在此篇博文的开头提到过，类与类之间的横向关系有四种：依赖，关联，聚合，组合。两个类只要是以这四种关系关联在一起，我们就可以称它们为朋友，除了是由于局部变量产生的依赖关系。在讲这四种横向关系的时候提到过，关联，聚合和组合关系一般是通过成员变量触发的，而依赖关系是由局部变量，方法参数，方法返回值和静态方法调用出发的。如果是由于局部变量触发的依赖关系，则关联的两个类不是朋友关系。</p>
+<p>按照惯例，还是用例子来解释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findAndPrint</span><span class="params">(String name, ClassMonitor monitor)</span></span>&#123;</div><div class="line">    <span class="comment">//student对象以局部变量出现在Teacher类的方法中，此处和陌生类对话了</span></div><div class="line">    Student student = monitor.find(name);</div><div class="line">    student.print();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassMonitor</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> List&lt;Student&gt; list;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(List list)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.list = list;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> Student <span class="title">find</span><span class="params">(String name)</span></span>&#123;</div><div class="line">     <span class="keyword">for</span>(Student tmp: list)&#123;</div><div class="line">       <span class="keyword">if</span>(tmp.getName().equals(name))&#123;</div><div class="line">         <span class="keyword">return</span> tmp;</div><div class="line">       &#125;</div><div class="line">     &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> String name;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(name);</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>在Teacher类的findAndPrint()方法中和陌生人Student类对话，违背了LoP。想想也是，老师明明可以直接让班长给同学传达任务，何必偏偏要班长把同学叫到身边来亲自给学生分配任务。将上述设计稍作修改，让Teacher的朋友类ClassMonitor作为中介来和陌生人通信，避免和陌生人的耦合。修改后代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Teacher</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findAndPrint</span><span class="params">(String name, ClassMonitor monitor)</span></span>&#123;</div><div class="line">    <span class="comment">//使用朋友类ClassTeacher作为中介间接与陌生人通信</span></div><div class="line">    monitor.findAndPrint(name)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassMonitor</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> List&lt;Student&gt; list;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(List list)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.list = list;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> Student <span class="title">find</span><span class="params">(String name)</span></span>&#123;</div><div class="line">     <span class="keyword">for</span>(Student tmp: list)&#123;</div><div class="line">       <span class="keyword">if</span>(tmp.getName().equals(name))&#123;</div><div class="line">         <span class="keyword">return</span> tmp;</div><div class="line">       &#125;</div><div class="line">     &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="comment">//ClassTeacher作为中介来避免Teacher和陌生类Student直接通信</span></div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findAndPrint</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    find(name).print();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span></span>&#123;</div><div class="line">  <span class="keyword">private</span> String name;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name)</span></span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</div><div class="line">    System.out.println(name);</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>LoD的目的在于尽量减少类与类之间的耦合，尽量保证类中不要出现陌生类（非朋友的类)。当然JDK提供的API不在陌生人之列，否则还如何能愉快地敲代码了😂。</p>
+<p>最后用一段话总结这六大设计原则：</p>
+<p><strong>SRP规定一个类的职责要单一；LSP表示子类重写要遵守父类（或父接口）方法的功能契约；DIP告诉我们要面向接口编程；ISP是说接口要尽量精简，接口的设计要对应具体客户的需求；LoD告诉我们不要和陌生人说话（类与类之间要尽量减少耦合）；OCP是说软件要对扩展开放，对修改关闭，OCP是前五种种设计原则的总纲。尽量遵守前五种原则能使得软件设计更合理，让软件应对需求变更时更容易遵守OCP。</strong></p>
+<p>这篇文章只是设计模式总结的开始，很多知识的理解和运用并不是很透彻，待内功修炼以后，再回过来补充一些新的感悟吧，在此先立一个Flag🇨🇳</p>
+<hr>
+<p>为了实现将复杂问题简单化，模式化，整出graceful code，了解常见的设计招式还是很有必要的。虽说金庸先生教导大家“无招胜有招”，但是对于我这种战五渣而言，从一招一式学起显然更为稳妥。</p>
+<p>2 3种常见设计模式根据其特征和应用场合可以分为三大类，如下图所示（开启思维导图模式，持续修改更新）<img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern-0%E3%80%91%5BMind%20Map%5D%20Design%20Pattern.pdf?%20v=20170303" alt=""></p>
+<p>具体每种设计模式的分析总结，会抽时间陆续更新在下面这个目录中：</p>
+<p><a href="http://hippo-jessy.com/categories/Design-Pattern/"><font color="green" size="3px">http://hippo-jessy.com/categories/Design-Pattern/</font></a></p>
+<hr>
+<h2 id="references">References</h2>
+<p>[1] 《设计模式之禅》</p>
+<p>[2] Agile Software Development, Principle, Patterns, Practices</p>
+<p>[3] <a href="http://blog.csdn.net/zhengzhb/article/details/7296944" target="_blank" rel="external">http://blog.csdn.net/zhengzhb/article/details/7296944</a></p>
+<p>[4] <a href="http://blog.csdn.net/zhengzhb/article/details/7190158" target="_blank" rel="external">http://blog.csdn.net/zhengzhb/article/details/7190158</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;设计模式重要性不言而喻，但是设计模式的学习只有结合具体项目实践才有意义。这里新开【Design Pattern】系列博文来总结设计模式相关的知识点，并尽量结合一些工程实践来帮助自己理解。&lt;/p&gt;
+&lt;p&gt;学习设计模式，就不得不提到软件设计的六大原则。本文作为【Design Pattern】系列的第一篇博文，主要围绕这六大设计原则展开讨论：&lt;/p&gt;
+&lt;p&gt;单一职责原则(SRP)，开闭原则(OCP)，里氏替换原则(LSP)， 依赖倒置原则(DIP)，接口隔离原则(ISP)， 迪米特法则(LoD)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Design Pattern" scheme="http://hippo-jessy.com/categories/Design-Pattern/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://hippo-jessy.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【深入理解Java虚拟机-1】Resolution vs Binding vs Dispatch</title>
+    <link href="http://hippo-jessy.com/2017/02/13/%E3%80%90%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-1%E3%80%91Resolution-vs-Binding-vs-Dispatch/"/>
+    <id>http://hippo-jessy.com/2017/02/13/【深入理解Java虚拟机-1】Resolution-vs-Binding-vs-Dispatch/</id>
+    <published>2017-02-13T23:18:13.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差：</p>
+<p>Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch</p>
+<p>其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以及Java的角度来分析上述几种概念的差别，并对“JVM方法调用“这一话题展开一些延伸思考和讨论。</p>
+<a id="more"></a>
+<p>在开始讨论之前，需要明确下面几个概念：</p>
+<p><strong>1. Static Type(Apparent Type) 静态类型（外观类型）， Actual Type（实际类型）</strong></p>
+<p>二者的区别用一个例子就能解释：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Person sample = <span class="keyword">new</span> Man();</div></pre></td></tr></table></figure>
+<p>这里，sample变量的静态类型（编译时类型）是Person， 实际类型（运行时类型）是Man</p>
+<p><strong>2. 方法的接收者(Receiver)</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Person man = <span class="keyword">new</span> Man();</div><div class="line">man.speak();</div></pre></td></tr></table></figure>
+<p>上例中，对象man就是speak()方法的所有者，也是speak()方法的接收者</p>
+<p><strong>3. 属性的所有者</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//		class Person&#123;</span></div><div class="line"><span class="comment">//  		String name = "unknown";</span></div><div class="line"><span class="comment">//		&#125;</span></div><div class="line"></div><div class="line">Person man = <span class="keyword">new</span> Man();</div><div class="line">System.out.println(man.name)</div></pre></td></tr></table></figure>
+<p>上例中, 对象man是属性name的所有者</p>
+<p><strong>4. 宗量</strong></p>
+<p>方法的接收者和方法的参数统称宗量，主要在单分派和多分派中用到这个概念，单分派是仅根据一种宗量（比如方法的接收者）对方法进行选择，多分派是根据多种宗量对方法进行选择。</p>
+<p><strong>5. Java中的 虚方法 vs 非虚方法</strong></p>
+<p>非虚方法主要包括invokestatic和invokespecial指令调用的方法以及final方法，即类方法，私有方法，构造器，final方法等。个人将其理解为无法被重写的方法集合。</p>
+<p>虚方法主要包括invokevirtual指令调用的方法（除了final方法），即不用final修饰的实例方法。</p>
+<p>下面开始正式讨论：</p>
+<h2 id="resolution">Resolution</h2>
+<p>Resolution, 解析是指<strong>将符号引用替换为直接引用的过程</strong>，JVM Specification并未规定其发生时间，只是规定在下面十六条指令执行前必须完成这些指令涉及的符号引用的解析:</p>
+<p>new, getstatic, putstatic, invokestatic, getfield, putfield, invokespecial, invokevirtual, invokeinterface, invokedynamic, anewarray, multianewarray, ldc, ldc_w, checkcast, instanceof。</p>
+<p>一般来说，解析可以发生在两个时间段：类加载时期和符号引用将被使用时。其中，invokedynamic必须等到指令执行时才能进行解析动作，其它指令都可以随意选择两个时间段中的一个（根据虚拟机的具体实现而定）。通常，非虚方法的解析都在类加载时期完成了。</p>
+<h2 id="binding">Binding</h2>
+<p>绑定是针对<strong>类型</strong>而言的，指的是类型确定的过程，<strong>通常发生在访问对象成员或者方法调用的过程中</strong>。当我们谈论方法或属性的访问时动态绑定还是静态绑定时，实际上指的是方法的<strong>接收者</strong>和属性的<strong>所有者</strong>的<strong>类型确定</strong>（determine by atual type or determine by static type）。</p>
+<p>根据类型确定发生在运行期还是编译期以及依据实际类型还是静态类型，可以将Binding分为Dynamic Binding和Static Binding两类。下面这个经典的例子反映了二者的区别。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="keyword">int</span> age = <span class="number">30</span>;</div><div class="line">  <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> age;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Man</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="keyword">int</span> age = <span class="number">40</span>;</div><div class="line">  <span class="keyword">int</span> height = <span class="number">160</span>;</div><div class="line">  <span class="function"><span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> age;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Person a = <span class="keyword">new</span> Man();</div><div class="line">    <span class="comment">//	a.age内部主要通过如下字节码实现：</span></div><div class="line">    <span class="comment">//	getfield      #5                  // Field test/Person.age:I</span></div><div class="line">    System.out.println(a.age);</div><div class="line">    <span class="comment">//	a.getAge()内部主要通过如下字节码实现：</span></div><div class="line">    <span class="comment">//	invokevirtual #7                  // Method test/Person.getAge:()I</span></div><div class="line">    System.out.println(a.getAge());</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出的结果如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="number">30</span></div><div class="line"><span class="number">40</span></div></pre></td></tr></table></figure>
+<p>这个例子实际上涉及了很多本篇博客要讨论的概念：静态绑定，动态绑定，属性隐藏，方法重写，动态分派，单分派等等，这里主要从静态绑定和动态绑定的角度进行分析。</p>
+<h3 id="static-binding">Static Binding</h3>
+<p>类型在编译期就已经可以确定，并且该类型确定在运行期保持不变，即<strong>最终</strong>通过静态类型确定该变量类型。Java中，在Java中，静态绑定通常用于属性所有者的类型绑定，非虚方法（类方法，私有方法，构造器方法，final方法）接收者的类型绑定，以及方法参数的类型绑定。</p>
+<p><strong>上例中，age属性是对象属性，age属性的所有者（对象a）在此次访问中是静态绑定</strong>，因此这里对象a的类型在编译期被确定为a的静态类型Person，并且该类型确定后在运行期执行getfield指令时也不会发生改变，最后&quot;a.age&quot;调用的是a的静态类型Person的age属性值。这里也涉及到了属性隐藏的问题：父类和子类有同名域时，域的访问是通过域的所有者的静态类型决定的。比如上面例子中如果想访问子类Man中的age，则必须将对象a强制转型为Man，或者在当时创建之初就声明为Man类型而非Person类型。</p>
+<p>通过静态绑定来实现访问对象属性所有者类型绑定的<strong>好处</strong>在于：编译期就可以确定最终类型，避免了动态查找，高效快速，但是是以牺牲一部分灵活性为代价的。</p>
+<h3 id="dynamic-binding">Dynamic Binding</h3>
+<p>类型在运行时才能最终确定，通过<strong>最终</strong>实际类型（运行时类型）来确定变量类型。Java中，动态绑定通常用于虚方法（如非私有的实例方法等）接收者的类型绑定。</p>
+<p>某些动态类型语言将动态绑定作为默认的内部实现。Java作为一种静态类型语言，采取了一些其他的方法来实现动态绑定（比如invokevirtual指令动态识别对象的实际类型）。</p>
+<p><strong>上面例子中，getAge()属于虚方法， getAge()方法的接收者（对象a）在此次访问中是动态绑定</strong>，因此这里对象a的类型尽管在编译期被标记为Person，最后在运行期会被invokevirtual指令重新确定为a的实际类型Man，并在Man中查找能够匹配符号引用中方法名和描述符的方法，因此&quot;a.getAge()&quot;调用的是a的实际类型Man的getAge方法。</p>
+<h2 id="dispatch">Dispatch</h2>
+<p>分派是针对<strong>方法</strong>而言的，指的是方法确定的过程，<strong>通常发生在方法调用的过程中</strong>。分派根据方法选择的发生时机可以分为静态分派和动态分派，其中对于动态分派，根据宗量种数又可以分为单分派和多分派。</p>
+<p>我更倾向于将分派理解为是<strong>方法选择</strong>的过程而非方法确定，“确定”这个词有“一劳永逸”的赶脚，让人进入一种误区：一次分派就能最终确定执行哪个方法。但是实际上从方法代码到JVM最终确定执行哪个方法的过程中，中间可能经过多次分派，比如某些重载的实例方法，在编译期进行一次方法选择（静态分派），在运行期可能还会进行一次方法选择（动态分派）。</p>
+<h3 id="static-dispatch">Static Dispatch</h3>
+<p>静态分派指的是在编译期间进行的方法选择，通常以方法名称，方法接收者和方法参数的静态类型来作为方法选择的依据。这些可以静态分派的方法一般都具有“签名唯一性”的特点（签名只考虑参数的静态类型而不管参数的实际类型），即不会出现相同签名的方法，因此可以在编译期就实现方法确定。Java中的非虚方法（主要包括静态方法，私有方法，final方法等，这些方法一般不可重写，故而不会有相同签名的情况出现）通常仅需要静态分派就可以实现方法的最终确定，更特别一点的例子是静态方法的隐藏，也是利用了静态分派，后面会专门讲解。虚方法的重载在编译时也用到了静态分派（尽管虚方法的调用在运行时还会涉及动态分派）。</p>
+<h4 id="关于-深入理解java虚拟机-中8-3-1解析部分的一些想法-resolution-vs-dispatch">关于《深入理解Java虚拟机》中8.3.1解析部分的一些想法（Resolution vs Dispatch）</h4>
+<p>《深入理解Java虚拟机》书中在方法调用8.3.1对静态分派以及解析两个概念的解释有些混乱，参考了一些资料之后，这里提出一些更为清晰的分析。</p>
+<p>首先区分Static Dispatch 与Resolution的区别(顺便附带Dynamic Dispatch)：</p>
+<p>个人理解的是resolution是符号引用转化为直接引用的过程，发生在类加载期或者运行期，而dispatch是方法确定的过程，static dispatch发生在编译期。一个方法从最初的代码调用到最后的直接引用（或者说入口地址），实际上先要经过dispatch后要经过resolution。也就是说，对于非虚方法的调用过程，方法签名唯一，在编译期就可以确定，使用static dispatch就可以实现方法确定。static dispatch 就是产生符号引用的过程，并且该符号引用在类加载时期转化为该符号引用的直接引用(此过程为resolution（非虚方法的解析通常在类加载时期完成）。而对于虚方法的调用过程，编译期产生的符号引用无法直接用于确定最终调用的方法（方法的最终确定无法在编译期完成，但是在编译期间也会进行一次方法选择——静态分派，比如虚方法重载就是利用此原理）,使用dynamic dispatch来实现最终的方法确定。dynamic dispatch则会在运行期根据方法接收者的实际类型，去实际类型的虚方法表上找与符号引用相同方法签名的方法，找到后如果该方法已被解析，则返回该方法的直接引用；否则，则此时执行resolution然后返回直接引用。</p>
+<ul>
+<li>非虚方法 —&gt; 静态分派 —&gt; resolution发生在类加载时期</li>
+<li>虚方法 —&gt;静态分派—&gt; 动态分派 —&gt; resolution发生在类加载时期或者run-time（动态连接）</li>
+</ul>
+<p>而《深入理解Java虚拟机》中有下面这段话：</p>
+<blockquote>
+<p>调用目标在代码写好、编译器进行编译时就必须确定下来。这类方法的调用称为解析（Resolution）。</p>
+</blockquote>
+<p>这里将”解析“换做“静态分派”似乎更加合适。而且书中在8.3.1的“解析”这一部分中的讲解似乎容易让人混淆解析和静态分派的概念。</p>
+<h3 id="dynamic-dispatch">Dynamic Dispatch</h3>
+<p>动态分派是指方法的确定在run-time才能最终完成。使用动态分派来实现方法确定的方法一般在编译期间都是一些“不明确”的方法（比如一些重写方法，拥有相同的方法签名并且方法接收者的静态类型可能也相同），因此只能在运行时期根据方法接收者和方法参数的实际类型最终实现方法确定。Java中的虚方法（主要指实例方法） 通常需要在运行期采用动态分派来实现方法确定（利用invokevirtual指令获取方法接收者的实际类型，后文会有具体例子分析）。</p>
+<h4 id="single-dispatch-multiple-dispatch">Single Dispatch / Multiple Dispatch</h4>
+<p>单分派和多分派是根据分派时使用的原理来分类的，只根据一种宗量（宗量的概念请见文章开头）进行方法选择是单分派，根据多种宗量进行方法选择是多分派。</p>
+<p><strong>单分派(Single [dynamic] Dispatch)</strong>：只根据方法接收者的实际类型来实现方法的确定（Java采用此种分派方法）</p>
+<p><strong>多分派(Multiple [dynamic] Dispatch)</strong>：根据方法的接收者类型以及方法参数的实际类型来实现方法的确定</p>
+<p>单分派多分派的概念区分一般只存在于动态分派当中。由于单分派多分派需要考虑实际类型，而对于静态分派只会根据静态类型来分派，因此没有所谓的静态单分派静态多分派的概念。（这种理解与《深入理解Java虚拟机》中的解释有所不同，个人比较倾向于单分派和多分派的分类只适用于动态分派）</p>
+<h3 id="如何理解java的-静态多分派-动态单分派">如何理解Java的“静态多分派，动态单分派”</h3>
+<p>这种说法是不准确的。Java确实是动态单分派，但是对于静态分派而言其实没有所谓的单分派多分派的概念。但是我们可以这样来理解所谓的”静态多分派“概念： 由于java的静态分派需要同时考虑方法接收者和方法参数的静态类型，某种层度上而言是考虑了两种宗量，尽管没有涉及任何实际类型，依然可以从行为上勉强理解为”多分派“。</p>
+<p>这里通过一个例子来理解Java中的分派。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Food</span></span>&#123;&#125;</div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Meat</span> <span class="keyword">extends</span> <span class="title">Food</span></span>&#123;&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Food food)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A person buy food"</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Meat meat)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A person buy meat"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Man</span> <span class="keyword">extends</span> <span class="title">Person</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Food food)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A man buy food"</span>);</div><div class="line">  &#125;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buy</span><span class="params">(Meat meat)</span></span>&#123;</div><div class="line">    System.out.println(<span class="string">"A man buy meat"</span>);</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</div><div class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">    Person a = <span class="keyword">new</span> Man();</div><div class="line">    Food b = <span class="keyword">new</span> Meat();</div><div class="line">    a.buy(b);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出的结果为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">A man buy food</div></pre></td></tr></table></figure>
+<p>这里涉及到了java里面的重载和重写。利用上文中提到的各种概念来对<code>a.buy(b)</code>方法调用过程进行分析：</p>
+<p>首先在编译期间进行了静态分派，利用方法名，方法接收者和方法参数的静态类型进行方法选择，于是方法的符号引用确定为<code>Person.buy:(Ltest/Food;)V</code>，这里明确可以看到此时经过静态分派对重载方法进行选择后确定的方法为Person类的buy(Food food)方法。</p>
+<p>但是对于虚方法的调用会在运行阶段利用动态分派再进行一次方法选择。如果此时采取动态单分派，则会根据方法接收者的实际类型再进行一次方法选择。由于对象a的实际类型是Man，因此最后确定调用的方法为Man类的buy(Food food)方法，输出结果将会是<code>A man buy food</code>。如果此时采取动态多分派，则会根据方法接收者以及方法参数的实际类型再进行一次方法选择。由于对象a的实际类型是Man，参数b的实际类型是Meat，因此最后确定调用的方法为Man类的buy(Meat meat)方法，输出结果将会是<code>A man buy meat</code>。</p>
+<p>显然，我们看到最后程序输出结果为<code>A man buy food</code>，也证明了Java采用了动态单分派。</p>
+<p>最后再从字节码的层面啰嗦一句，这里Java的动态分派是依靠invokevirtual指令的多态查找完成的。<code>a.buy(b)</code>方法调用对应的核心字节码为<code>invokevirtual #6 // Method test/Person.buy:(Ltest/Food;)V</code>，invokevirtual指令会首先找到操作数栈的第一个元素指向的对象（此例中为对象a）的实际类型（动态绑定方法接收者类型），并从实际类型中查找与指令参数中符号变量描述的方法签名（此例中为<code>buy:(Ltest/Food;)V</code>）相同的方法，并返回该方法的直接引用。</p>
+<h2 id="resolution-vs-binding-vs-dispatch">Resolution vs Binding vs Dispatch</h2>
+<p>Resolution是指将符号引用转化为直接引用的过程，通常发生在类加载时期和运行期（运行期发生的resolution又被称为动态连接）。</p>
+<p>这里从一般意义上(不限于Java)来对Binding和Dispatch来做一个区分：二者主要的区别在于作用的对象不同。</p>
+<p>Binding是针对类型而言，指的是类型确定的过程，通常发生在对象属性的访问或方法调用时，也就是说Binding是属性的所有者以及方法的接收者的类型确定。</p>
+<p>Dispatch是针对方法而言的，通常发生在方法调用时，指的是方法确定的过程。然而方法的确定也依赖于方法接收者类型的确定，这也是导致Binding和dispatch容易概念混淆的原因之一。举个例子来说，由于虚方法通过动态分派实现方法的最终选择，动态分派需要借助于方法接收者的<strong>实际类型</strong>，其实也就是意味着虚方法的接收者的类型确定是通过动态绑定实现的。这也是动态分派和动态绑定的关系所在：方法的确定通过动态分派实现，意味着方法接收者类型的确定通过动态绑定实现。前文已对Binding和Dispatch展开讨论，这里不再赘述。</p>
+<p>网上有很多解释说”绑定指的是把一个方法的调用与方法所在的类(方法主体)关联起来“，个人觉得是不准确的，这种说法一定程度上将binding和dispatch的概念混淆在一起。这种说法本意是指”方法绑定”而非一般意义上的绑定（类型绑定）。但是目前看来，在Java中，大家还是比较倾向于将绑定和分派当做同义词来使用（方法绑定），都表示方法与方法接收者关联的过程。这些概念性的问题没必要细纠，弄明白原理就好。</p>
+<h2 id="overloading-overriding-hiding">Overloading / Overriding / Hiding</h2>
+<p>下面通过Java中的重载，重写，隐藏（属性隐藏和方法隐藏）来综合理解上文中提到的多种概念。</p>
+<h3 id="overloading">Overloading</h3>
+<p>非虚方法的重载是通过静态绑定以及静态多分派实现的。</p>
+<p>虚方法的重载是通过动态绑定以及静态多分派和动态单分派实现的。</p>
+<h3 id="overriding">Overriding</h3>
+<p>重写是实现多态的关键之一（多态三要素：继承，重写，父类引用指向子类对象），重写是通过 动态绑定以及动态单分派实现的。</p>
+<p>由于重载和重写在上文中已经举过例子分析方法调用时的分派问题，这里不再赘述。</p>
+<h3 id="hiding">Hiding</h3>
+<p>覆盖和隐藏的共同特征表现在代码上：父类和子类定义了同名属性或同签名方法</p>
+<p>而覆盖和隐藏的区别表现在行为上：</p>
+<p><strong>覆盖（重写）</strong>：方法或属性的所有者实际类型和静态类型不相符时（静态类型为父类，实际类型为子类），最后实际被访问的是实际类型的方法或属性。</p>
+<p><strong>隐藏</strong>：方法或属性的所有者实际类型和静态类型不相符时（静态类型为父类，实际类型为子类），最后实际被访问的是静态类型的方法或属性。（静态方法，类属性或实例属性都只能被隐藏而无法覆盖）</p>
+<p>造成二区别的原因在于是否会进行动态类型识别，这些都与属性所有者以及方法接收者的类型确定方式有关（Binding）。</p>
+<h4 id="field-hiding">Field Hiding</h4>
+<p>前文讨论Binding时介绍过：属性所有者的类型确定是通过静态绑定实现的，意味着属性所有者不会进行动态类型识别。前文举过例子，不再详述。</p>
+<h4 id="method-hiding">Method Hiding</h4>
+<p>实例方法可以被重写，而静态方法不能被重写（覆盖），只能被隐藏（Method Hiding）。</p>
+<p>本质原因在于实例方法接收者的类型确定是通过动态绑定，实例方法的最终确定是通过动态分派，意味着实例方法的接收者类型由实际类型决定，最终访问的是实际类型的方法。</p>
+<p>而静态方法接收者的类型确定是通过静态绑定，静态方法的最终确定是通过静态分派，意味着静态方法的接收者类型仅通过静态类型决定，不会在运行时识别接收者的实际类型，最终访问的也就是静态类型的方法。</p>
+<p>由于本人对编译原理以及JVM的内部原理了解并不深入，如有纰漏，欢迎斧正~~</p>
+<h2 id="references">References</h2>
+<p><a href="https://book.douban.com/subject/6522893/" target="_blank" rel="external">《深入理解Java虚拟机》第二版</a></p>
+<p><a href="http://softwareengineering.stackexchange.com/questions/200115/what-is-early-and-late-binding/200123#200123" target="_blank" rel="external">http://softwareengineering.stackexchange.com/questions/200115/what-is-early-and-late-binding/200123#200123</a></p>
+<p><a href="https://www.zhihu.com/question/28462483" target="_blank" rel="external">https://www.zhihu.com/question/28462483</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近总结《深入理解Java虚拟机》方法调用相关内容时，发现对下面这几个概念理解有偏差：&lt;/p&gt;
+&lt;p&gt;Resolution, Static Binding/Dynamic Binding, Static Dispatch/Dynamic Dispatch, Single Dispatch/Multiple Dispatch&lt;/p&gt;
+&lt;p&gt;其中最容易产生混淆的是Binding和Dispatch这两个概念，本篇博客会从一般角度以及Java的角度来分析上述几种概念的差别，并对“JVM方法调用“这一话题展开一些延伸思考和讨论。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JVM" scheme="http://hippo-jessy.com/categories/JVM/"/>
+    
+      <category term="深入理解Java虚拟机" scheme="http://hippo-jessy.com/categories/JVM/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    
+      <category term="Java" scheme="http://hippo-jessy.com/tags/Java/"/>
+    
+      <category term="JVM" scheme="http://hippo-jessy.com/tags/JVM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【深入理解Java虚拟机-0】思维导图汇总</title>
+    <link href="http://hippo-jessy.com/2017/02/03/%E3%80%90%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA-0%E3%80%91%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E6%B1%87%E6%80%BB/"/>
+    <id>http://hippo-jessy.com/2017/02/03/【深入理解Java虚拟机-0】思维导图汇总/</id>
+    <published>2017-02-03T22:59:05.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>此篇博文主要用于汇总JVM初级学习阶段的思维导图，主要根据《深入理解Java虚拟机》书中的脉络，结合JVM Specification中的知识点进行拓展和总结。思维导图通过<strong>iThoughtsX 4.3</strong>绘制，文中会提供原始格式文件(低于4.3版本的iThoughtsX可能无法打开原始文件)和导出的图片。由于有些章节的思维导图过大，我可能会进行拆分，但是尽量不会影响理解。</p>
+<p>内容有些杂乱，主要用作个人笔记整理，同时也希望这些思维导图能帮助大家更好地理解《深入理解Java虚拟机》(配合JVM Specification食用更佳）。有些导图目前还是半成品，暂时不会放上来，文章持续更新中。</p>
+<a id="more"></a>
+<h2 id="第二部分-自动内存管理">第二部分 自动内存管理</h2>
+<h3 id="第二章-java内存区域与内存溢出异常">第二章 Java内存区域与内存溢出异常</h3>
+<p>这一章节主要涉及三方面的内容：</p>
+<ul>
+<li>运行时数据区域</li>
+<li>HotSpot虚拟机对象的表示</li>
+<li>OutOfMemoryError的相关实践</li>
+</ul>
+<p>思维导图如下( 点击放大再放大😑 ) ：<img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Java%20Memory%20Area.pdf" alt=""></p>
+<p>iThoughtsX原格式文件地址:</p>
+<p><a href="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Java%20Memory%20Area.itmz" target="_blank" rel="external">http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Java%20Memory%20Area.itmz</a></p>
+<h3 id="第三章-垃圾收集器与内存分配策略">第三章 垃圾收集器与内存分配策略</h3>
+<p><a href="http://qifuguang.me/2015/09/02/%5BJava%E5%B9%B6%E5%8F%91%E5%8C%85%E5%AD%A6%E4%B9%A0%E4%B8%83%5D%E8%A7%A3%E5%AF%86ThreadLocal/" target="_blank" rel="external">http://qifuguang.me/2015/09/02/[Java并发包学习七]解密ThreadLocal/</a></p>
+<h2 id="第三部分-虚拟机执行子系统">第三部分 虚拟机执行子系统</h2>
+<h3 id="第六章-类文件结构">第六章 类文件结构</h3>
+<p>这一章节思维导图拆分为两部分，第一部分是关于Class类文件结构的，第二部分是关于字节码指令简介的。由于第二部分知识点比较琐碎，目前还在考虑对此部分是否有制作思维导图的必要。首先献上第一部分思维导图 ( 点击放大再放大😑 ) ：<img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91Class%20File%20Mind%20Map.pdf" alt="Class File Mind Map"></p>
+<p>iThoughtsX原格式文件地址:</p>
+<p><a href="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91Class%20File%20Mind%20Map.itmz" target="_blank" rel="external">http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】Class%20File%20Mind%20Map.itmz</a></p>
+<h3 id="第七章-虚拟机类加载机制">第七章 虚拟机类加载机制</h3>
+<p>这一章节分为类加载机制以及类加载器两部分。</p>
+<h4 id="类加载机制">类加载机制</h4>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Class%20Loading%20.pdf?%20v=20170214" alt="Class Loading"></p>
+<p>iThoughtsX原格式文件地址:</p>
+<p><a href="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Class%20Loading%20.itmz" target="_blank" rel="external">http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading%20.itmz</a></p>
+<h4 id="类加载器">类加载器</h4>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Class%20Loading_1%20.pdf?%20imageView2/3/w/400/h/400/q/75" alt=""></p>
+<p>iThoughtsX原格式文件地址:</p>
+<p><a href="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20Class%20Loading_1%20.itmz" target="_blank" rel="external">http://ojnnon64z.bkt.clouddn.com/【Understanding%20the%20JVM】%5BMind%20Map%5D%20Class%20Loading_1%20.itmz</a></p>
+<h3 id="第八章-虚拟机字节码执行引擎">第八章 虚拟机字节码执行引擎</h3>
+<p>这一章节主要分为三个部分：</p>
+<ul>
+<li>
+<p>运行时栈帧结构</p>
+</li>
+<li>
+<p>方法调用</p>
+</li>
+<li>
+<p>基于栈的字节码解释执行引擎</p>
+</li>
+</ul>
+<p>这三部分都集中在下面这张图中进行总结：<img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20JVM%20Bytecode%20Execution%20Engine.pdf" alt=""></p>
+<p>iThoughtsX原格式文件地址:</p>
+<p><a href="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Understanding%20the%20JVM%E3%80%91%5BMind%20Map%5D%20JVM%20Bytecode%20Execution%20Engine.itmz" target="_blank" rel="external">【Understanding%20the%20JVM】%5BMind%20Map%5D%20JVM%20Bytecode%20Execution%20Engine.itmz</a></p>
+<h2 id="第四部分-程序编译与代码优化">第四部分 程序编译与代码优化</h2>
+<p>敬请期待。。。😪</p>
+<h2 id="第五部分-高效并发">第五部分 高效并发</h2>
+<p>这一部分书中主要分为两个章节来讲解： Java内存模型与线程、线程安全与锁优化。但是《深入理解Java虚拟机》并没有用很大的篇幅来讲并发这一部分，因此还需结合《Java Concurrency in Practice》等书来加深理解。更多关于java并发的总结可以关注Java Primer系列的相关博文。</p>
+<h3 id="第十二章-java内存模型与线程">第十二章 Java内存模型与线程</h3>
+<h3 id="第十三章-线程安全与锁优化">第十三章 线程安全与锁优化</h3>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;此篇博文主要用于汇总JVM初级学习阶段的思维导图，主要根据《深入理解Java虚拟机》书中的脉络，结合JVM Specification中的知识点进行拓展和总结。思维导图通过&lt;strong&gt;iThoughtsX 4.3&lt;/strong&gt;绘制，文中会提供原始格式文件(低于4.3版本的iThoughtsX可能无法打开原始文件)和导出的图片。由于有些章节的思维导图过大，我可能会进行拆分，但是尽量不会影响理解。&lt;/p&gt;
+&lt;p&gt;内容有些杂乱，主要用作个人笔记整理，同时也希望这些思维导图能帮助大家更好地理解《深入理解Java虚拟机》(配合JVM Specification食用更佳）。有些导图目前还是半成品，暂时不会放上来，文章持续更新中。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="JVM" scheme="http://hippo-jessy.com/categories/JVM/"/>
+    
+      <category term="深入理解Java虚拟机" scheme="http://hippo-jessy.com/categories/JVM/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Java%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    
+      <category term="JVM" scheme="http://hippo-jessy.com/tags/JVM/"/>
+    
+      <category term="MindMap" scheme="http://hippo-jessy.com/tags/MindMap/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Personal Configuration for Mac and Apps</title>
+    <link href="http://hippo-jessy.com/2017/01/30/Personal-Configuration-for-Mac-and-Apps/"/>
+    <id>http://hippo-jessy.com/2017/01/30/Personal-Configuration-for-Mac-and-Apps/</id>
+    <published>2017-01-30T12:41:00.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="continue-updating">Continue Updating</h2>
+<p>Here are my configurations and settings for mac and apps in order to reach a higher productivity. Some config files can be found in the following repo: <a href="https://github.com/hippo-jessy/MacAndAppsConfig" target="_blank" rel="external">https://github.com/hippo-jessy/MacAndAppsConfig</a></p>
+<h2 id="current-environments">Current Environments</h2>
+<p>OS: Mac OS X EI Capitan(version 10.11.6)</p>
+<a id="more"></a>
+<h2 id="useful-apps-and-tools-for-mac">Useful Apps and Tools for Mac</h2>
+<ul>
+<li>
+<p><strong>Karabiner &amp;&amp; Seil</strong></p>
+<ul>
+<li>
+<p><strong>Karabiner:</strong></p>
+<p>This app can be used to remap keyboard and shortcut. I take use of it to remap “ctrl + K / J / H / L” to Arrow keys ( Up / Down / Left / Right ). My personal config file is right here:</p>
+<p><a href="https://github.com/hippo-jessy/MacAndAppsConfig/blob/master/Karabiner/private.xml" target="_blank" rel="external">https://github.com/hippo-jessy/MacAndAppsConfig/blob/master/Karabiner/private.xml</a></p>
+</li>
+<li>
+<p><strong>Seil:</strong></p>
+<p>I use this app only for its functionality to remap Caps Lock to esc. It’s pretty much helpful when editing in vim mode. Although most remapping actions can be performed by Karabiner, it can do nothing with this special key ( Karabiner is currently working to support MacOS Sierra and trying to fully integrate Seil, you can <a href="https://github.com/tekezo/Karabiner-Elements" target="_blank" rel="external">check it here</a> ).</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>iStat Menus</strong></p>
+<p>This one is basically a profiling tool which show dynamic status of CPU, memory, disks, etc. All these information is presented in the menubar and in a pleasant way as the following picture shown:</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Personal%20Configuration%20for%20Mac%20and%20Apps.png" alt=" Personal Configuration for Mac and Apps"></p>
+</li>
+</ul>
+<h2 id="keyboard-and-shortcut-remapping">Keyboard and Shortcut Remapping</h2>
+<ul>
+<li>
+<p><strong>Disable shortcut CMD + H systemwide &quot; hide window &quot; functionality and reassign it to different action in specific apps</strong>. No additional tool is needed to fulfil this remapping process and try to follow these steps:</p>
+<ol>
+<li>
+<p>Go to <em>System Preference</em> and locate <em>KeyBoard</em></p>
+</li>
+<li>
+<p>Go to <em>Keyboard Shortcuts</em> sub tab at the top</p>
+</li>
+<li>
+<p>Choose <em>App Shortcuts</em> on the list at left side</p>
+</li>
+<li>
+<p>Click on the + sign below the list to the right</p>
+</li>
+<li>
+<p>See the following screenshot, where I’ve reassigned CMD+H  to “left with selection” action in IntelliJ IDEA exclusively.</p>
+<p><em>Tips: choose “All controls” for pressing Tab could also fast your keyboard operation.</em></p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Personal%20Configuration%20for%20Mac%20and%20Apps_1.png" alt="Personal Configuration for Mac and Apps_1"></p>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Remap Ctrl + H / J / K / L to Arrow keys ( left / down / up/ right )</strong> considering anti human location of Arrow keys. Take good use of <strong>Karabiner</strong> to achieve this task as I mentioned before.</p>
+</li>
+<li>
+<p><strong>Remap caps lock to esc</strong> using <strong>Seil</strong> to speed up vim mode editing.</p>
+</li>
+<li>
+<p><strong>Remember to switch Mac Function Keys ( such as F1, F2 ) to standard function keys</strong> in that many apps like browsers, IDEs may take these keys as part of shortcuts.</p>
+</li>
+</ul>
+<h2 id="settings-for-intellij-idea">Settings for IntelliJ IDEA</h2>
+<p>I changed most of keymap settings of IntelliJ IDEA based on my own habits and most of these changed shortcuts are easier to remember. You can find the settings file here:  <a href="https://github.com/hippo-jessy/MacAndAppsConfig/tree/master/IntelliJ_IDEA" target="_blank" rel="external">settings exported</a></p>
+<p><strong>To Be Continued …</strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;continue-updating&quot;&gt;Continue Updating&lt;/h2&gt;
+&lt;p&gt;Here are my configurations and settings for mac and apps in order to reach a higher productivity. Some config files can be found in the following repo: &lt;a href=&quot;https://github.com/hippo-jessy/MacAndAppsConfig&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/hippo-jessy/MacAndAppsConfig&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;current-environments&quot;&gt;Current Environments&lt;/h2&gt;
+&lt;p&gt;OS: Mac OS X EI Capitan(version 10.11.6)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Configuration" scheme="http://hippo-jessy.com/categories/Configuration/"/>
+    
+    
+      <category term="Mac" scheme="http://hippo-jessy.com/tags/Mac/"/>
+    
+      <category term="Config" scheme="http://hippo-jessy.com/tags/Config/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Design Pattern】Iterator 迭代器模式</title>
+    <link href="http://hippo-jessy.com/2017/01/22/%E3%80%90Design-Pattern%E3%80%91Iterator-%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://hippo-jessy.com/2017/01/22/【Design-Pattern】Iterator-迭代器模式/</id>
+    <published>2017-01-22T03:32:07.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<h1>Class Diagram</h1>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern%E3%80%91Iterator%20%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.png" alt="【Design Pattern】Iterator 迭代器模式"></p>
+<h1>Introduction</h1>
+<p>迭代器模式其目的是将容器的遍历与容器的内部实现解耦，从而利用一种通用统一的方式遍历内部实现各异的多种容器。迭代器模式的使用已经非常普遍，这里不再赘述。此篇博客重点在于介绍迭代器的内部实现，以及在JDK源码中迭代器模式的实际运用。</p>
+<a id="more"></a>
+<h1>Implementation</h1>
+<p>既然是要与容器内部实现解耦，很自然地想到要加一层针对容器的抽象。如何加抽象？这里采用interface的形式。根据上文中的类图，我们可以看到Aggregate接口，这个接口就保证了凡是实现了该接口的容器（不管其内部是如何实现的）都可以利用Iterator对其进行遍历。Aggregate接口声明的createIterator()方法非常关键(对应于java中的iterator()方法），它实现了Iterator与容器的关联绑定。给一个更具体的ConcreteIterator类图：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern%E3%80%91Iterator%20%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F_1.png" alt="【Design Pattern】Iterator 迭代器模式_1"></p>
+<p>具体来说，ConcreteIterator的构造器有一个参数，这个参数必须是一个实现了Aggregate接口的类的对象。这样，通过createIterator()的内部实现  return new ConcreteIterator(this) 使得ConcreteIterator关联了ConcreteAggregate的对象，从而可以直接利用createItertor()返回的Iterator对象来对ConcreteAggregate进行遍历。</p>
+<h1>Examples</h1>
+<blockquote>
+<p>所有【Design Pattern】系列博文的示例代码都可以在这个repo中找到<a href="https://github.com/hippo-jessy/design_pattern" target="_blank" rel="external">https://github.com/hippo-jessy/design_pattern</a></p>
+</blockquote>
+<p>这里给出一个实现迭代器模式的一个例子(ConcreteAggregate用ArrayList作为内部结构存储)：</p>
+<ul>
+<li><strong>Aggregate Interface</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Aggregate</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line">	<span class="function">Iterator&lt;E&gt; <span class="title">createIterator</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>Iterator Interface</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line">	<span class="function">E <span class="title">next</span><span class="params">()</span></span>;</div><div class="line">	<span class="function"><span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>ConcreteAggregate Class</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteAggregate</span>&lt;<span class="title">E</span>&gt; <span class="keyword">implements</span> <span class="title">Aggregate</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line">	<span class="keyword">private</span> ArrayList&lt;E&gt; internalData;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">ConcreteAggregate</span><span class="params">()</span></span>&#123;</div><div class="line">		internalData = <span class="keyword">new</span> ArrayList&lt;E&gt;();</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> Iterator&lt;E&gt; <span class="title">createIterator</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="keyword">new</span> ConcreteIterator&lt;E&gt;(<span class="keyword">this</span>);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> E <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> internalData.get(index);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(E element)</span></span>&#123;</div><div class="line">		internalData.add(element);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>&#123;</div><div class="line">		<span class="keyword">return</span> internalData.size();</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>ConcreteIterator Class</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteIterator</span>&lt;<span class="title">E</span>&gt; <span class="keyword">implements</span> <span class="title">Iterator</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">private</span> ConcreteAggregate&lt;E&gt; aggregate;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">int</span> cursor = <span class="number">0</span>;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">ConcreteIterator</span><span class="params">(ConcreteAggregate&lt;E&gt; aggregate)</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.aggregate = aggregate;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> E <span class="title">next</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> aggregate.get(cursor++);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> (cursor &lt; aggregate.size()) ? <span class="keyword">true</span> : <span class="keyword">false</span>;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>Client 端代码</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		ConcreteAggregate&lt;String&gt; aggregate = <span class="keyword">new</span> ConcreteAggregate&lt;String&gt;();</div><div class="line">		aggregate.add(<span class="string">"This"</span>);</div><div class="line">		aggregate.add(<span class="string">"is"</span>);</div><div class="line">		aggregate.add(<span class="string">"a"</span>);</div><div class="line">		aggregate.add(<span class="string">"bright"</span>);</div><div class="line">		aggregate.add(<span class="string">"day"</span>);</div><div class="line">		Iterator&lt;String&gt; iter = aggregate.createIterator();</div><div class="line">		<span class="keyword">while</span>(iter.hasNext())&#123;</div><div class="line">			System.out.print(iter.next()+<span class="string">"/"</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>运行输出结果为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">This/is/a/bright/day/</div></pre></td></tr></table></figure>
+<br>
+<h1>Extension</h1>
+<p>参照上面的类图和例子，又产生了如下疑问：</p>
+<p>这里产生了一个新的问题，如果ConcreteIterator必须设一个ConcreteAggregate类型的属性，那岂不是每定义一种ConcreteAggregate都得重新定义一个与之对应的ConcreteIterator类？<strong>从某种程度上来说</strong>，java中确实是这样做的。</p>
+<p>为什么说是“从某种程度上“ ？原因主要有两点：</p>
+<ol>
+<li>
+<p>以Collection框架为例，从最初的Iterable接口, Collection接口到最后的ArrayList, LinkedList, HashSet, PriorityQueue等最终实现，中间添加了多重抽象层，比如AbstractCollection, AbstractList等等。因此在JDK中ConcreteAggregate的这个概念变得模糊了。以ArrayList和LinkedList为例，实际上充当ConcreteAggregate的是它们的父类AbstractList。也就是说只需要定义与AbstractList对应的ConcreteIterator类即可，而不必要给ArrayList，LinkedList都创建对应的ConcreteIterator。</p>
+</li>
+<li>
+<p>严格地来说，java是在ConcreteAggregate类中定义一个与之对应的ConcreteIterator<strong>内部类</strong>。这样做其实是一种很明智的做法，从上面的两张类图以及Example中的示例代码我们可以清楚的看到Client端（也就是JDK使用者）通常只会和Aggregate接口，ConcreteAggregate类以及Iterator接口打交道（Client端遍历容器只需要使用Iterator接口暴露的方法即可，没有任何调用ConcreteIterator的需求）。ConcreteIterable类除了在ConcreteAggregate类的createIterator方法中被实例化以外，不会在其他地方实例化。而且这种关联关系存在的意义是为了让ConcreteIterable使用ConcreteAggregate内部的某些方法以便实现Iterator接口定义的next()等方法。很明显在将ConcreteIterable作为ConcreteAggregate的内部类来定义非常合适。甚至可以直接在createIterator方法中定义匿名内部类实现Iterable接口。</p>
+<blockquote>
+<p>适合使用匿名类情形：该类只会在定义的地方被实例化；</p>
+<p>适合使用内部类的特征： 该类需要使用外部类的某些属性方法而该类又不会在外部类以外的地方被调用或实例化。</p>
+</blockquote>
+</li>
+</ol>
+<p>于是根据第二点的启发，上面Example部分的实例代码可以进行改写（Iterator接口用匿名内部类实现，无需专门单独定义ConcreteIterator类）：</p>
+<ul>
+<li><strong>改进版ConcreteAggregate</strong></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteAggregateOptim</span>&lt;<span class="title">E</span>&gt; <span class="keyword">implements</span> <span class="title">Aggregate</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line"></div><div class="line">	<span class="keyword">private</span> ArrayList&lt;E&gt; internalData;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="title">ConcreteAggregateOptim</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">this</span>.internalData = <span class="keyword">new</span> ArrayList&lt;E&gt;();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> Iterator&lt;E&gt; <span class="title">createIterator</span><span class="params">()</span> </span>&#123;</div><div class="line">      <span class="comment">//使用匿名内部类实现Iterator接口</span></div><div class="line">		<span class="keyword">return</span> <span class="keyword">new</span> Iterator&lt;E&gt;() &#123;</div><div class="line">			<span class="keyword">private</span> <span class="keyword">int</span> cursor = <span class="number">0</span>;</div><div class="line"></div><div class="line">			<span class="meta">@Override</span></div><div class="line">			<span class="function"><span class="keyword">public</span> E <span class="title">next</span><span class="params">()</span> </span>&#123;</div><div class="line">				<span class="keyword">return</span> get(cursor++);</div><div class="line">			&#125;</div><div class="line"></div><div class="line">			<span class="meta">@Override</span></div><div class="line">			<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">hasNext</span><span class="params">()</span> </span>&#123;</div><div class="line">				<span class="keyword">return</span> (cursor &lt; size()) ? <span class="keyword">true</span> : <span class="keyword">false</span>;</div><div class="line">			&#125;</div><div class="line"></div><div class="line">		&#125;;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> E <span class="title">get</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> internalData.get(index);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">add</span><span class="params">(E element)</span> </span>&#123;</div><div class="line">		internalData.add(element);</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> internalData.size();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>JDK源码中对迭代器模式的实现和上面这段改进代码比较类似，只不过它更倾向于采用内部类而非匿名内部类。JDK中迭代器模式的简化版类图（中间省略了几层继承关系）如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern%E3%80%91Iterator%20%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F_2.png" alt="【Design Pattern】Iterator 迭代器模式_2"></p>
+<p>这里JDK库中<strong>Iterable接口相当于上文第一张类图中的Aggregate接口</strong>，Iterable接口中声明的方法Iterator()对应于createIterator()方法，<strong>Java 中的Iterator接口直接对应与之前的Iterator接口</strong>，AbstractList类对应于ConcreteAggregate类，而AbstractList类中的内部类Itr实现了Iterator接口，相当于ConcreteIterator。ArrayList和LinkedList均为AbstractList的子类，可以直接使用父类的iterator()方法得到由内部类Itr向上转型后的Iterator接口引用，通过Iterator接口暴露的hasNext, next等方法最终实现遍历。Client端代码一般只会和Iterator接口以及ArrayList，LinkedList等类发生关联（有时也会使用上面类图中省略了的List接口，Collection接口等，但是不会有使用内部类Iter的需求）。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">ArrayList&lt;String&gt; sampleList = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div><div class="line">Collections.addAll(sampleList,<span class="string">"a"</span>,<span class="string">"b"</span>,<span class="string">"c"</span>,<span class="string">"d"</span>);</div><div class="line"><span class="comment">//sampleList.iterator()调用的是ArrayList的父类AbstractList中实现Iterable接口的方法</span></div><div class="line">Iterator&lt;String&gt; iter = sampleList.iterator();</div><div class="line"><span class="keyword">while</span>(iter.hasNext())&#123;</div><div class="line">  System.out.println(iter.next());</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//凡是实现了Iterable接口的类都可以用foreach形式来遍历其内部元素，原理是foreach会</span></div><div class="line"><span class="comment">//默认调用该类的iterator()方法获得其Iterator然后进行遍历</span></div><div class="line"></div><div class="line"><span class="keyword">for</span>(String item: sampleList)&#123;</div><div class="line">  System.out.println(item);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+   <br>
+<h1>References</h1>
+<p>Design Pattern(GOF)</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1&gt;Class Diagram&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;http://ojnnon64z.bkt.clouddn.com/%E3%80%90Design%20Pattern%E3%80%91Iterator%20%E8%BF%AD%E4%BB%A3%E5%99%A8%E6%A8%A1%E5%BC%8F.png&quot; alt=&quot;【Design Pattern】Iterator 迭代器模式&quot;&gt;&lt;/p&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;迭代器模式其目的是将容器的遍历与容器的内部实现解耦，从而利用一种通用统一的方式遍历内部实现各异的多种容器。迭代器模式的使用已经非常普遍，这里不再赘述。此篇博客重点在于介绍迭代器的内部实现，以及在JDK源码中迭代器模式的实际运用。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Design Pattern" scheme="http://hippo-jessy.com/categories/Design-Pattern/"/>
+    
+    
+      <category term="Java" scheme="http://hippo-jessy.com/tags/Java/"/>
+    
+      <category term="Design Pattern" scheme="http://hippo-jessy.com/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Java You Don&#39;t Know - Item 2】All Interfaces Have toString() Method</title>
+    <link href="http://hippo-jessy.com/2017/01/22/%E3%80%90Java-You-Don-t-Know-Item-2%E3%80%91All-Interfaces-Have-toString-Method/"/>
+    <id>http://hippo-jessy.com/2017/01/22/【Java-You-Don-t-Know-Item-2】All-Interfaces-Have-toString-Method/</id>
+    <published>2017-01-22T00:30:29.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>最近总结<strong>Thinking in Java 读书笔记</strong>时，涉及到下面这段简单代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Collection&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;String&gt;();</div><div class="line">Collections.addAll(list, <span class="string">"tomorrow"</span>,<span class="string">"hi"</span>,<span class="string">"yes"</span>);</div><div class="line"><span class="comment">//内部调用list.toString方法</span></div><div class="line">System.out.print(list);</div></pre></td></tr></table></figure>
+<p>上面这段代码的运行结果如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[tomorrow, hi, yes]</div></pre></td></tr></table></figure>
+<p>进而引出了两个问题：</p>
+<ul>
+<li>
+<p>Collection是一个接口，其内部并没有toString方法，为什么声明为Collection类型的list对象可以调用toString方法？</p>
+</li>
+<li>
+<p>list对象的toString方法明显被重写过了，重写toString方法是在哪里实现的？</p>
+</li>
+</ul>
+<a id="more"></a>
+<h2 id="solution">Solution</h2>
+<p>首先解决第二个问题：</p>
+<p>​       ArrayList的继承关系是 ArrayList -&gt; AbstractList -&gt; AbstractCollection。而AbstractCollection中重写了toString方法，具体实现如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</div><div class="line">       Iterator&lt;E&gt; it = iterator();</div><div class="line">       <span class="keyword">if</span> (! it.hasNext())</div><div class="line">           <span class="keyword">return</span> <span class="string">"[]"</span>;</div><div class="line"></div><div class="line">       StringBuilder sb = <span class="keyword">new</span> StringBuilder();</div><div class="line">       sb.append(<span class="string">'['</span>);</div><div class="line">       <span class="keyword">for</span> (;;) &#123;</div><div class="line">           E e = it.next();</div><div class="line">           sb.append(e == <span class="keyword">this</span> ? <span class="string">"(this Collection)"</span> : e);</div><div class="line">           <span class="keyword">if</span> (! it.hasNext())</div><div class="line">               <span class="keyword">return</span> sb.append(<span class="string">']'</span>).toString();</div><div class="line">           sb.append(<span class="string">','</span>).append(<span class="string">' '</span>);</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+<p>然而这个解答并不能解决全部问题，就算是ArrayList中的toString方法已经通过继承父类得到重写，ArrayList创建出的对象被向上转型赋值给了Collection类型的list引用，于是又绕回到第一个问题了，Collection接口源码中没有toString方法，为何list对象可以调用toString方法？</p>
+<p>下面这张图通过Eclipse的自动补全工具给我们提供了一点线索：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/All%20Interfaces%20Have%20toString%28%29%20Method.png" alt="All%20Interfaces%20Have%20toString%28%29%20Method"></p>
+<p>可以看出，其实list调用的是Object中的toString方法。实际上Collection中有toString方法，只不过是隐式添加的。一个没有任何父接口的接口，如果没有显式声明toString等Object类中的public实例方法，则会被隐式添加这些方法对应的抽象方法。</p>
+<p>简而言之，所有接口都会有对应于Object类中public实例方法的抽象方法。也就是说所有接口都会有toString,  hashCode, wait, notify, getClass, equals等方法。Java Language Specification 中的原话如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">If an interface has no direct superinterfaces, then the interface implicitly declares a</div><div class="line">public abstract member method m with signature s, return type r, and throws clause t</div><div class="line">corresponding to each public instance method m with signature s, return type r, and</div><div class="line">throws clause t declared in Object, unless a method with the same signature, same return</div><div class="line">type, and a compatible throws clause is explicitly declared by the interface.</div></pre></td></tr></table></figure>
+<p>总结一下整个过程，Collection中没有显式声明toString方法，因此会隐式添加对应于Object类中toString的同名抽象方法，<code>System.out.println(list)</code> list调用Collection接口中的toString方法，list实际类型为ArrayList, 由于动态绑定（此处涉及多态），调用的是ArrayList实例对象中的toString方法，ArrayList中并没有重写toString方法，又因为ArrayList的超父类AbstractCollection重写了toString方法，因此最后调用的是AbstractCollection 中的toString方法。从而实现了打印Collection所有元素的最终效果。</p>
+<p>由此进行一下拓展，如果接口中显式声明了toString等方法又会怎样呢？此时，实现该接口的类不会被强制要求实现toString方法，原因很简单，所有的类都已经通过继承Object类实现了toString方法。因此，在平时coding的时候，如果想在接口中定义有效的强制被实现的抽象方法，最好避免与Object类中public实例方法重名。</p>
+<h2 id="reference">Reference</h2>
+<p><a href="http://stackoverflow.com/questions/12124163/do-interfaces-have-tostring-method" target="_blank" rel="external">http://stackoverflow.com/questions/12124163/do-interfaces-have-tostring-method</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;最近总结&lt;strong&gt;Thinking in Java 读书笔记&lt;/strong&gt;时，涉及到下面这段简单代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;Collection&amp;lt;String&amp;gt; list = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ArrayList&amp;lt;String&amp;gt;();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Collections.addAll(list, &lt;span class=&quot;string&quot;&gt;&quot;tomorrow&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;hi&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;yes&quot;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//内部调用list.toString方法&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;System.out.print(list);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;上面这段代码的运行结果如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[tomorrow, hi, yes]&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;进而引出了两个问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Collection是一个接口，其内部并没有toString方法，为什么声明为Collection类型的list对象可以调用toString方法？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;list对象的toString方法明显被重写过了，重写toString方法是在哪里实现的？&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="http://hippo-jessy.com/categories/Java/"/>
+    
+      <category term="Java You Don&#39;t Know" scheme="http://hippo-jessy.com/categories/Java/Java-You-Don-t-Know/"/>
+    
+    
+      <category term="Java" scheme="http://hippo-jessy.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Java You Don&#39;t Know - Item 1】为什么long类型的变量在赋值时数值常量要加“L”</title>
+    <link href="http://hippo-jessy.com/2017/01/21/%E3%80%90Java-You-Don-t-Know-Item-1%E3%80%91%E4%B8%BA%E4%BB%80%E4%B9%88long%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F%E5%9C%A8%E8%B5%8B%E5%80%BC%E6%97%B6%E6%95%B0%E5%80%BC%E5%B8%B8%E9%87%8F%E8%A6%81%E5%8A%A0%E2%80%9CL%E2%80%9D/"/>
+    <id>http://hippo-jessy.com/2017/01/21/【Java-You-Don-t-Know-Item-1】为什么long类型的变量在赋值时数值常量要加“L”/</id>
+    <published>2017-01-21T23:30:13.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>下面这段代码大家应该多很熟悉，也都知道Java赋值long类型变量时，一定要在常量后面加上“L”或“l”。这篇笔记就简单展开讨论其原因。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">long</span> a = <span class="number">500</span>;	<span class="comment">//赋值500，编译通过</span></div><div class="line"><span class="keyword">long</span> b = <span class="number">5000000000</span>;	<span class="comment">//赋值50亿，编译报错</span></div><div class="line"><span class="keyword">long</span> c = <span class="number">5000000000L</span>;	<span class="comment">//赋值50亿，编译通过</span></div></pre></td></tr></table></figure>
+<p>​	这里其实涉及到一个细节，Java默认的整数常量类型为int。因此我们赋值变量时，不管变量是什么类型，赋值等号右边的数字默认先使用int保存，然后赋值时再根据变量类型进行自动类型转换。比如 <code>byte a = 5</code> 实际上是将int类型的‘5’，通过自动类型转换为byte类型的变量a。由于long类型的变量可能保存远远大于int表示范围的数值，因此可能出现大于int表示范围的数值常量默认保存在int中的情况。具体参照上述code block中的第二行，该赋值语句执行的过程是：</p>
+<a id="more"></a>
+<p>​	1. 现将50亿数值保存为默认的整数常量类型int；</p>
+<p>​	2. 将该int类型的数值通过自动转型赋值给long类型的变量b;</p>
+<p>​	实际上在执行第一步时就已经出错了，int的表示范围大概在正负21亿左右，50亿远远出超出该范围。具体报错信息如下：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Java/Java-Basics/Misc/%E4%B8%BA%E4%BB%80%E4%B9%88Java-long%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F%E5%9C%A8%E8%B5%8B%E5%80%BC%E6%97%B6%E6%95%B0%E5%80%BC%E5%B8%B8%E9%87%8F%E8%A6%81%E5%8A%A0%E2%80%9CL%E2%80%9D/error1.png" alt="error1"></p>
+<p>​	这种报错和赋值号左边是否是long类型无关，只与数值常量大小是否超出int表示范围有关。比如 <code>byte a = 5000000000</code> 同样会报出 “integer number too large” 的错误。如果想要保存类似50亿这样的大数值，解决方法便是在数值常量后加上“L”, 这样使得Java不再默认使用int类型保存数字而是改为直接用long类型来保存。如此一来，对于 <code>long c = 5000000000L</code> 这样的赋值语句当然就不会再报错，但是如果是 <code>byte a = 5000000000L</code> 呢？这样在赋值语句执行的两个步骤中，虽然第一步数值常量默认保存为long类型不会报错了，但是第二步将long类型自动转型给byte类型却会出现精度丢失（50亿远大于byte的表示范围），因此会报出第二种错误：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Java/Java-Basics/Misc/%E4%B8%BA%E4%BB%80%E4%B9%88Java-long%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F%E5%9C%A8%E8%B5%8B%E5%80%BC%E6%97%B6%E6%95%B0%E5%80%BC%E5%B8%B8%E9%87%8F%E8%A6%81%E5%8A%A0%E2%80%9CL%E2%80%9D/error1.png" alt="error2"></p>
+<p>​	很明显这是一个类型转换的错误，我们知道类型转换分为自动类型转换和强制类型转换，自动类型转换只能是由容量小的类型向容量大的类型转换（向上转型，这里说的<strong>容量是指表数范围而不是指字节数目</strong>，比如8字节的long可以自动转型为4字节的float），否则则需要强制类型转换。此时由long向byte显然无法进行自动类型转换，因此报出incompatible types的错误。这里又引出了第二个问题，为什么 <code>byte a = 5</code>  这样的赋值语句不会报出类型转换的错误呢？常量数值5也是默认保存为int类型，此时int转byte是向下转型，按道理是应该强制类型转换的。这里其实涉及到自动类型转换的一个特例：**整型常量以默认类型int直接赋值给byte, short, char等类型变量时，只要该整型常量不超过对应变量类型的表数范围时，是可以进行自动类型转换的。**更深一层的原因可能是由于JVM内部实际上是将char, byte, short扩展成int处理的，这里暂时不做深究。</p>
+<p>​	需要强调的是，必须得是<strong>整型常量</strong>而且必须是<strong>直接赋值</strong>才能进行上述的特例转换。举个反例加深印象：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> a = <span class="number">10</span>;</div><div class="line"><span class="keyword">byte</span> b = a;</div></pre></td></tr></table></figure>
+<p>​	此时会报出incompatible types的错误，简单来说，可以这样理解：编译器在编译时首先如果发现右边为int类型<strong>并且为常量</strong>，则会判断该常量是否在被赋值变量类型表数范围内，如果在则自动转型，不在，则报错要求强制转型。如果发现右边为变量，如果满足向上转型的标准则可自动转型，否则报错要求强制转型。下面还有一个类似的小例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">byte</span> a = <span class="number">1</span>, b = <span class="number">2</span>, c, d;</div><div class="line">c = <span class="number">1</span> + <span class="number">2</span>;	<span class="comment">//编译通过</span></div><div class="line">d = a + b;	<span class="comment">//报错，incompatible types</span></div></pre></td></tr></table></figure>
+<p>​	当算数运算操作对象是byte, short, char时，Java会将操作数提升为int类型来处理，因此第三行右边为int类型，然而编译器在编译过程中无法得知两个变量的相加结果，因此无法进一步判断是否在byte的范围内，因此无法自动转型；相反第二行代码是两个常量int相加，编译阶段就可以得到结果为3，在byte的范围内，自动转型。</p>
+<h4 id="references">References</h4>
+<p>[1] [<a href="http://tieba.baidu.com/p/2620126491?pn=2" target="_blank" rel="external">http://tieba.baidu.com/p/2620126491?pn=2</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;下面这段代码大家应该多很熟悉，也都知道Java赋值long类型变量时，一定要在常量后面加上“L”或“l”。这篇笔记就简单展开讨论其原因。&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;500&lt;/span&gt;;	&lt;span class=&quot;comment&quot;&gt;//赋值500，编译通过&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; b = &lt;span class=&quot;number&quot;&gt;5000000000&lt;/span&gt;;	&lt;span class=&quot;comment&quot;&gt;//赋值50亿，编译报错&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; c = &lt;span class=&quot;number&quot;&gt;5000000000L&lt;/span&gt;;	&lt;span class=&quot;comment&quot;&gt;//赋值50亿，编译通过&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;​	这里其实涉及到一个细节，Java默认的整数常量类型为int。因此我们赋值变量时，不管变量是什么类型，赋值等号右边的数字默认先使用int保存，然后赋值时再根据变量类型进行自动类型转换。比如 &lt;code&gt;byte a = 5&lt;/code&gt; 实际上是将int类型的‘5’，通过自动类型转换为byte类型的变量a。由于long类型的变量可能保存远远大于int表示范围的数值，因此可能出现大于int表示范围的数值常量默认保存在int中的情况。具体参照上述code block中的第二行，该赋值语句执行的过程是：&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Java" scheme="http://hippo-jessy.com/categories/Java/"/>
+    
+      <category term="Java You Don&#39;t Know" scheme="http://hippo-jessy.com/categories/Java/Java-You-Don-t-Know/"/>
+    
+    
+      <category term="Java" scheme="http://hippo-jessy.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Charset and Encoding</title>
+    <link href="http://hippo-jessy.com/2017/01/17/Charset-and-Encoding/"/>
+    <id>http://hippo-jessy.com/2017/01/17/Charset-and-Encoding/</id>
+    <published>2017-01-17T19:41:33.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近重新整理一遍 <strong>Java</strong> 基础，在写到注释相关的内容时发现自己对各种字符编码问题一直似懂非懂。相信很多人都听说过ASCII, Unicode, GB2312, UTF-8之类的编码，但是对于它们的印象可能仅仅停留在知道它们是不同的字符编码，使用不当可能会导致乱码的层面上。</p>
+<p>​	查了很多资料，脑子有点乱，下面这篇笔记主要用来梳理思路。文章可能涉及到ASCII, ISO8859, GB2312, GBK, Unicode, UTF-8, UTF-16等多个字符集和编码方式进行探讨，篇幅有限，泛泛而谈，希望对有相同困惑的朋友有所帮助~~</p>
+<a id="more"></a>
+<h2 id="charset-and-encoding">Charset and Encoding</h2>
+<p>强调，这一部分<strong>非常重要</strong>，很多人在弄清楚Unicode, GB2312等多种编码原理之后可能都不一定弄清楚了字符集和字符编码的区别。在具体讲解各种编码规则之前，先来明确一下字符集(Charset)和字符编码(Encoding)的区别。</p>
+<ul>
+<li>
+<p>Charset (Character set) 字符集： 见名知义，字符集就是字符的集合。比如ASCII字符集收录了英文字符和标点以及控制字符，GB2312字符集收录了常用的汉字字符、标点等。</p>
+</li>
+<li>
+<p>Encoding (Charset Encoding) 字符编码：实现字符与字节（二进制）映射的编码规则。可以通俗的看做是实现语言字符与计算机机器码相互翻译的规则，比如UTF-8编码方式等。</p>
+<p>​为什么经常容易混淆Charset与Encoding？主要由于很多Charset只对应一种Encoding的方式，并且有相同的名字，比如ASCII字符集只对应ASCII编码规则，GB2312字符集只能由GB2312编码规则来进行翻译。然而下面这个例子很好地诠释了Charset与Encoding的区别。</p>
+</li>
+</ul>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding.png" alt="Charset and Encoding"></p>
+<p>Unicode字符集对应了多种Encoding方式（UTF-8等），而GB2312字符集只有GB2312一种编码方式。因此实际上我们经常看到的 <code>charset = &quot;uft-8&quot;</code> 是不准确的说法，UTF-8实际上只是一种编码方式而不是一个字符集，它所对应的字符集是Unicode字符集。额外提一句，在windows平台上(比如记事本)有时候会出现Unicode编码这种不规范的说法，其实它指的的UTF-16编码。</p>
+<h2 id="从历史说起">从历史说起</h2>
+<p>首先上图，这张图按照历史发展顺序对多种字符编码集进行了梳理。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_1.png" alt="Charset and Encoding_1"></p>
+<p>简单的来说，最开始为了能实现二进制与人类语言字符的映射转换，人们想出了ASCII码来实现英文字符的转换。后来西欧各国也需要表示自己的语言，于是对ASCII进行扩展产生ISO8859。再然后我天朝崛起，博大精深的中文通过GB2312等字符集进入计算机，当然世界上还有各种语言，于是各种字符集编码层出不穷。。。为了促进世界的和谐，Unicode出现了希望能够包罗万象，以一种字符编码集收录所有的语言。再后来随着网络世界的崛起，为了提高网络传输效率，UTF-8等编码方式出现以期望提高Unicode的编码效率。</p>
+<p>下面将大致根据上图的脉络，依次对各个字符编码展开讲解。</p>
+<h2 id="ascii">ASCII</h2>
+<p>​	计算机使用二进制保存指令和数据，字节作为计算接处理数据的基本单位，有256(2<sup>8</sup>)种可能状态。这些状态被人们利用来标记指令和文字。最初前32(0x20)种状态被用来表示终端、打印机等设备的某些特殊动作，比如终端遇到字节0x10则换行，类似的还有回车(CR 0x0D)，震铃(BELL 0x07)等。这前32种状态又被称为控制码。除了这些特殊用途的状态外，还有256-32=224种状态没有被利用，资源浪费怎么能忍，何况除了控制指令外，咱们的文字还没有被表示。于是这些多出来的状态被用来表示文字(English Character)和符号标点等，如此这般，计算机就可以显示和记录文字了，这便是<strong>ASCII</strong>(American Standard Code for Information Interchange)最初的由来。下面附张ASCII的图加深印象。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_2.png" alt="Charset and Encoding_2"></p>
+<p>从图片中可以看到，所有英文字符和标点等可显示字符即使加上32种控制字符，也只需要128种状态(7 bits)就可以表示完，因此ASCII码实际上每个字节的第一位都是0。</p>
+<h2 id="iso8859">ISO8859</h2>
+<p>​	然而，世界上不止只有英文这一种语言，西欧各个国家蠢蠢欲动。由于西欧的多种语言和英语有着共同的起源，都是拉丁语系，因此除了ASCII码原有的128个字符，借助一个字节剩下的256-128=128种状态也足以表示他们的语言字符不同的地方（比如130即0x82在法语编码中代表了é）。由此，引出了<strong>ISO8859</strong>这种编码方式。ISO8859实际上是对ASCII的8位扩展（ASCII实际上只用到了一个字节的低7位），是由<strong>ISO</strong>(the International Organization for Standardization )提出的。</p>
+<h2 id="gb2312">GB2312</h2>
+<p>​	终于等到我大天朝了，区区256种状态怎够表示我朝上下五千年的灿烂文明！！！仅仅常用的汉字就多达6000多个，更别提那些生僻字和繁体字了。勤劳智慧的中国人民需要更多位来表示汉字，于是<strong>GB2312</strong>应运而生。GB2312采用两个字节来表示一个中文字符（即一个汉字），仍然使用一个字节表示英文字符标点等（保留ASCII的方式），一共收录了6763个常用汉字，其他一些特殊符号，以及ASCII表示的字符。这样一来每个字符对应的二进制位数可变（8位或16位），计算机要如何识别一个字节对应一个字符还是两个字节对应一个字符呢？</p>
+<p>​	我们知道ASCII实际只用到了字节的低七位，因此字节的第一位始终为0。GB2312使用第一位为1的两个连续字节表示汉字，使用第一位为0的单个字节表示原来ASCII编码的字符（由此实现了对ASCII的兼容）。这样，当计算机读到首位为1的字节时便可知需要将连续两个字节显示成一个字符，读到首位为0的字节时便直接将该字节翻译成一个字符。下面详述汉字表示的部分。</p>
+<p>​	GB2312使用首位为1的两个字节来表示一个汉字字符(一个汉字或者一个中文标点等)，第一个字节称为高位字节，范围是0xA1-0xF7（87种状态），用来表示区码，分别对应区号01-87；第二个字节为低位字节，范围是0xA1-0xFE（94种状态），用来表示位码，分别对应位号01-94。这种表示方式也被称为“区位码”，其实说白了就是类似于坐标定位的原理，你可以想象这些汉字字符都被放在了一个二维平面上，区位码类似于横纵坐标，依此实现编码与汉字字符的一一对应。</p>
+<p>​	对于区码对应的字符有如下特征：</p>
+<ul>
+<li>
+<p>01-09区为特殊符号</p>
+</li>
+<li>
+<p>10-15区没有编码</p>
+</li>
+<li>
+<p>16-55区为一级汉字，按拼音排序，共3755个</p>
+</li>
+<li>
+<p>56-87区为二级汉字，按部首／笔画排序，共3008个</p>
+</li>
+<li>
+<p>88-94区没有编码</p>
+<p>由于编码表过大(<a href="http://tools.jb51.net/table/gb2312" target="_blank" rel="external">地址一</a> <a href="http://www.knowsky.com/resource/gb2312tbl.htm" target="_blank" rel="external">地址二</a>)，这里只截取第17区部分示例讲解。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_3.png" alt="Charset and Encoding_3"></p>
+</li>
+</ul>
+<p>第17区对应于区码0xA1+17=0xB1，因此如上图所示该区所有汉字字符的高位字节均为0xB1。而且也可以看到，随着位码的增长，其对应的汉字字符也是按拼音顺序排序的。另外提一句，由于两个字节可以表示的状态很多而实际上GB2312只收录了六千多个常用的汉字。于是仗着空间大，尽管已经收录了ASCII中的字符，GB2312又做了一套类似ASCII中的一些标点符号收录进来，也就出现了我们经常遇到的全角半角标符的区别。</p>
+<h2 id="gbk-gb18030-big5">GBK &amp; GB18030 &amp; BIG5</h2>
+<p>中国汉字总数将近十万个，GB2312也仅仅只能表示常用的汉字，但是对于生僻字以及繁体字，则需要<strong>GBK</strong>对GB2312进行进一步的扩展。还有，别忘了，五十六个民族五十六朵花。咱们少数民族同胞的各种语言瑰宝怎能蒙尘，于是你懂得，<strong>GB18030</strong>继续扩展（写到这里，突然好奇去翻了个<a href="http://www.amdotibet.cn" target="_blank" rel="external">藏文网站</a>，虽然如同天书一般，但是也莫名感觉到了一股浓郁的政府芬芳）。</p>
+<p>​	BIG5又称<strong>大五码</strong>，台湾同胞的繁体编码集。。。实在没精力一一介绍了，感兴趣的童鞋自行搜索吧&gt;_&lt;。</p>
+<h2 id="unicode">Unicode</h2>
+<p>仅仅为了解决汉字编码问题就已经陆续出现了GB2312, BIG5等多种中文派系的编码方式，世界上有多种语言，针对各种语言门派的编码方式层出不穷，且互不兼容。为了解决这种诸侯纷争的局面，<strong>ISO</strong>决定一统江湖，推出Unicode这种<strong>字符集</strong>，希望这部武林秘籍能够保罗所有语言字符。</p>
+<p>​	下面 <strong><a href="https://googleblog.blogspot.com/2012/02/unicode-over-60-percent-of-web.html" target="_blank" rel="external">这张图</a></strong> 足以说明Unicode的发展趋势和普及程度。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_4.png" alt="Charset and Encoding_4"></p>
+<p>​Unicode不仅仅是一个字符集，它还为每个字符配上了一个号码。值得注意的是，这个号码并不是字符在计算机的字节中存储的号码。可以将号码看做是对整个字符集进行了一个编号（1号字符，2号字符，etc），就好比是学生都有学号，方便管理。在Unicode中将这种编号命名为<strong>码点(code point)</strong>。这使得Unicode字符集称为一种标准，一旦公布了Unicode字符集以及对应码点，大家就可以自行设计编码方式，将字符码点按照自定义的编码规则映射为相应编码储存到字节中。这也侧面验证了前文谈到的字符集与字符编码的区别，Unicode字符集就对应了UTF-8, UTF-16等多种编码方式。Unicode的码点范围在U+0000~U+10FFFF(十六进制表示数字)，大致可以算出范围在111万左右。为了方便分类管理，这些码点又被分为多个平面（plane）来管理，我们只需要知道<strong>BMP</strong>(Basic Multilingual Plane)这个平面即可。BMP包含了U+0000~U+FFFF这个范围内的码点，世界人民常用的字符都落在这个平面内。BMP所包含的所有字符参见传送门☞<a href="http://unifoundry.com/pub/unifont-7.0.03/unifont-7.0.03.bmp" target="_blank" rel="external">BMP</a>。</p>
+<p>​	这里再多说几句，以免混淆<strong>码点</strong>和真正存储在计算机字节中的<strong>编码</strong>。我们知道编码规则的作用是将字符翻译成机器中的二进制编码。其实也就是实现字符与编码一一映射的规则。码点只是Unicode字符集额外提供的一个工具，方便编码规则来实现这种映射。试想如果编码规则实现了学号与编码的一一映射，那么其实也就实现了学生与编码的翻译过程。对于码点也是同样的，只要实现了码点与编码的映射（这个映射由编码规则实现，如UTF-8），也就实现了字符与编码的翻译。那么码点和编码的数值大小是一样的吗？这个就得由编码规则来定了。</p>
+<p>​	Unicode的最大码点0x10FFFF，至少需要三个字节来保存。如果要设计一种编码方式来保存码点，你会怎么做？最简单的做法就是直接将码点当做编码来用，用三个字节来保存一个字符编码。当然这是一种可行的方案，实际上UTF-32就是采用的类似思想，不过它是用四个字节来保存一个字符。然而这种方式有明显的缺点，对于较小的码点(比如U+0001,U+0002等)，根本不需要那么多字节来保存。而且随着网络的发展，很多文件需要通过网络传输，这种低效的编码方式使得文件大小过大，不利于网络传输。</p>
+<p>​	于是一种新的编码思想产生的——<strong>变长编码</strong>。我们之前谈到的编码方式大多采用定长编码，即使用固定的字节数目来表示每一个字符。实际上我们可以将定长与变长编码当做朗读课文时的一种断句方式。由于文件是以二进制保存的，计算机如何知道多少位表示一个字符？对于定长编码很简单，计算机只用按照固定的字节翻译成一个字符（类比朗读时两个字当做一个词来断句，“我们/大家/努力/学习/编码/知识”）；对于变长编码，有时一个字节翻译成一个字符，有时两三个字节翻译成一个字符（类比两个字或四个字当做一个词断句，“我们/大家/努力学习/编码知识”）。实际上之前提到的GB2312就是一种变长编码，它采用单字节存储ASCII字符集，采用双字节存储中文字符集部分。定长编码有其优势——规则简单且方便计算机“断句”，但是对于规模较大的字符集（比如百万级别的Unicode）,这种编码方式极容易造成空间浪费。UTF-8以及UTF-16这些变长编码规则的出现较好地解决了这个问题，它们采用较少的字节来保存数值较小的码点，使用较多字节来保存数值较大的码点。</p>
+<h2 id="utf系列-utf-8-utf-16-etc">UTF系列（UTF-8, UTF-16, etc）</h2>
+<p>UTF(Unicode Transformation Format), Unicode字符集的编码方式，主要有UTF-8，UTF-16，UTF-32等。由于UTF-32采用定长四字节编码，这里不多说，下面主要介绍UTF-8，附带介绍UTF-16。</p>
+<h3 id="utf-8">UTF-8</h3>
+<p>UTF-8是变长编码，使用1~4个字节来表示一个字符，下图大致呈现了UTF-8对Unicode码点的变长转换原理。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_5.png" alt="Charset and Encoding_5"></p>
+<ol>
+<li>
+<p>单字节表示对应Unicode码点0x0000-0x007F的字符，且此时首位为0，有效位7位，也就是说可以表示2<sup>7</sup>=128种字符，这部分其实刚好兼容了ASCII编码规则，而Unicode0x0000-0x007F的字符也就是ASCII字符。</p>
+</li>
+<li>
+<p>双字节表示对应Unicode码点0x0080-0x07FF的字符，且此时第一个字节以110开头，后面的字节以10开头，有效 位数为11位，可以表示2048种字符。其实由上图可以看到UTF-8变长编码的规律，为了让计算机知道以几个字节来断句（即翻译为一个字符），在首字节的前几位就有几个1，例如如果是双字节断句，则首字节开头以110，如果是三字节断句，则首字节以1110开头。然而单字节断句为什么用0开头而不用1或者10开头呢？其实原因前文已经涉及了，就是为了兼容ASCII编码。这里还有几个问题大家可以思考一下：当多字节表示一个字符的情况时，既然首字节已经标记了如何断句，为什么后面的字节也要指定10开头？如果首字节后面的字节不指定用10开头岂不是可以增加两个有效位，增加编码空间进而提高效率？这些问题涉及到变长编码的一种设计思想，将在后文<strong>定长编码与变长编码</strong>部分详细解答。</p>
+</li>
+<li>
+<p>三字节表示对应Unicode码点0x0800-0xFFFF的字符，有效位为16位，可以容纳65536种字符，我们常用的中文字符也都落在三字节部分。因此UTF-8是以三个字节来表示常用汉字字符的，当然实际上汉字有将近十万个，65536无法容纳如此庞大的汉字体系，因此有些冷门汉字只能用四字节表示了。我们知道Unicode将人们常用的字符都放在BMP平面（U+0000-U+FFFF），而至此，UTF-8已经用1-3个字节表示了BMP平面的全部内容。</p>
+<p>以汉字“一”为例讲解UTF-8如何对Unicode码点进行编码。汉字“一”的Unicode码点是U+4E00，在范围0x0800-0xFFFF中，因此采用1110XXX_10XXXXXX_10XXXXXX模板，有效位为16位，0x4E00换做二进制表示为0b0100_1110_0000_0000，将这十六位二进制数依次填入模板中缺失的X即可。于是我们得到汉字“一”的UTF-8编码为0b11100100_10111000_10000000，即0xE4B880。想要验证更多可以移步 ☞ <a href="http://www.endmemo.com/unicode/unicodeconverter.php" target="_blank" rel="external"><strong>传送门</strong></a></p>
+</li>
+</ol>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_6.png" alt="Charset and Encoding_6"></p>
+<p>如果看到一串的16进制码有如下的形式：<strong>E</strong>X XX XX <strong>E</strong>X XX XX…每个三字节组前面都是E打头，那么它很可能就是一串汉字的UTF-8编码了。</p>
+<h3 id="utf-16">UTF-16</h3>
+<p>UTF-16是以二字节或四字节表示一个字符的变长编码。Unicode在BMP平面的字符（U+0000~U+FFFF）用二字节来编码，其余字符用四字节来编码。对于二字节编码部分直接用码点值来编码，四字节编码部分的转换规则这里不再详述。我们只需记住常用的中英文字符在UTF-16中使用二字节表示即可。具体编码规则以后有空再加进来吧。</p>
+<p>简单总结下：</p>
+<p>UTF-8中，英文字符是一个字节表示，常用中文字符使用三个字节表示，某些中文字符可能采用四字节表示。</p>
+<p>UTF-16中，英文字符是二字节表示，常用中文字符使用二字节表示，某些中文字符可能采用四字节表示。</p>
+<p>大致了解了UTF系列的编码规则之后，可能还会有一个疑问：UTF-8，UTF-16，UTF-32这些名字中数字的由来。其实8，16，32指的是UTF用来表示一个字符最少需要用的位数，这个位数又被称为是<strong>代码单元(Code Unit)</strong>。UTF-8使用1~4个字节来表示字符，最少需要用8位来表示一个字符，代码单元为一个字节；UTF-16使用2或者4个字节来表示字符，最少需要16位来表示一个字符，代码单元为两个字节；UTF-32使用4个字节来表示字符，由于是定长编码，一定需要32位来表示一个字符，代码单元为四个字节。</p>
+<h3 id="bom">BOM</h3>
+<p>讲到BOM之前，需要大端Big Endian和小端Little Endian的相关知识, 这里只是简单提一下大小端的问题，具体细节请先自行google。</p>
+<p>只有涉及到多于一个字节的数据结构保存和传输时才会产生大小端的问题。Big EndIan普遍用于网络传输，又被称为Network Byte Order；Little Endian通常用于微处理器，部分受到Intel处理器设计的影响。二者的区别简单来说就是，Big EndIan优先保存高位字节，最终表现为低址存储高位字节，高址存储低位字节； Little Endian优先保存低位字节， 最终表现为低址存储低位字节，高址存储高位字节。如下图所示（图片来自Wikipedia）：</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_7.png" alt="Charset and Encoding_7"></p>
+<blockquote>
+<p>需要注意的是，不管大端还是小端，单个字节内部的存储顺序是一致的，因为字节是计算机数据处理的最小可寻址单位是字节，因此字节内部也就不存在高址低址的概念，故而更不会有大小端的概念了。</p>
+</blockquote>
+<p>BOM, Byte Order Mark, 字节序标志。 刚才也提到过，只有对于多于一个字节的数据结构才存在字节序（Byte Order）这个概念，因此我们可以向字符编码中类推： UTF-8采用单个字节作为代码单元，因此没有并不会涉及字节序，而UTF-16使用两个字节作为一个代码单元，因此在代码单元的保存上用到了BOM（同理，UTF - 32也会用到BOM）。</p>
+<p>UTF - 16 Big EndIan BOM： FE FF</p>
+<p>UTF - 16 Little EndIan BOM： FF FE</p>
+<p>实际上UTF-8早期也是有BOM的，其值为EF BB BF，但是通过之前的分析也可以知道这个BOM是没有意义的。更多的时候它并没有起到字节序标志的作用，而是用作标志此文件是UTF - 8编码，类似于魔数（Magic Number）的作用。</p>
+<p>Java中默认使用Big EndIan，下面这段代码简单演示了“拜拜bye”字符串分别使用UTF-16大小端编码时的数据：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Demo</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        String sample = <span class="string">"拜拜bye"</span>;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">          <span class="comment">//Java UTF-16默认使用大端</span></div><div class="line">            System.out.println(printHexBinary(sample.getBytes(<span class="string">"UTF-16"</span>)));</div><div class="line">            System.out.println(printHexBinary(sample.getBytes(<span class="string">"UTF-16LE"</span>)));</div><div class="line">        &#125; <span class="keyword">catch</span> (UnsupportedEncodingException e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>输出的结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">FEFF62DC62DC006200790065</div><div class="line">DC62DC62620079006500</div></pre></td></tr></table></figure>
+<p>在这里我们不仅看到了大端时的BOM是FEFF，并且还可以回忆验证一下UTF-16的编码规则：所有英文和大部分汉字使用两个字节来表示一个字符，因此这里采用十个字节来编码sample字符串。每个代码单元两个字节，字节顺序大小端刚好颠倒。</p>
+<h2 id="定长编码与变长编码">定长编码与变长编码</h2>
+<p>前文<strong>UTF-8</strong>部分提出了的几个问题：当多字节表示一个字符的情况时，既然首字节已经标记了如何断句，为什么后面的字节也要指定10开头？如果首字节后面的字节不指定用10开头岂不是可以增加两个有效位，增加编码空间使得相同的字节长度可以表示更多的字符？</p>
+<p>​	首字节中110，1110，11110这些标记确实已经告诉计算机该如何“断句”，但是除了断句以外，计算机还需要完成我们的另一项需求：字符搜索。字符搜索实际上就是进行比特串匹配。假如UTF-8首字节后面的字节不指定用10开头很可能出现下面这种情况：</p>
+<p>​	我们想要搜索&quot;a&quot;，其UTF-8编码为0x61(0b01100001)。当我们搜索“a”时，计算机会自动搜索匹配01100001字符串，当然“a”会被搜索匹配出来，但是110XXXXX_01100001，1110XXXX_01100001_XXXXXXXX这些二三字节表示的字符也会被错误匹配为“a”。因此在变长编码设计之初就需要考虑到搜索匹配的问题，多字节模式不可以与单字节模式或者较少字节模式的比特串发生字节重叠。对于UTF-8中首字节之后的字节的开始两位“10”就是起这个作用（详见下图）。细心的童鞋可能留意到GB2312在用二字节表示中文字符时也规定两个字节的首位都必须为1，其中第二个字节首位必须为1的规定也是为了避免和ASCII编码比特串（GB2312用一字节表示英文字符的方式和ASCII兼容）重叠。</p>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/Charset%20and%20Encoding_8.png" alt="Charset and Encoding_8"></p>
+<h2 id="乱码原因">乱码原因</h2>
+<p>编码方式不兼容会导致乱码。具体是怎么一回事呢？当你想打开一个保存有文字的文件时，首先这个文件肯定是事先经过字符输入的，那么在输入字符的过程中必须采用一种编码方式A来将字符转化为字节保存在存贮载体上。然而你通过某种渠道（网络传输，拷贝等）获得了这份文件，计算机打开这个文件时必须选择一种编码方式B来将字节翻译成字符以供阅读。如果编码方式B和编码方式A是同一种编码方式，或者编码方式B可以兼容编码方式A，我们就可以顺利地查看文件中保存的文字，否则就显示乱码。</p>
+<blockquote>
+<p>你可能碰到过这样的事，把一个文本文件从Windows平台上传到Linux平台，并在Linux平台下打开时发现乱码了，但这不意味着文件内容有了什么变化，通常的原因是你的文件是用GBK编码的，但Linux平台下打开时它缺省可能用的是UTF-8编码去读取，因此，你只要调整成正确的编码去读取即可。</p>
+</blockquote>
+<p>对于Web系统的情况，如果想要html中正常显示文字字符，就必须保证数据库编码，web应用程序编码以及html页面的编码都相同或者兼容。</p>
+<h2 id="java采用的编码集">Java采用的编码集</h2>
+<p>Java内部字符串采用Unicode字符集，<s>本想在这篇笔记中一起介绍Java涉及的编码方式以及一些相关实验验证，但是考虑到篇幅有限，还是以后有空另开一篇博客专门介绍。</s></p>
+<p><font color="green">更新于2017/03/09</font></p>
+<p>避免立下太多flag，决定不再单独开博客介绍Java中涉及的编码方式，记住“字符传输存储用UTF-8，字符内存操作用UTF-16”这句话基本可以应对大多数场景需求了。可是，为什么选择UTF-8用作传输存储，而UTF-16用作内存操作？</p>
+<p>其实也很好理解，如今网络带宽还比较有限，因此尽量选择效率高，占用空间小的编码方式来编码需要网络传输的数据。而对于内存操作而言，变长编码可能会导致算法复杂度以及操作复杂度的增加，虽然空间也很重要（即内存资源），但是对于处理逻辑（即CPU资源以及算法设计复杂度）而言，显得没那么重要。UTF-8采用1-4字节变长编码，大部分常用字符用一个字节就可以表示，相比UTF-16最少采用两个字节表示字符而言，UTF-8在节省空间上表现出了明显的优势，因此被广泛用于网络传输。而UTF-16采用两个或四个字节表示一个字符，虽然也是变长编码，但是除去生僻的字符外，大多数常用字符都只需要两个字节表示，因此比较方便设计字符的存储逻辑以及操作逻辑（比如Java中的基础数据类型char采用两个字节存储，而String底层也是简单采用char数组实现，都是利用了UTF-16大多数字符采用两个字节存储的特性）。</p>
+<p>再就是，我们应该弄明白Java中String类的构造器new String(byte[] data) 和String类的实例方法public byte[] getBytes()是如何实现字符编码的转换的。</p>
+<!---
+直接上例子：
+......举一个java例子。。。。
+
+--->
+<p>String类的内部实际采用private final char[] value这个字符数组来保存字符串，而new String(byte[] data)构造器内部会调用<strong>默认的编码方式X</strong>来解析字节数组data，然后将其转换为UTF-16编码存储到String内部的字符数组value中。类似的，public byte[] getBytes() 方法会用UTF-16解析String内部的value字符数组，然后转用<strong>默认的编码方式X</strong>进行编码后保存数据到方法的返回值byte数组中。当然如果你调用的是上述方法的重载方法：</p>
+<p>public String(byte bytes[], Charset charset)</p>
+<p>public byte[] getBytes(Charset charset)</p>
+<p>那么，恭喜你，你可以自由选择<strong>编码方式X</strong>。</p>
+<p>可是这里仍然有个疑问，Java默认采用UTF-16来进行字符内存操作，那这是不是意味着上一段提到的<strong>默认的编码方式X</strong> 就是指UTF-16？</p>
+<p><a href="https://www.zhihu.com/question/27562173" target="_blank" rel="external">https://www.zhihu.com/question/27562173</a></p>
+<p>然而事情并不是那么简单，这个疑问实际上是由于不明白“字符内存操作”的定义导致的。首先应该明确的是，对于Java而言，什么是字符内存操作？简而言之，字符内存操作即所有和char这种基本数据类型打交道的操作，就是字符内存操作。而Java默认采用UTF-16来进行字符内存操作的含义在于，Java必须保证char中保存的数据是采用UTF-16编码的。</p>
+<p>感兴趣的童鞋可以移步下面这几篇专门讨论Java编码原理的博客：</p>
+<p><a href="https://my.oschina.net/goldenshaw/blog/470946" target="_blank" rel="external">文本在内存中的编码(1)</a></p>
+<p><a href="https://my.oschina.net/goldenshaw/blog/470948" target="_blank" rel="external">文本在内存中的编码(2)</a></p>
+<p><a href="https://my.oschina.net/goldenshaw/blog/471370" target="_blank" rel="external">文本在内存中的编码(3)</a></p>
+<p>如果对Java中的字符操作比较感兴趣也可以看看下面这些问题的讨论：</p>
+<p><a href="http://stackoverflow.com/questions/4659659/why-does-inputstreamread-return-an-int-and-not-a-byte" target="_blank" rel="external">why does InputStream#read() return an int and not a byte</a></p>
+<p>磨磨唧唧，终于写完了，估计你们早就看累了。还是那句老话，文章如有纰误，欢迎大家在评论区批评斧正，提前谢过~~</p>
+<h2 id="references">References</h2>
+<p>[1] <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html</a></p>
+<p>[2] <a href="http://wenku.baidu.com/view/cb9fe505cc17552707220865.html" target="_blank" rel="external">http://wenku.baidu.com/view/cb9fe505cc17552707220865.html</a></p>
+<p>[3] <a href="http://blog.csdn.net/yjier/article/details/6237697" target="_blank" rel="external">http://blog.csdn.net/yjier/article/details/6237697</a></p>
+<p>[4] <a href="https://my.oschina.net/sunnyboy177/blog/399097" target="_blank" rel="external">https://my.oschina.net/sunnyboy177/blog/399097</a></p>
+<p>[5] <a href="https://my.oschina.net/goldenshaw/blog/307708" target="_blank" rel="external">https://my.oschina.net/goldenshaw/blog/307708</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近重新整理一遍 &lt;strong&gt;Java&lt;/strong&gt; 基础，在写到注释相关的内容时发现自己对各种字符编码问题一直似懂非懂。相信很多人都听说过ASCII, Unicode, GB2312, UTF-8之类的编码，但是对于它们的印象可能仅仅停留在知道它们是不同的字符编码，使用不当可能会导致乱码的层面上。&lt;/p&gt;
+&lt;p&gt;​	查了很多资料，脑子有点乱，下面这篇笔记主要用来梳理思路。文章可能涉及到ASCII, ISO8859, GB2312, GBK, Unicode, UTF-8, UTF-16等多个字符集和编码方式进行探讨，篇幅有限，泛泛而谈，希望对有相同困惑的朋友有所帮助~~&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Misc" scheme="http://hippo-jessy.com/categories/Misc/"/>
+    
+    
+      <category term="Charset" scheme="http://hippo-jessy.com/tags/Charset/"/>
+    
+      <category term="Encoding" scheme="http://hippo-jessy.com/tags/Encoding/"/>
+    
+      <category term="Unicode" scheme="http://hippo-jessy.com/tags/Unicode/"/>
+    
+      <category term="UTF-8" scheme="http://hippo-jessy.com/tags/UTF-8/"/>
+    
+      <category term="UTF-16" scheme="http://hippo-jessy.com/tags/UTF-16/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【Spark概念模型-2】RDD &amp; Dependency &amp; 宽窄依赖划分</title>
+    <link href="http://hippo-jessy.com/2016/05/15/%E3%80%90Spark%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B-2%E3%80%91RDD-Dependency-%E5%AE%BD%E7%AA%84%E4%BE%9D%E8%B5%96%E5%88%92%E5%88%86/"/>
+    <id>http://hippo-jessy.com/2016/05/15/【Spark概念模型-2】RDD-Dependency-宽窄依赖划分/</id>
+    <published>2016-05-15T12:45:41.000Z</published>
+    <updated>2017-05-17T05:07:20.266Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="rdd">RDD</h2>
+<p>RDD是由诸多partition所构成的分布式只读数据集以及相关算子的封装，它只是一个逻辑概念上的数据集而并非是一个将所有数据都载入内存的数据结构（这里只是简单提一下RDD，在另一篇博客详细讲解RDD的概念，本文重点在于Dependency）。</p>
+<h2 id="dependency">Dependency</h2>
+<p>Dependency描述了RDD之间的依赖关系，每个RDD内部都记录了它与其他RDD（parent RDD）的依赖关系。通过Dependency类的getParents(partitionId:Int)我们可以获取当前RDD的每个partition所依赖的parent partitions。</p>
+<a id="more"></a>
+<p>RDD之间的依赖关系可以分为Narrow Dependency和Shuffle(Wide) Dependency。到底应该如何区分RDD之间的关系是宽依赖还是窄依赖？</p>
+<p>这主要取决于parent RDD的一个partition被child RDD的多少个partition所利用：如果parent RDD的每一个partition最多只会被child RDD的一个partition利用，则父子RDD之间的关系为窄依赖，相反，如果被child RDD的多个partition利用，则为宽依赖。</p>
+<p>这种定义无疑是正确的，但是并不是很形象</p>
+<p>现在把每一条数据看做是一个带有序号和颜色的小球（序号可以重复），将partition看做是放小球的盒子（盒子也有序号且序号不重复），一个RDD是指一个持有多个盒子的人。每个人都有自己放置小球的策略，将partitioner看做是人将小球放置到盒子中的策略（比如常见的HashPartitioner)，而且每个人根据自己的职业都有自己对小球处理的喜好。现在进行盒子传递（一个人把盒子给另一个人）。传递盒子的人是父RDD,接受盒子的人是子RDD，由于接受盒子的人有自己的处理喜好和放置小球的策略，因此凡是进行了盒子传递必定会进行小球的处理和重新放置（相当于transformation）。</p>
+<blockquote>
+<p>“不同的算子会产生不同的RDD”，这句话其实并不是那么准确，我们知道每个RDD都有compute方法，但是不同的RDD对应的compute实现并不相同（如MappedRDD的compute方法里对每一条数据进行了map操作，相当于在RDD内部包含了算子定义的操作，详见<a href="../Spark%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/RDD%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90">RDD源码解析</a>）。因此，个人觉得这句话改成不同的RDD带有不同的算子更为恰当。同理，RDD中有一个属性partitioner，因此，分区策略也是RDD的固有属性。</p>
+</blockquote>
+<p>对应于现在的场景，不同的人根据自己的职业有不同的处理小球的喜好，且有自己放置小球的策略，对应于不同的RDD带有不同的算子，且传入了不同的partitioner。</p>
+<p>其实上面的比喻也可以帮助我们更好地理解RDD，如果我们想在一群人之间传递盒子以便让不同职业的人对盒子中的小球进行处理（此过程相当于将一系列partition中的数据用不同算子处理以得到目标结果），则对于每个人我们至少需要五个信息：当前人所持有的所有盒子的列表，当前人对小球的处理喜好，传递盒子给当前人的人是哪些人，当前人对小球的放置策略，以及当前人放置盒子的地点</p>
+<p>这恰好和<a href="./RDD%E7%9A%84%E6%A6%82%E5%BF%B5%E7%90%86%E8%A7%A3">RDD的概念理解</a>中提到过RDD类的五个重要特征相对应：<br>
+1、partitions的列表（“当前人”所持有的盒子列表)<br>
+2、compute方法来计算iterator（“当前人”对小球的处理喜好）<br>
+3、getDependencies(传递给“当前人”盒子的人有哪些)<br>
+4、partitioner（“当前人”放置小球的策略）<br>
+5、getPreferredLocations（“当前人”放置盒子的位置）</p>
+<p>现在有一个人持有多个箱子，他按照放置策略A放置好了小球，你可以选择让他把箱子传给下面不同职业的人</p>
+<p>将算子作用于小球的变化过程看做是如下操作：</p>
+<blockquote>
+<p>eg：<br>
+map() -&gt; 当做是给小球涂色 -&gt; 对应于MappedRDD，相当于将盒子传递给了一个画匠</p>
+</blockquote>
+<blockquote>
+<p>filter() -&gt; 当做是从盒子里取出小球扔掉  -&gt; 对应于FilteredRDD，相当于将盒子传递给了一个投手。。。想不到更合适的职业了。。。</p>
+</blockquote>
+<blockquote>
+<p>union(rdd) -&gt; 当做是将多个小盒子合成一个大盒子（所有被合并小盒子的编号均可看做合并后大盒子的编号）-&gt; 对应于UnionRDD，相当于将盒子传递给了一个装箱工人</p>
+<p>join(rdd,partitioner) -&gt; 当做是将号码相同的小球（不管是不是在一个盒子里）熔成一个大球，并根据放置策略partitioner重新放置 -&gt; 相当于将盒子传递给了一个铁匠</p>
+</blockquote>
+<p>如果经过上述某个操作后，对于所有留下来的小球，如果原来在同一个盒子里的小球现在全部还在同一个盒子里，则为窄依赖；如果任何一个小球和原来在同一个盒子里的其他小球分开了，则为宽依赖。 通俗一点来说，不管被传递的人怎么折腾，原本在同一个盒子里的小球都还在一个盒子里（或者衍生的大盒子），这个传递关系就是窄依赖；否则，则是宽依赖。</p>
+<p>逐一看一下上面列举的算子，显然，map和filter是窄依赖，因为都只是简单的传递了盒子，对单个小球涂色或扔掉，并没有传入新的partitioner，即接收盒子的人并没有对小球进行重新放置。因此所有小球都待在自己原来的盒子里，显然是窄依赖。对于union，也是窄依赖，因为每个小球都会在原来小盒子所衍生的大盒子中。</p>
+<h3 id="join">join</h3>
+<p>对于join(rddB)既可能是窄依赖，也有可能是宽依赖，实际上讨论join是宽依赖还是窄依赖其实相当于讨论cogroup，可以参看下面源码可知，join内部是调用cogroup实现的</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">join</span></span>[<span class="type">W</span>](other: <span class="type">RDD</span>[(<span class="type">K</span>, <span class="type">W</span>)], partitioner: <span class="type">Partitioner</span>): <span class="type">RDD</span>[(<span class="type">K</span>, (<span class="type">V</span>, <span class="type">W</span>))] = &#123;</div><div class="line">   <span class="keyword">this</span>.cogroup(other, partitioner).flatMapValues( pair =&gt;</div><div class="line">     <span class="keyword">for</span> (v &lt;- pair._1; w &lt;- pair._2) <span class="keyword">yield</span> (v, w)</div><div class="line">   )</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<p>我们需要分情况讨论：</p>
+<h4 id="窄依赖join">窄依赖join</h4>
+<p>想要窄依赖，则必须保证原来同一个盒子里的球传递个另一个人之后依然在同一个盒子里。</p>
+<p>如果传递盒子的人和接受盒子的人有相同的放置小球的策略，并且传递盒子的人和接受盒子的人的盒子数目相同，则join为窄依赖，否则为宽依赖。比如传递者A和传递者B（rddB）两人都采用了HashParitioner（比如用小球的序号对盒子的序号取余），则二人所持有的相同序号的小球一定放在序号相同的盒子里，join之后接受盒子的人也使用同样的HashParitioner，则熔成的打球一定还会被放置在序号相同的盒子里，这样看来，原本放在盒子1中的小球最后一定还是会被放置在盒子1中。（如后文图中的join with inputs co-partitioned）</p>
+<h4 id="宽依赖join">宽依赖join</h4>
+<p>大多数情况的join都是宽依赖，第一个人将相同序号的球打散放置在不同的盒子里，传递给第二个人之后，如果采用不同的放置策略，基本都会使原本在同一个盒子里的球分散到不同的盒子中去。</p>
+<p>这种区别也就是我们常见的join with inputs co-partitioned 和 join with inputs not co-partitioned(如下图所示)</p>
+<blockquote>
+<p>下图中的 join with inputs co-partitioned 对应于上述窄依赖的情况3<br>
+图中涉及到一个人向另一个人传递盒子以及两个人向第三个人传递盒子的情况</p>
+</blockquote>
+<p><img src="http://ojnnon64z.bkt.clouddn.com/%E3%80%90Spark%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B-2%E3%80%91RDD%20&amp;%20Dependency%20&amp;%20%E5%AE%BD%E7%AA%84%E4%BE%9D%E8%B5%96%E5%88%92%E5%88%86.png" alt=""></p>
+<p>实际上我们也可以从源码角度来看如何区分cogroup是否为宽依赖，cogroup方法实际上创建了CoGroupedRDD，该RDD的getDependencies方法如下：</p>
+<figure class="highlight scala"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">def</span> <span class="title">getDependencies</span></span>: <span class="type">Seq</span>[<span class="type">Dependency</span>[_]] = &#123;</div><div class="line"> <span class="comment">//rdds是CoGroupedRDD的父RDD列表，part是CoGroupedRDD的partitioner</span></div><div class="line">   rdds.map &#123; rdd: <span class="type">RDD</span>[_ &lt;: <span class="type">Product2</span>[<span class="type">K</span>, _]] =&gt;</div><div class="line">     <span class="keyword">if</span> (rdd.partitioner == <span class="type">Some</span>(part)) &#123;</div><div class="line">       logDebug(<span class="string">"Adding one-to-one dependency with "</span> + rdd)</div><div class="line">       <span class="keyword">new</span> <span class="type">OneToOneDependency</span>(rdd)</div><div class="line">     &#125; <span class="keyword">else</span> &#123;</div><div class="line">       logDebug(<span class="string">"Adding shuffle dependency with "</span> + rdd)</div><div class="line">       <span class="keyword">new</span> <span class="type">ShuffleDependency</span>[<span class="type">K</span>, <span class="type">Any</span>, <span class="type">CoGroupCombiner</span>](rdd, part, serializer)</div><div class="line">     &#125;</div><div class="line">   &#125;</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
+<p>代码逻辑非常清晰，如果CoGroupedRDD和其父RDD有相同的partitioner则二者关系为窄依赖，否则为宽依赖。</p>
+<h2 id="references">References</h2>
+<p><a href="http://smallx.me/2016/06/07/spark%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" target="_blank" rel="external">http://smallx.me/2016/06/07/spark%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</a>  <a href="https://github.com/JerryLead/SparkInternals/blob/master/markdown/2-JobLogicalPlan.md" target="_blank" rel="external">https://github.com/JerryLead/SparkInternals/blob/master/markdown/2-JobLogicalPlan.md</a>  <a href="https://github.com/JerryLead/SparkInternals/blob/master/markdown/3-JobPhysicalPlan.md" target="_blank" rel="external">https://github.com/JerryLead/SparkInternals/blob/master/markdown/3-JobPhysicalPlan.md</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;rdd&quot;&gt;RDD&lt;/h2&gt;
+&lt;p&gt;RDD是由诸多partition所构成的分布式只读数据集以及相关算子的封装，它只是一个逻辑概念上的数据集而并非是一个将所有数据都载入内存的数据结构（这里只是简单提一下RDD，在另一篇博客详细讲解RDD的概念，本文重点在于Dependency）。&lt;/p&gt;
+&lt;h2 id=&quot;dependency&quot;&gt;Dependency&lt;/h2&gt;
+&lt;p&gt;Dependency描述了RDD之间的依赖关系，每个RDD内部都记录了它与其他RDD（parent RDD）的依赖关系。通过Dependency类的getParents(partitionId:Int)我们可以获取当前RDD的每个partition所依赖的parent partitions。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Spark" scheme="http://hippo-jessy.com/categories/Spark/"/>
+    
+      <category term="Spark概念模型" scheme="http://hippo-jessy.com/categories/Spark/Spark%E6%A6%82%E5%BF%B5%E6%A8%A1%E5%9E%8B/"/>
+    
+    
+      <category term="Spark" scheme="http://hippo-jessy.com/tags/Spark/"/>
+    
+  </entry>
+  
+</feed>
