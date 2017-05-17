@@ -68,7 +68,7 @@ description:
 
 ​	重新上课（不强求，时间不够就自己练，兴趣驱动），以指法、古曲训练为主。半年目标：每月至少练一次，练熟《送我一枝玫瑰花》
 
-<blockquote><font color="green" size="3px">4.5 英语口语不能丢</big></font></blockquote> <br/>
+<blockquote><font color="green" size="3px">4.5 英语口语</big></font></blockquote> <br/>
 
 ​	每两周周末一次conversation exchange（难以达成的情况下，至少保证每月一次）
 
